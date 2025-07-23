@@ -21,10 +21,12 @@ const quickLinks = [
 ];
 
 const services = [
-  { name: "Web Development", path: "/services" },
-  { name: "Mobile Development", path: "/services" },
-  { name: "UI/UX Design", path: "/services" },
-  { name: "Digital Marketing", path: "/services" },
+  { name: "Web Development", path: "/services/web-development" },
+  { name: "Mobile Development", path: "/services/mobile-development" },
+   { name: "Machine Learning", path: "/services/machine-learning" },
+  { name: "SEO Optimization", path: "/services/seo-optimization" },
+  { name: "UI/UX Design", path: "/services/ui-ux-design" },
+  { name: "Digital Marketing", path: "/services/digital-marketing" },
 ];
 
 export default function Footer() {

@@ -1,6 +1,17 @@
 import SecurityImg from "../assets/security.png";
 import ComputerImg from "../assets/computer.png";
 import LaptopImg from "../assets/laptop.png";
+import customerImg from "../assets/ServicesImages/customer.webp";
+import crossPlatformImg from "../assets/ServicesImages/cross-platform.webp";
+import predictiveAnalyticsImg from "../assets/ServicesImages/PredictiveAnalytics.webp";
+import dataDrivenImg from "../assets/ServicesImages/data-driven.webp";
+import onpageSeoImg from "../assets/ServicesImages/onpage-seo.webp";
+import offpageSeoImg from "../assets/ServicesImages/offpage-seo.webp";
+import designImg from "../assets/ServicesImages/design.webp";
+import prototypingImg from "../assets/ServicesImages/prototyping.webp";
+import adsImg from "../assets/ServicesImages/ads.webp";
+import contentMarketingImg from "../assets/ServicesImages/ContentMarketing.webp";
+
 
 export interface ServiceData {
   slug: string;
@@ -50,7 +61,7 @@ export const servicesData: ServiceData[] = [
         {
           title: "Secure and Scalable Solutions",
           description: "We implement robust security protocols and design scalable architectures to ensure your web applications are secure, reliable, and ready to grow.",
-          image: ComputerImg,
+          image: SecurityImg,
           reverse: true,
         },
       ],
@@ -83,9 +94,14 @@ export const servicesData: ServiceData[] = [
     details: {
       serviceCards: [
         {
-          title: "Mobile App Development",
-          description: "Our team creates high-performance mobile apps for Android and iOS platforms.",
-          image: SecurityImg,
+          title: "Cross-Platform Development",
+          description: "We use modern frameworks like React Native and Flutter to develop cross-platform apps that cut costs and time, without compromising on performance or user experience.",
+          image: crossPlatformImg,
+        },
+         {
+          title: "User-Centric Design",
+          description: "Our UI/UX designers follow user-centered design principles to craft intuitive, visually engaging interfaces that boost user satisfaction and drive meaningful interaction.",
+          image: customerImg,
           reverse: true,
         },
       ],
@@ -107,7 +123,7 @@ export const servicesData: ServiceData[] = [
       overviewSection: {
         title1: "Our Mobile",
         title2: "App Development Services",
-        description: "We create intuitive, high-performance mobile solutions that provide a seamless user experience and deliver measurable results.",
+        description: "At TechBugs, we offer tailored mobile app development services designed to meet your unique business needs. Our skilled developers leverage cutting-edge technologies and modern tools to build high-quality, user-friendly, and scalable mobile applications for both iOS and Android platforms. Whether you require a native app, hybrid solution, or web-based mobile app, we have the expertise to deliver robust and reliable solutions that align perfectly with your goals.",
       },
     },
   },
@@ -118,9 +134,15 @@ export const servicesData: ServiceData[] = [
     details: {
       serviceCards: [
         {
-          title: "Machine Learning",
-          description: "We deliver AI and machine learning solutions to automate and optimize your business.",
-          image: ComputerImg,
+          title: "Predictive Analytics",
+          description: "Our predictive models deliver forward-looking insights that help you stay ahead and make smarter decisions with confidence.",
+          image: predictiveAnalyticsImg,
+        },
+        {
+          title: "Data-Driven Insights",
+          description: "Unlock valuable insights from complex data to inform smarter strategies and boost operational efficiency.",
+          image: dataDrivenImg,
+          reverse: true
         },
       ],
       processSteps: [
@@ -141,7 +163,7 @@ export const servicesData: ServiceData[] = [
       overviewSection: {
         title1: "Our Machine",
         title2: "Learning Services",
-        description: "We create AI-driven solutions that provide actionable insights and automation for your business.",
+        description: "At TechBugs, we harness the power of cutting-edge machine learning algorithms and models to build intelligent solutions that automate processes, predict trends, and uncover valuable insights from data. Our machine learning services empower businesses to make smarter, data-driven decisions, optimize operations, and stay ahead in a competitive market.",
       },
     },
   },
@@ -152,9 +174,15 @@ export const servicesData: ServiceData[] = [
     details: {
       serviceCards: [
         {
-          title: "SEO Optimization",
-          description: "We help you rank higher and reach more customers with proven SEO strategies.",
-          image: ComputerImg,
+          title: "On-Page SEO",
+          description: "Optimizing individual web pages to improve search engine rankings and attract more relevant, high-quality traffic.",
+          image: onpageSeoImg,
+        },
+        {
+          title: "Off-Page SEO",
+          description: "We create authoritative backlinks and amplify your content across trusted platforms to enhance your domain authority and online visibility.",
+          image: offpageSeoImg,
+          reverse: true
         },
       ],
       processSteps: [
@@ -175,7 +203,7 @@ export const servicesData: ServiceData[] = [
       overviewSection: {
         title1: "Our SEO",
         title2: "Optimization Services",
-        description: "We create strategies that drive organic traffic and maximize your digital visibility.",
+        description: "TechBugs provides comprehensive SEO services tailored to boost your online visibility, attract high-quality organic traffic, and improve your search engine rankings. With a data-driven strategy, we optimize your website for maximum impact—driving higher conversions and accelerating business growth.",
       },
     },
   },
@@ -186,10 +214,16 @@ export const servicesData: ServiceData[] = [
     details: {
       serviceCards: [
         {
-          title: "UI/UX Designing",
-          description: "We design intuitive and engaging user interfaces for web and mobile applications.",
-          image: ComputerImg,
+          title: "Visual Design",
+          description: "We craft the visual identity of your digital product, including color schemes, typography, and imagery to ensure a cohesive and engaging user interface.",
+          image: designImg,
         },
+        {
+          title: "Interactive Prototyping",
+          description: "Our interactive prototypes give clients a hands-on preview of their product, allowing for early feedback and experience-driven refinements.",
+          image: prototypingImg,
+          reverse: true
+        }
       ],
       processSteps: [
         { number: 1, title: "Analysis", description: "Placeholder for UI/UX analysis." },
@@ -209,7 +243,7 @@ export const servicesData: ServiceData[] = [
       overviewSection: {
         title1: "Our UI/UX",
         title2: "Design Services",
-        description: "We create visually appealing and intuitive user experiences for your applications.",
+        description: "At TechBugs, we deliver UI/UX design services that empower businesses to build intuitive, user-friendly, and visually compelling digital products. Our design approach is rooted in a deep understanding of your business goals, target audience, and industry trends, enabling us to craft unique and impactful designs that elevate the overall user experience.",
       },
     },
   },
@@ -220,10 +254,16 @@ export const servicesData: ServiceData[] = [
     details: {
       serviceCards: [
         {
-          title: "Digital Marketing",
-          description: "Grow your business with our comprehensive digital marketing solutions.",
-          image: ComputerImg,
+          title: "Content Marketing",
+          description: "We craft and distribute meaningful content that resonates with your audience, building trust, driving engagement, and strengthening brand loyalty.",
+          image: contentMarketingImg,
         },
+         {
+          title: "Paid Advertising",
+          description: "We run strategic paid campaigns on Google and social media to maximize your reach, drive quick results, and boost brand visibility instantly.",
+          image: adsImg,
+          reverse: true
+        }
       ],
       processSteps: [
         { number: 1, title: "Analysis", description: "Placeholder for marketing analysis." },
@@ -243,7 +283,7 @@ export const servicesData: ServiceData[] = [
       overviewSection: {
         title1: "Our Digital",
         title2: "Marketing Services",
-        description: "We create data-driven marketing campaigns to maximize your reach and results.",
+        description: "At TechBugs, we provide comprehensive digital marketing services aimed at enhancing your online presence, engaging your target audience, and delivering measurable results. Our strategies are customized to align with your business objectives, ensuring maximum ROI and long-term, sustainable growth.",
       },
     },
   },
