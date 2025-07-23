@@ -10,27 +10,21 @@ const ReactDevelopmentPage: React.FC = () => {
 
   return (
     <div className="bg-gray-50 text-gray-900">
+      {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden py-28 flex items-center"
+        className="relative overflow-hidden py-28 flex items-center"
       >
-        {/* Background elements */}
-        <div className="absolute inset-0 z-0 bg-[url('data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a0a0a0' fill-opacity='0.1'%3E%3Ccircle cx='25' cy='25' r='3'/%3E%3Ccircle cx='75' cy='75' r='3'/%3E%3C/g%3E%3C/svg%3E')] bg-repeat">
-          <div className="absolute w-80 h-80 bg-primary-200 rounded-full -top-20 -left-20 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-          <div className="absolute w-96 h-96 bg-secondary-200 rounded-full top-20 -right-20 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute w-100 h-100 bg-accent-200 rounded-full -bottom-20 left-1/3 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-        </div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={heroInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="container mx-auto px-4 text-center relative z-10"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#08162C]">
             React Development
           </h1>
-          <p className="text-xl max-w-3xl mx-auto text-gray-600">
+          <p className="text-xl max-w-3xl mx-auto text-[#4C4C4C]">
             React is a widely-used JavaScript library for building user
             interfaces. It allows developers to create reusable UI components
             and efficiently update the user interface as the underlying data
@@ -49,11 +43,11 @@ const ReactDevelopmentPage: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="container mx-auto px-4"
         >
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center text-[#08162C]">
             React Development services we provide
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
                 title: "React.js development from scratch",
@@ -77,9 +71,11 @@ const ReactDevelopmentPage: React.FC = () => {
                 className="bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="p-6">
-                  <CheckCircle size={36} className="text-green-500 mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
+                  <CheckCircle size={36} className="text-[#29E8AE] mb-4" />
+                  <h3 className="text-xl font-semibold text-[#08162C] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-[#4C4C4C]">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -87,26 +83,30 @@ const ReactDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      <section ref={benefitsRef} className="py-20 bg-gray-100">
+      {/* Benefits Section */}
+      <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={benefitsInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="container mx-auto px-4"
         >
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center text-[#08162C]">
             Benefits of React Development
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center lg:justify-start">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                alt="React Icon"
-                className="w-64 h-64 opacity-70"
-              />
+          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-16">
+            <div className="flex justify-center w-full lg:w-[36%]">
+              <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                  alt="React Icon"
+                  className="w-64 h-64 object-contain"
+                />
+              </div>
             </div>
-            <div className="space-y-8">
+
+            <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
               {[
                 {
                   title: "Reusable components",
@@ -126,12 +126,14 @@ const ReactDevelopmentPage: React.FC = () => {
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  <div className="w-10 h-10 flex-shrink-0 bg-[#78BA9F] text-[#08162C] rounded-full flex items-center justify-center font-semibold">
                     {String(index + 1).padStart(2, "0")}
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
-                    <p className="text-gray-600">{item.desc}</p>
+                    <h3 className="text-lg font-semibold text-[#08162C] mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-[#4C4C4C]">{item.desc}</p>
                   </div>
                 </div>
               ))}
