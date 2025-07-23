@@ -64,9 +64,7 @@ const AboutSection: React.FC = () => {
       </style>
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
-          <NavLink to="/">
-          Home &gt; 
-          </NavLink>
+          <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> About</span>
         </p>
 

@@ -19,7 +19,6 @@ import {
 
 import logo from "../assets/logo.png";
 import { servicesData } from "../data/servicesData";
-import { technologyData } from "../data/technologyData";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -128,13 +127,28 @@ const Navbar: React.FC = () => {
                   </h4>
                   <ul className="space-y-2">
                     <li>
-                      <NavLink to="/technologies/react" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">React</NavLink>
+                      <NavLink
+                        to="/technologies/react"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        React
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/technologies/nextjs" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">Next.js</NavLink>
+                      <NavLink
+                        to="/technologies/nextjs"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        Next.js
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/technologies/angular" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">Angular</NavLink>
+                      <NavLink
+                        to="/technologies/angular"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        Angular
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -146,10 +160,20 @@ const Navbar: React.FC = () => {
                   </h4>
                   <ul className="space-y-2">
                     <li>
-                      <NavLink to="/technologies/nodejs" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">Node.js</NavLink>
+                      <NavLink
+                        to="/technologies/nodejs"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        Node.js
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/technologies/python" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">Python</NavLink>
+                      <NavLink
+                        to="/technologies/python"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        Python
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -161,13 +185,28 @@ const Navbar: React.FC = () => {
                   </h4>
                   <ul className="space-y-2">
                     <li>
-                      <NavLink to="/technologies/android" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">Android</NavLink>
+                      <NavLink
+                        to="/technologies/android"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        Android
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/technologies/react-native" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">React Native</NavLink>
+                      <NavLink
+                        to="/technologies/react-native"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        React Native
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/technologies/flutter" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">Flutter</NavLink>
+                      <NavLink
+                        to="/technologies/flutter"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        Flutter
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -180,7 +219,12 @@ const Navbar: React.FC = () => {
 
                   <ul className="space-y-2">
                     <li>
-                      <NavLink to="/technologies/figma" className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]">Figma</NavLink>
+                      <NavLink
+                        to="/technologies/figma"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
+                      >
+                        Figma
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -221,12 +265,24 @@ const Navbar: React.FC = () => {
                     className="px-4 py-2 flex gap-2 items-center hover:text-[#45BCA0]"
                   >
                     {/* Add icons based on service.slug */}
-                    {service.slug === "web-development" && <Globe size={18} className="text-[#45BCA0]" />}
-                    {service.slug === "mobile-development" && <Smartphone size={18} className="text-[#45BCA0]" />}
-                    {service.slug === "machine-learning" && <Brain size={18} className="text-[#45BCA0]" />}
-                    {service.slug === "seo-optimization" && <Search size={18} className="text-[#45BCA0]" />}
-                    {service.slug === "ui-ux-design" && <Palette size={18} className="text-[#45BCA0]" />}
-                    {service.slug === "digital-marketing" && <BarChart2 size={18} className="text-[#45BCA0]" />}
+                    {service.slug === "web-development" && (
+                      <Globe size={18} className="text-[#45BCA0]" />
+                    )}
+                    {service.slug === "mobile-development" && (
+                      <Smartphone size={18} className="text-[#45BCA0]" />
+                    )}
+                    {service.slug === "machine-learning" && (
+                      <Brain size={18} className="text-[#45BCA0]" />
+                    )}
+                    {service.slug === "seo-optimization" && (
+                      <Search size={18} className="text-[#45BCA0]" />
+                    )}
+                    {service.slug === "ui-ux-design" && (
+                      <Palette size={18} className="text-[#45BCA0]" />
+                    )}
+                    {service.slug === "digital-marketing" && (
+                      <BarChart2 size={18} className="text-[#45BCA0]" />
+                    )}
                     {service.title}
                   </NavLink>
                 ))}
@@ -345,15 +401,69 @@ const Navbar: React.FC = () => {
               </button>
               {mobileTechOpen && (
                 <div className="ml-6 mt-2 space-y-2">
-                  <NavLink to="/technologies/react" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>React</NavLink>
-                  <NavLink to="/technologies/nextjs" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>Next.js</NavLink>
-                  <NavLink to="/technologies/angular" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>Angular</NavLink>
-                  <NavLink to="/technologies/nodejs" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>Node.js</NavLink>
-                  <NavLink to="/technologies/python" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>Python</NavLink>
-                  <NavLink to="/technologies/android" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>Android</NavLink>
-                  <NavLink to="/technologies/react-native" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>React Native</NavLink>
-                  <NavLink to="/technologies/flutter" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>Flutter</NavLink>
-                  <NavLink to="/technologies/figma" className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]" onClick={() => setMobileMenuOpen(false)}>Figma</NavLink>
+                  <NavLink
+                    to="/technologies/react"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    React
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/nextjs"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Next.js
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/angular"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Angular
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/nodejs"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Node.js
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/python"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Python
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/android"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Android
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/react-native"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    React Native
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/flutter"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Flutter
+                  </NavLink>
+                  <NavLink
+                    to="/technologies/figma"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Figma
+                  </NavLink>
                 </div>
               )}
             </div>
@@ -384,12 +494,24 @@ const Navbar: React.FC = () => {
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {/* Add icons based on service.slug */}
-                      {service.slug === "web-development" && <Globe size={18} className="text-[#45BCA0]" />}
-                      {service.slug === "mobile-development" && <Smartphone size={18} className="text-[#45BCA0]" />}
-                      {service.slug === "machine-learning" && <Brain size={18} className="text-[#45BCA0]" />}
-                      {service.slug === "seo-optimization" && <Search size={18} className="text-[#45BCA0]" />}
-                      {service.slug === "ui-ux-design" && <Palette size={18} className="text-[#45BCA0]" />}
-                      {service.slug === "digital-marketing" && <BarChart2 size={18} className="text-[#45BCA0]" />}
+                      {service.slug === "web-development" && (
+                        <Globe size={18} className="text-[#45BCA0]" />
+                      )}
+                      {service.slug === "mobile-development" && (
+                        <Smartphone size={18} className="text-[#45BCA0]" />
+                      )}
+                      {service.slug === "machine-learning" && (
+                        <Brain size={18} className="text-[#45BCA0]" />
+                      )}
+                      {service.slug === "seo-optimization" && (
+                        <Search size={18} className="text-[#45BCA0]" />
+                      )}
+                      {service.slug === "ui-ux-design" && (
+                        <Palette size={18} className="text-[#45BCA0]" />
+                      )}
+                      {service.slug === "digital-marketing" && (
+                        <BarChart2 size={18} className="text-[#45BCA0]" />
+                      )}
                       {service.title}
                     </NavLink>
                   ))}
