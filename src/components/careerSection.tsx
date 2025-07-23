@@ -3,6 +3,7 @@ import { FiTarget, FiUsers, FiZap, FiAward, FiHeart } from "react-icons/fi";
 import { TbBulb } from "react-icons/tb";
 import { Button } from "./common/button";
 import type { Quality } from "../types/quality";
+import { NavLink } from "react-router-dom";
 
 const qualities: Quality[] = [
   {
@@ -104,8 +105,10 @@ const careerSection = () => {
         </style>
         <div className="max-w-[69rem] mx-auto px-8 md:px-10 mt-10 pb-14 sm:pb-32 relative z-20">
           <p className="text-lg text- font-semibold mb-4">
-            Home{" "}
-            <span className="text-[#78BA9F] font-semibold"> &gt; Carerrs</span>
+            <NavLink to="/">
+          Home &gt; 
+          </NavLink>
+            <span className="text-[#78BA9F] font-semibold">Carerrs</span>
           </p>
 
           <div className="space-y-2">

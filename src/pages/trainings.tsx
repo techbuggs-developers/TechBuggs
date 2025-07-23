@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import { FaCogs, FaLaptopCode, FaBug } from "react-icons/fa";
 import { courseOutlines } from "../data/courseOutlines";
 import { Button } from "../components/common/button";
+import { NavLink } from "react-router-dom";
 
 const cardCourses = [
   {
@@ -90,9 +91,11 @@ const Courses: React.FC = () => {
       </style>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 mt-32 mb-14 md:mb-20">
-        <div className="sm:text-center mb-10">
+        <div className="sm:text-center mb-10 relative z-20">
           <p className="text-lg text-[#08162C] font-semibold mb-4 text-left">
-            Home {"> "}
+           <NavLink to="/">
+          Home &gt; 
+          </NavLink>
             <span className="text-[#78BA9F] font-semibold">Trainings</span>
           </p>
           <h2 className="text-4xl md:text-6xl font-bold mb-5 sm:mb-14 text-[#08162C] relative z-20">

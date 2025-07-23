@@ -25,6 +25,7 @@ import naseebi from "../assets/PortfolioImages/naseebi.webp";
 import blockchain from "../assets/PortfolioImages/blockchain.webp";
 import tailwindcss from "../assets/PortfolioImages/tailwindcss.webp";
 import keycoinweb from "../assets/PortfolioImages/keycoinweb.webp";
+import { NavLink } from "react-router-dom";
 
 const projectsData = [
   {
@@ -198,7 +199,9 @@ const PortfolioSection: React.FC = () => {
 
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10 mb-14 md:mb-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
-          Home &gt;
+         <NavLink to="/">
+           Home &gt;
+         </NavLink>
           <span className="text-[#78BA9F] font-semibold"> Portfolio</span>
         </p>
         <div className="space-y-2 relative z-20">

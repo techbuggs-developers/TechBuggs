@@ -5,6 +5,7 @@ import { RiCodeSSlashLine } from "react-icons/ri";
 import { BiBarChartAlt2 } from "react-icons/bi";
 import ProjectsSection from "../components/projectSection";
 import { Button } from "./common/button";
+import { NavLink } from "react-router-dom";
 
 const processSteps = [
   {
@@ -63,7 +64,10 @@ const AboutSection: React.FC = () => {
       </style>
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
-          Home &gt; <span className="text-[#78BA9F] font-semibold"> About</span>
+          <NavLink to="/">
+          Home &gt; 
+          </NavLink>
+          <span className="text-[#78BA9F] font-semibold"> About</span>
         </p>
 
         <div className="space-y-2">

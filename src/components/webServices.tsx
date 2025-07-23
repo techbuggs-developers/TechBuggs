@@ -10,9 +10,15 @@ const WebServices: React.FC = () => {
 
   return (
     <section className="py-10 sm:py-20 px-4 md:px-12 lg:px-24 bg-white pt-32 pb-20 relative overflow-hidden">
-      <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] text-center mb-12">
-        Our Services
-      </h1>
+     <div className="max-w-6xl mx-auto px-4 md:px-6 mt-20 mb-14 md:mb-20">
+        <p className="text-lg text-[#08162C] font-semibold mb-4">
+          <NavLink to="/">Home &gt;</NavLink>
+          <span className="text-[#78BA9F] font-semibold"> Services</span>
+        </p>
+        <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] text-center mb-12">
+          Our Services
+        </h1>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {homeServices.map((service: ServiceSectionItem, index: number) => {
           const isHovered = hovered === index;
