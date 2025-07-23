@@ -183,8 +183,8 @@ const HeroSection: React.FC = () => {
           className="absolute bottom-0  lg:right-8 xl:right-28 z-20 w-64 h-40 sm:w-80 sm:h-48 bg-[#BCBCBC80] border-2 sm:border-3 shadow-xl rounded-t-2xl p-4"
         >
           <div className="text-sm sm:text-xl text-[#252525] font-semibold">
-            Helping businesses grow <br /> through clean design and smart
-            development
+            Clean Design. Smart Development. Business
+Growth.
           </div>
           <div className="flex justify-end mt-5 mr-4">
             <NavLink to="/contact">

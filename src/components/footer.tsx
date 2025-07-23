@@ -23,7 +23,7 @@ const quickLinks = [
 const services = [
   { name: "Web Development", path: "/services/web-development" },
   { name: "Mobile Development", path: "/services/mobile-development" },
-   { name: "Machine Learning", path: "/services/machine-learning" },
+  { name: "Machine Learning", path: "/services/machine-learning" },
   { name: "SEO Optimization", path: "/services/seo-optimization" },
   { name: "UI/UX Design", path: "/services/ui-ux-design" },
   { name: "Digital Marketing", path: "/services/digital-marketing" },
@@ -82,7 +82,10 @@ export default function Footer() {
                     className="pl-10 pr-4 py-4 w-full sm:w-75 rounded-md  bg-white border border-gray-600 text-black placeholder:text-[#7B7B7B]"
                   />
                 </div>
-                <Button className="w-full sm:w-40 px-6 py-4 rounded-md" variant="primary">
+                <Button
+                  className="w-full sm:w-40 px-6 py-4 rounded-md"
+                  variant="primary"
+                >
                   SUBSCRIBE
                 </Button>
               </div>
@@ -104,10 +107,29 @@ export default function Footer() {
                 cutting-edge technology.
               </p>
               <div className="flex gap-4">
-                <Linkedin />
-                <Facebook />
-                <Youtube />
-                <Instagram />
+                <a href="https://www.linkedin.com/company/techbuggs/" target="blank">
+                  {" "}
+                  <Linkedin />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/people/Techbuggs/61578437660327/"
+                  target="blank"
+                >
+                  {" "}
+                  <Facebook />
+                </a>
+                <a href="https://www.youtube.com/@Techbuggsofficial" target="blank">
+                  {" "}
+                  <Youtube />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/techbuggsofficial?igsh=MTlvbHNtMHZyNmtuaQ=="
+                  target="blank"
+                >
+                  <Instagram />
+                </a>
               </div>
             </div>
 
@@ -189,7 +211,7 @@ export default function Footer() {
               </h3>
               <p className="text-[#C8C8C8] mb-3 text-base flex items-center gap-2">
                 <Phone className="w-5 h-5 text-white" />
-                +92 3244252592
+                +92 3347518381
               </p>
               <p className="text-[#C8C8C8] text-base flex items-center gap-2 mb-3">
                 <Mail className="w-5 h-5 text-white" />
