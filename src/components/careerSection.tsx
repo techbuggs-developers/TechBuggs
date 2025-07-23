@@ -76,7 +76,7 @@ const careerSection = () => {
     <section className="bg-white">
       <div className=" relative overflow-hidden pt-32">
         <div
-          className="absolute w-[40rem] h-[35rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-35 z-0 hidden sm:block"
+          className="absolute w-[40rem] h-[35rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to bottom, #78BA9F 20%, #12334E 80%)",
             animation: "blob 8s infinite",
@@ -85,7 +85,7 @@ const careerSection = () => {
         />
 
         <div
-          className="absolute w-[32rem] h-[35rem] bottom-0 right-0 rounded-tl-[100%] filter blur-3xl opacity-35 z-0 hidden sm:block"
+          className="absolute w-[32rem] h-[35rem] bottom-0 right-0 rounded-tl-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to right, #78BA9F 90%, #12334E 10%)",
             animation: "blob 8s infinite",
@@ -103,16 +103,14 @@ const careerSection = () => {
       }
     `}
         </style>
-        <div className="max-w-[69rem] mx-auto px-8 md:px-10 mt-10 pb-14 sm:pb-32 relative z-20">
-          <p className="text-lg text- font-semibold mb-4">
-            <NavLink to="/">
-          Home &gt; 
-          </NavLink>
+        <div className="max-w-[69rem] mx-auto px-8 md:px-10 mt-10 pb-14 sm:pb-32 ">
+          <p className="text-lg text- font-semibold mb-4 relative z-20">
+            <NavLink to="/">Home &gt;</NavLink>{" "}
             <span className="text-[#78BA9F] font-semibold">Carerrs</span>
           </p>
 
-          <div className="space-y-2">
-            <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C]">
+          <div className="space-y-2 relative z-20">
+            <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] ">
               A Curious Mind.
             </h1>
             <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C]">
@@ -152,7 +150,9 @@ const careerSection = () => {
               <div key={index} className="flex flex-col items-start gap-4">
                 <div className="mt-1">{item.icon}</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-white">
+                    {item.title}
+                  </h3>
                   <p className="text-[#F0F0F0]">{item.description}</p>
                 </div>
               </div>
@@ -191,93 +191,95 @@ const careerSection = () => {
     `}
         </style>
 
-       <div className="py-14 sm:py-20 px-8 md:px-10 max-w-[69rem] mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[#08162C]">
-          Inside Techbuggs
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-10 relative z-20">
-          {values.map((item, index) => (
-            <div key={index}>
-              {item.icon}
-              <h3 className="text-xl font-semibold text-[#252525] mb-2">
-                {item.title}
-              </h3>
-              <p className="text-[#4C4C4C]">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="mt-10 sm:mt-20 px-8 md:px-10 relative z-20 pb-10">
-        <div className="max-w-[69rem] mx-auto">
-          <h2 className="text-2xl sm:text-5xl font-bold text-[#08162C] mb-4">
-            Current Openings
+        <div className="py-14 sm:py-20 px-8 md:px-10 max-w-[69rem] mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[#08162C]">
+            Inside Techbuggs
           </h2>
-          <p className="text-lg text-[#252525] max-w-3xl mb-10">
-            Explore limitless possibilities to advance in your professional life
-            with Techbuggs. We help engineers jump-start their careers by
-            creating innovative, real-world software solutions with the latest
-            technologies.
-          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-y-10">
-            <div className="space-y-6 w-full md:w-60">
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="w-full border border-[#4C4C4C] rounded-md py-2 px-4 pr-10 focus:outline-none focus:ring-1 focus:ring-gray-400"
-                />
-                <svg
-                  className="absolute right-3 top-2.5 text-gray-500 w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
+          <div className="grid md:grid-cols-3 gap-10 relative z-20">
+            {values.map((item, index) => (
+              <div key={index}>
+                {item.icon}
+                <h3 className="text-xl font-semibold text-[#252525] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[#4C4C4C]">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-10 sm:mt-20 px-8 md:px-10 relative z-20 pb-10">
+          <div className="max-w-[69rem] mx-auto">
+            <h2 className="text-2xl sm:text-5xl font-bold text-[#08162C] mb-4">
+              Current Openings
+            </h2>
+            <p className="text-lg text-[#252525] max-w-3xl mb-10">
+              Explore limitless possibilities to advance in your professional
+              life with Techbuggs. We help engineers jump-start their careers by
+              creating innovative, real-world software solutions with the latest
+              technologies.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-y-10">
+              <div className="space-y-6 w-full md:w-60">
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    className="w-full border border-[#4C4C4C] rounded-md py-2 px-4 pr-10 focus:outline-none focus:ring-1 focus:ring-gray-400"
                   />
-                </svg>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-[#08162C]">
-                  Department
-                </label>
-                <select className="w-full border-b border-[#4C4C4C] bg-transparent focus:outline-none"></select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-[#08162C]">
-                  Location
-                </label>
-                <select className="w-full border-b border-[#4C4C4C] bg-transparent focus:outline-none"></select>
-              </div>
-            </div>
-
-            <div className="md:col-span-2 space-y-10">
-              {[1, 2, 3, 4, 5].map((_, i, arr) => (
-                <div
-                  key={i}
-                  className={`pb-8 flex justify-between items-center flex-wrap gap-y-2${i !== arr.length - 1 ? " border-b border-[#4C4C4C]" : ""}`}
-                >
-                  <h3 className="text-lg font-medium text-[#252525]">
-                    Sr. UX Designer
-                  </h3>
-                  <p className="text-sm text-[#252525]">
-                    Lahore · 6 Years · Full Time
-                  </p>
+                  <svg
+                    className="absolute right-3 top-2.5 text-gray-500 w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
+                    />
+                  </svg>
                 </div>
-              ))}
+
+                <div>
+                  <label className="block text-sm font-medium text-[#08162C]">
+                    Department
+                  </label>
+                  <select className="w-full border-b border-[#4C4C4C] bg-transparent focus:outline-none"></select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-[#08162C]">
+                    Location
+                  </label>
+                  <select className="w-full border-b border-[#4C4C4C] bg-transparent focus:outline-none"></select>
+                </div>
+              </div>
+
+              <div className="md:col-span-2 space-y-10">
+                {[1, 2, 3, 4, 5].map((_, i, arr) => (
+                  <div
+                    key={i}
+                    className={`pb-8 flex justify-between items-center flex-wrap gap-y-2${
+                      i !== arr.length - 1 ? " border-b border-[#4C4C4C]" : ""
+                    }`}
+                  >
+                    <h3 className="text-lg font-medium text-[#252525]">
+                      Sr. UX Designer
+                    </h3>
+                    <p className="text-sm text-[#252525]">
+                      Lahore · 6 Years · Full Time
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-     </div>
     </section>
   );
 };
