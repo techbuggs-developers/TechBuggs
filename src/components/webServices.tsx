@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { services as homeServices } from "./serviceSection";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "./common/button";
 import { NavLink } from "react-router-dom";
 import type { ServiceSectionItem } from "../types/serviceSection";
 
