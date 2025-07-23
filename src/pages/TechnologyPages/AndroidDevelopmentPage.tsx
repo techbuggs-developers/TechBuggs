@@ -46,28 +46,20 @@ const AndroidDevelopmentPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Kotlin Development",
-                desc: "Modern, concise, and safe programming language for Android development.",
+                title: "Custom Android App Development",
+                desc: "We develop tailor-made Android applications that align with your business requirements, ensuring a visually appealing design, smooth functionality, and optimal performance.",
               },
               {
-                title: "Material Design",
-                desc: "Create beautiful, consistent user interfaces following Material Design guidelines.",
+                title: "UI/UX Design",
+                desc: "Our skilled designers create intuitive and visually engaging user interfaces, focusing on user-centric design principles to deliver a seamless and delightful user experience for your Android app.",
               },
               {
-                title: "Room Database",
-                desc: "Robust local database solution for data persistence in Android apps.",
+                title: "App Testing and Quality Assurance",
+                desc: "We conduct thorough testing to ensure your Android app is free from bugs, performs seamlessly across different Android devices, and delivers a consistent experience.",
               },
               {
-                title: "Security Best Practices",
-                desc: "Implement robust security measures to protect user data and app integrity.",
-              },
-              {
-                title: "Play Store Deployment",
-                desc: "Publish and distribute your apps through the Google Play Store.",
-              },
-              {
-                title: "Performance Optimization",
-                desc: "Optimize app performance for smooth user experience across devices.",
+                title: "Play Store Submission and Support",
+                desc: "We assist you in the process of submitting your app to the Google Play Store, ensuring it meets the necessary requirements. We also provide ongoing support and maintenance for your Android app to ensure its continued success.",
               },
             ].map((item, i) => (
               <div
@@ -87,7 +79,6 @@ const AndroidDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Benefits Section */}
       <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -100,7 +91,6 @@ const AndroidDevelopmentPage: React.FC = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-16">
-            {/* Image Section */}
             <div className="flex justify-center w-full lg:w-[36%]">
               <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
                 <img
@@ -111,24 +101,23 @@ const AndroidDevelopmentPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Numbered Benefits */}
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
               {[
                 {
-                  title: "Wider Reach",
-                  desc: "Android powers the majority of mobile devices globally, offering maximum audience penetration.",
+                  title: "Large User Base",
+                  desc: "Android has the largest market share globally, providing a vast potential user base for your app. Developing an Android app allows you to reach a wide audience and expand your business reach.",
                 },
                 {
-                  title: "Open Source Flexibility",
-                  desc: "Leverage Android’s open ecosystem for deep customization and innovation.",
+                  title: "Open Platform",
+                  desc: "Android offers an open platform that allows for greater customization and flexibility in app development. It provides developers with the freedom to innovate and create unique experiences for users.",
                 },
                 {
-                  title: "Fast Deployment",
-                  desc: "Rapid development and Play Store publishing allow faster time to market.",
+                  title: "Device Compatibility",
+                  desc: "Android supports a wide range of devices with varying screen sizes, resolutions, and hardware capabilities. By developing an Android app, you can ensure compatibility across a diverse range of smartphones and tablets.",
                 },
                 {
-                  title: "Hardware Compatibility",
-                  desc: "Develop apps for a wide range of device types: phones, tablets, TVs, and wearables.",
+                  title: "Integration with Google Services",
+                  desc: "Android seamlessly integrates with various Google services such as Google Maps, Google Analytics, Google Drive, and Google Play Services, providing opportunities for enhanced functionality and integration with popular Google services.",
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">

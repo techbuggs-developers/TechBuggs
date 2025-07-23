@@ -31,7 +31,6 @@ const ReactNativeDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Services Section */}
       <section ref={servicesRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,28 +45,20 @@ const ReactNativeDevelopmentPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "JavaScript / TypeScript",
-                desc: "Write mobile apps using modern JavaScript or TypeScript for maintainability and speed.",
+                title: "Cross-Platform App Development",
+                desc: "We leverage React Native to build robust and feature-rich mobile applications that run smoothly on both iOS and Android platforms, ensuring a consistent user experience across devices.",
               },
               {
-                title: "Native Components",
-                desc: "Integrate with platform-specific APIs and UI components for truly native performance.",
+                title: "UI/UX Design",
+                desc: "Our talented designers create visually appealing and user-friendly interfaces, following best design practices to deliver an intuitive and engaging user experience for your React Native app.",
               },
               {
-                title: "Cross-Platform Codebase",
-                desc: "Build for both Android and iOS from a single codebase, reducing cost and effort.",
+                title: "App Testing and Quality Assurance",
+                desc: "We conduct thorough testing to ensure your React Native app is stable, bug-free, and performs optimally on different devices and operating systems.",
               },
               {
-                title: "Fast Refresh",
-                desc: "Use hot reloading to instantly see UI updates, speeding up development.",
-              },
-              {
-                title: "Third-Party Libraries",
-                desc: "Access a rich ecosystem of plugins, libraries, and components to accelerate development.",
-              },
-              {
-                title: "App Store Deployment",
-                desc: "Package and publish apps to the Apple App Store and Google Play Store.",
+                title: "App Store Deployment and Support",
+                desc: "We assist you in the process of submitting your app to the respective app stores, providing guidance and support to ensure a successful launch. We also offer ongoing maintenance and support services to address any issues and keep your app up to date.",
               },
             ].map((item, i) => (
               <div
@@ -87,7 +78,6 @@ const ReactNativeDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Benefits Section */}
       <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -100,7 +90,6 @@ const ReactNativeDevelopmentPage: React.FC = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-16">
-            {/* Image section */}
             <div className="flex justify-center w-full lg:w-[36%]">
               <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
                 <img
@@ -111,24 +100,23 @@ const ReactNativeDevelopmentPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Numbered Benefits */}
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
               {[
                 {
-                  title: "Faster Development",
-                  desc: "Build and update apps rapidly with shared codebase and instant refresh features.",
+                  title: "Cross-Platform Compatibility",
+                  desc: "With React Native, you can develop mobile applications that run seamlessly on both iOS and Android platforms, eliminating the need for separate codebase and reducing development and maintenance costs.",
                 },
                 {
-                  title: "Reduced Costs",
-                  desc: "Develop once and deploy across platforms, saving time and budget.",
+                  title: "Reusable Codebase",
+                  desc: "React Native allows for code reuse, enabling developers to write a single codebase that can be shared between platforms. This results in faster development cycles and easier maintenance.",
                 },
                 {
-                  title: "Community & Ecosystem",
-                  desc: "Leverage a large developer community and a mature ecosystem of libraries.",
+                  title: "Native-like Performance",
+                  desc: "React Native leverages native components and optimizes performance, ensuring that the apps perform smoothly and deliver a native-like user experience.",
                 },
                 {
-                  title: "Native Performance",
-                  desc: "React Native bridges directly to native APIs ensuring smooth UI and performance.",
+                  title: "Rapid Development",
+                  desc: "React Native offers a hot-reloading feature that allows developers to see real-time updates of code changes instantly, speeding up the development process and enabling quick iterations.",
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">

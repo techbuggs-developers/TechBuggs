@@ -31,7 +31,6 @@ const FigmaDesignPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Services Section */}
       <section ref={servicesRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,20 +45,20 @@ const FigmaDesignPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Design Systems",
-                desc: "Build consistent, scalable design systems with reusable components.",
+                title: "User Research and UX Strategy",
+                desc: "We conduct user research to understand your target audience and their needs. Based on the findings, we create UX strategies that align with your business goals and provide optimal user experiences.",
               },
               {
-                title: "Prototyping",
-                desc: "Create interactive prototypes to visualize and test user flows.",
+                title: "Wire-framing and Prototyping",
+                desc: "We use Figma to create wire-frames and interactive prototypes that illustrate the layout, navigation, and functionality of your digital product. This allows you to visualize the user flow and make informed design decisions.",
               },
               {
-                title: "Real-time Collaboration",
-                desc: "Design with your team in real-time using live editing and comments.",
+                title: "Visual Design and Branding",
+                desc: "Our talented designers utilize Figma powerful design tools to create visually stunning and brand-aligned user interfaces. We focus on creating intuitive and engaging designs that resonate with your target audience.",
               },
               {
-                title: "Developer Handoff",
-                desc: "Provide developers with detailed specs, assets, and code-ready components.",
+                title: "Design Collaboration and Handoff",
+                desc: "With Figma collaboration features, we ensure smooth communication and collaboration throughout the design process. We provide design handoff deliverables that facilitate seamless integration with the development team.",
               },
             ].map((item, index) => (
               <div
@@ -79,7 +78,6 @@ const FigmaDesignPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Benefits Section */}
       <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -92,7 +90,6 @@ const FigmaDesignPage: React.FC = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            {/* Image */}
             <div className="flex justify-center w-full lg:w-[36%]">
               <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
                 <img
@@ -103,24 +100,23 @@ const FigmaDesignPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Numbered Benefits */}
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
               {[
                 {
-                  title: "Cloud-Based Collaboration",
-                  desc: "Edit and comment with teammates in real time from anywhere.",
+                  title: "Collaborative Design",
+                  desc: "Figma is designed with collaboration in mind. Multiple designers can work simultaneously on the same project, making it easy to share ideas, gather feedback, and maintain a unified design vision. Real-time collaboration fosters efficient teamwork and reduces version control issues.",
                 },
                 {
-                  title: "Reusable Components",
-                  desc: "Maintain consistency across your designs using shared libraries.",
+                  title: "Cloud-Based and Cross-Platform",
+                  desc: "Figma is a cloud-based tool, which means that designs are saved and accessible online. It allows designers to work from anywhere, on any operating system, without the need for local installations or file syncing. This flexibility enhances productivity and enables seamless collaboration across teams and locations.",
                 },
                 {
-                  title: "Streamlined Handoff",
-                  desc: "Developers get clean specs, code snippets, and exportable assets.",
+                  title: "Interactive Prototyping",
+                  desc: "Figma offers powerful prototyping capabilities, allowing designers to create interactive prototypes with transitions and animations. This enables stakeholders to experience the user journey and provides a realistic representation of the final product, facilitating better decision-making and user testing.",
                 },
                 {
-                  title: "Design for All Screens",
-                  desc: "Design responsive layouts that adapt across devices and viewports.",
+                  title: "Design System and Component Libraries",
+                  desc: "Figma supports the creation and management of design systems and component libraries. This allows designers to establish consistent design patterns, reuse design elements, and maintain design integrity throughout the project. It promotes design scalability and efficiency.",
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">

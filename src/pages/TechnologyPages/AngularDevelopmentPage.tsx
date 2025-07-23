@@ -31,7 +31,6 @@ const AngularDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Services Section */}
       <section ref={servicesRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,20 +45,20 @@ const AngularDevelopmentPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Angular app development",
-                desc: "We build custom Angular applications tailored to your business goals using a scalable and component-driven approach.",
+                title: "Custom Angular Development",
+                desc: "We develop customized Angular applications tailored to your specific business requirements, delivering robust and scalable solutions.",
               },
               {
-                title: "Single Page Applications (SPA)",
-                desc: "We create high-performing SPAs using Angular’s routing and state management tools.",
+                title: "Angular Component Development",
+                desc: "Our team creates reusable and modular Angular components that can be seamlessly integrated into your applications, promoting code reusability and efficiency.",
               },
               {
-                title: "Cross-platform apps",
-                desc: "We leverage Angular with Ionic or NativeScript to build mobile apps that run on both iOS and Android.",
+                title: "Angular UI/UX Design",
+                desc: "We design visually appealing and user-friendly interfaces using Angular, focusing on delivering an exceptional user experience.",
               },
               {
-                title: "Enterprise-grade apps",
-                desc: "We build secure and scalable enterprise web apps with Angular, optimizing performance and maintainability.",
+                title: "Angular Migration",
+                desc: "If you have an existing application and want to migrate it to Angular, we can assist you in the migration process, ensuring a smooth transition and leveraging the benefits of Angular's features and performance optimizations.",
               },
             ].map((item, index) => (
               <div
@@ -79,7 +78,6 @@ const AngularDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Benefits Section */}
       <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -105,20 +103,20 @@ const AngularDevelopmentPage: React.FC = () => {
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
               {[
                 {
-                  title: "Modular architecture",
-                  desc: "Angular’s module-based architecture simplifies app structure, promotes code reuse, and eases testing.",
+                  title: "Powerful Data Binding",
+                  desc: "Angular's two-way data binding simplifies the synchronization between the UI and data model, reducing the need for manual updates and improving developer productivity.",
                 },
                 {
-                  title: "Two-way data binding",
-                  desc: "Angular offers synchronized model and view updates, making UI management more efficient.",
+                  title: "Modular and Reusable Components",
+                  desc: "Angular encourages the use of reusable components, which promotes code reusability, maintainability, and efficient development.",
                 },
                 {
-                  title: "Dependency injection",
-                  desc: "Built-in DI system improves scalability, modularity, and testability in complex apps.",
+                  title: "Dependency Injection",
+                  desc: "Angular's built-in dependency injection system simplifies component management and facilitates the development of loosely coupled and testable code.",
                 },
                 {
-                  title: "CLI tooling",
-                  desc: "Angular CLI speeds up development with scaffolding, testing, and deployment tools out of the box.",
+                  title: "Enhanced Performance",
+                  desc: "Angular optimizes application performance through features like ahead-of-time (AOT) compilation, lazy loading, and code splitting, resulting in faster load times and improved user experience.",
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">

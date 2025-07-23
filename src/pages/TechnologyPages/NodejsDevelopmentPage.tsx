@@ -10,7 +10,6 @@ const NodejsDevelopmentPage: React.FC = () => {
 
   return (
     <div className="bg-gray-50 text-gray-900">
-      {/* Hero Section */}
       <section
         ref={heroRef}
         className="relative overflow-hidden py-28 flex items-center"
@@ -33,7 +32,6 @@ const NodejsDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Services Section */}
       <section ref={servicesRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,20 +46,20 @@ const NodejsDevelopmentPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Custom Node.js Applications",
-                desc: "We develop scalable and high-performance Node.js applications tailored to your specific business needs.",
+                title: "Custom Backend Development",
+                desc: "We develop custom backend applications and APIs using Node.js, tailored to your specific business requirements and scalability needs.",
               },
               {
                 title: "RESTful API Development",
-                desc: "We create robust and secure RESTful APIs using Node.js, Express, and other modern frameworks.",
+                desc: "We build robust and scalable RESTful APIs using Node.js and popular frameworks like Express.js, allowing seamless integration with frontend applications and third-party services.",
               },
               {
-                title: "Real-time Applications",
-                desc: "We build real-time applications using WebSocket and Socket.io for instant data updates and communication.",
+                title: "Real-time Application Development",
+                desc: "We leverage the event-driven nature of Node.js to build real-time applications such as chat applications, collaborative tools, and streaming platforms.",
               },
               {
                 title: "Microservices Architecture",
-                desc: "We design and implement microservices using Node.js for better scalability and maintainability.",
+                desc: "We design and develop backend systems using Node.js with a microservices architecture, allowing for modular and scalable application development.",
               },
             ].map((item, index) => (
               <div
@@ -81,7 +79,6 @@ const NodejsDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Benefits Section */}
       <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -94,7 +91,6 @@ const NodejsDevelopmentPage: React.FC = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-16">
-            {/* Image section */}
             <div className="flex justify-center w-full lg:w-[36%]">
               <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
                 <img
@@ -105,24 +101,23 @@ const NodejsDevelopmentPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Numbered Benefits */}
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
               {[
                 {
-                  title: "High Performance",
-                  desc: "Node.js uses an event-driven, non-blocking I/O model for building fast and scalable apps.",
+                  title: "Scalability and Performance",
+                  desc: "Node.js is known for its ability to handle a large number of concurrent connections with high efficiency, making it suitable for building scalable and high-performance backend systems.",
                 },
                 {
-                  title: "Full-stack JavaScript",
-                  desc: "Use JavaScript on both frontend and backend to streamline development and collaboration.",
+                  title: "JavaScript Everywhere",
+                  desc: "With Node.js, developers can use the same programming language (JavaScript) on both the frontend and backend, allowing for easier code sharing, faster development, and better collaboration between frontend and backend teams.",
                 },
                 {
-                  title: "Rich Ecosystem",
-                  desc: "Access to the npm ecosystem with thousands of reusable packages speeds up development.",
+                  title: "Non-Blocking I/O",
+                  desc: "Node.js uses an asynchronous, non-blocking I/O model, allowing it to handle multiple requests concurrently without getting blocked, resulting in faster response times and improved application performance.",
                 },
                 {
-                  title: "Real-time Capabilities",
-                  desc: "Built-in support for WebSockets and asynchronous events makes Node.js ideal for live features.",
+                  title: "Vast Ecosystem",
+                  desc: "Node.js has a rich ecosystem of modules and libraries available through npm, enabling developers to leverage pre-built components, frameworks, and tools to accelerate development and enhance functionality.",
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">

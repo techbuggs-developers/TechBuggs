@@ -31,7 +31,6 @@ const FlutterDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Services Section */}
       <section ref={servicesRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,20 +45,20 @@ const FlutterDevelopmentPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Cross-platform Development",
-                desc: "Create mobile, web, and desktop apps with a single codebase using Flutter.",
+                title: "Cross-Platform App Development",
+                desc: "We utilize Flutter to build robust and scalable mobile applications that work seamlessly on iOS, Android, and the web. This ensures maximum reach and compatibility across different devices.",
               },
               {
-                title: "UI/UX Design",
-                desc: "Build pixel-perfect UIs with customizable widgets and native look & feel.",
+                title: "Custom UI/UX Design",
+                desc: "Our talented designers create visually appealing and user-friendly interfaces, leveraging Flutter's rich widget library to design intuitive and engaging user experiences.",
               },
               {
-                title: "Dart Programming",
-                desc: "Use Dart, an optimized language for building fast and expressive UIs.",
+                title: "App Testing and Quality Assurance",
+                desc: "We conduct thorough testing to ensure your Flutter app is stable, bug-free, and performs optimally on various platforms and devices.",
               },
               {
-                title: "Integration & Deployment",
-                desc: "Integrate with APIs and deploy to Play Store, App Store, or web effortlessly.",
+                title: "App Store Deployment and Support",
+                desc: "We assist you in the process of submitting your Flutter app to the respective app stores, providing guidance and support to ensure a successful launch. We also offer ongoing maintenance and support services to address any issues and keep your app up to date.",
               },
             ].map((item, index) => (
               <div
@@ -79,7 +78,6 @@ const FlutterDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Benefits Section */}
       <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -92,7 +90,6 @@ const FlutterDevelopmentPage: React.FC = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            {/* Image */}
             <div className="flex justify-center w-full lg:w-[36%]">
               <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
                 <img
@@ -103,24 +100,23 @@ const FlutterDevelopmentPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Numbered Benefits */}
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
               {[
                 {
-                  title: "Faster Development",
-                  desc: "Hot reload and reusable widgets speed up development dramatically.",
-                },
-                {
-                  title: "Beautiful UIs",
-                  desc: "Rich widget library allows crafting highly customized interfaces.",
-                },
-                {
-                  title: "Performance",
-                  desc: "Flutter apps are compiled to native code for high performance.",
-                },
-                {
                   title: "Single Codebase",
-                  desc: "Maintain one codebase for Android, iOS, web, and desktop platforms.",
+                  desc: "Flutter allows you to write a single codebase that runs on multiple platforms, reducing development time and effort. This means you can reach a wider audience with consistent user experiences across different devices.",
+                },
+                {
+                  title: "Fast Performance",
+                  desc: "Flutter apps are compiled to native machine code, providing near-native performance and smooth animations. The framework also optimizes rendering and ensures a responsive user interface, resulting in a delightful user experience.",
+                },
+                {
+                  title: "Rich UI and Customization",
+                  desc: "Flutter provides a wide range of customizable widgets and rich UI components, enabling developers to create visually appealing and unique app designs. The flexible widget system allows for seamless customization to match your brand identity and user interface requirements.",
+                },
+                {
+                  title: "Rapid Development",
+                  desc: "Flutter's hot-reload feature allows developers to instantly see the effects of code changes, making the development process highly iterative and efficient. This helps in faster debugging, UI tweaking, and overall faster app development cycles.",
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
