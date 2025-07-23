@@ -16,7 +16,7 @@ export const services: ServiceSectionItem[] = [
     slug: "web-development",
     title: ["Web App", "Development"],
     hoverDescription:
-      "At TechBuggs, we build dynamic, scalable web applications tailored to your business goals, using the latest technologies to deliver impactful digital solutions.",
+      "Building responsive and scalable web applications using modern technologies and advanced frameworks.",
     description: "Learn more",
     bgColor: "bg-[#F3F3F3]",
     textColor: "text-[#08162C]",
@@ -30,7 +30,7 @@ export const services: ServiceSectionItem[] = [
     slug: "mobile-development",
     title: ["Mobile App", "Development"],
     hoverDescription:
-      "We craft mobile applications that are fast, intuitive, and tailored to your audience — from iOS to Android and beyond.",
+      "Native and cross-platform mobile applications for iOS and Android platforms.",
     description: "Learn more",
     bgColor: "bg-[#78BA9F]",
     textColor: "text-[#08162C]",
@@ -44,7 +44,7 @@ export const services: ServiceSectionItem[] = [
     slug: "machine-learning",
     title: ["Machine", "Learning"],
     hoverDescription:
-      "We integrate machine learning models to deliver predictive analytics, automation, and intelligent decision-making systems.",
+      "Advanced machine learning solutions designed to automate tasks and optimize your business processes.",
     description: "Learn more",
     bgColor: "bg-[#12334E]",
     textColor: "text-white",
@@ -58,7 +58,7 @@ export const services: ServiceSectionItem[] = [
     slug: "seo-optimization",
     title: ["SEO", "Optimization"],
     hoverDescription:
-      "Boost your visibility with our SEO strategies — from content optimization to technical audits, we drive measurable growth.",
+      "Comprehensive SEO strategies tailored to boost your online visibility and search engine rankings.",
     description: "Learn more",
     bgColor: "bg-[#F3F3F3]",
     textColor: "text-[#08162C]",
@@ -72,7 +72,7 @@ export const services: ServiceSectionItem[] = [
     slug: "ui-ux-design",
     title: ["UI/UX", "Designing"],
     hoverDescription:
-      "We design intuitive and engaging user interfaces for web and mobile applications, focusing on user-friendly navigation and visually appealing experiences.",
+      "User-centered design solutions crafted to enhance user experience and drive deeper engagement.",
     description: "Learn more",
     bgColor: "bg-[#F3F3F3]",
     textColor: "text-[#08162C]",
@@ -86,7 +86,7 @@ export const services: ServiceSectionItem[] = [
     slug: "digital-marketing",
     title: ["Digital", "Marketing"],
     hoverDescription:
-      "Grow your business with our comprehensive digital marketing solutions, including targeted campaigns, brand strategy, and data-driven insights to maximize your reach.",
+      "Strategic digital marketing solutions designed to expand your online presence and reach the right audience.",
     description: "Learn more",
     bgColor: "bg-[#78BA9F]",
     textColor: "text-[#08162C]",
@@ -203,12 +203,12 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ limit }) => {
       <div className="mt-8 max-w-6xl mx-auto flex justify-end">
         <NavLink to="/services">
           <Button
-            className="flex items-center cursor-pointer text-xl sm:text-2xl font-semibold text-[#08162C] group hover:text-[#29E8AE] transition-colors"
+            className="flex items-center cursor-pointer text-sm sm:text-lg md:text-xl font-semibold text-[#08162C] group hover:text-[#29E8AE] transition-colors"
             variant="ghost"
           >
             SEE ALL
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
-              <ArrowRight className="w-5 h-5 sm:w-8 sm:h-8 group-hover:text-[#29E8AE] transition-colors" />
+              <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:text-[#29E8AE] transition-colors" />
             </span>
           </Button>
         </NavLink>

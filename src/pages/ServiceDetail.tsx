@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../components/common/button";
 import { useParams } from "react-router-dom";
 import { servicesData } from "../data/servicesData";
+import { NavLink } from "react-router-dom";
 
 const ServiceDetail: React.FC = () => {
   const { serviceSlug } = useParams<{ serviceSlug: string }>();
@@ -15,7 +16,9 @@ const ServiceDetail: React.FC = () => {
   }
   if (!details) {
     return (
-      <div className="p-8 text-center text-red-500">Service details not available.</div>
+      <div className="p-8 text-center text-red-500">
+        Service details not available.
+      </div>
     );
   }
   return (
@@ -23,7 +26,9 @@ const ServiceDetail: React.FC = () => {
       {/* ... Gradient blob */}
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
-          {details.breadcrumb[0].label} {"> "}
+          <NavLink to="/">
+            {details.breadcrumb[0].label} {"> "}
+          </NavLink>
           <span className="text-[#78BA9F] font-semibold">
             {details.breadcrumb[1].label}
           </span>
@@ -89,14 +94,14 @@ const ServiceDetail: React.FC = () => {
         {/* ... Gradient blobs */}
 
         <div className="max-w-[69rem] mx-auto py-10 sm:py-20 px-6 md:px-16">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-5xl mx-auto mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-6xl font-semibold text-[#08162C]">
               {details.overviewSection.title1}
             </h2>
             <h2 className="text-2xl sm:text-3xl md:text-6xl font-semibold mb-6 text-[#08162C]">
               {details.overviewSection.title2}
             </h2>
-            <p className="text-[#252525] mt-4 text-lg leading-relaxed font-semibold">
+            <p className="text-[#252525] mt-4 text-base leading-relaxed font-semibold">
               {details.overviewSection.description}
             </p>
           </div>

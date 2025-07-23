@@ -43,9 +43,15 @@ export const servicesData: ServiceData[] = [
     details: {
       serviceCards: [
         {
-          title: "Web App Development",
-          description: "We build robust, scalable, and modern web applications tailored to your business needs.",
+          title: "Responsive Web Design",
+          description: "Your users deserve a flawless experience our responsive design approach guarantees that your web app looks and performs perfectly on every device, from desktops to smartphones.",
           image: ComputerImg,
+        },
+        {
+          title: "Secure and Scalable Solutions",
+          description: "We implement robust security protocols and design scalable architectures to ensure your web applications are secure, reliable, and ready to grow.",
+          image: ComputerImg,
+          reverse: true,
         },
       ],
       processSteps: [
@@ -66,7 +72,7 @@ export const servicesData: ServiceData[] = [
       overviewSection: {
         title1: "Our Web",
         title2: "Development Services",
-        description: "We create intuitive, high-performance solutions that provide a seamless user experience and deliver measurable results.",
+        description: "At TechBugs, we specialize in web application development that delivers dynamic, efficient, and tailored digital solutions. Our approach is centered on deeply understanding your business goals, user expectations, and leveraging the latest web technologies to create high-performance, scalable web applications that truly make an impact.",
       },
     },
   },

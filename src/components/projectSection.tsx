@@ -1,9 +1,9 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
-import project3 from "../assets/project3.png";
+import cyberGuardiansImg from "../assets/PortfolioImages/cg.webp";
+import keycoin from "../assets/PortfolioImages/keycoin.webp";
+import globalswiftasia from "../assets/PortfolioImages/globalswiftasia.webp";
 import { NavLink } from "react-router-dom";
 import { Button } from "./common/button";
 import type { Project } from "../types/project";
@@ -13,31 +13,31 @@ const projects: Project[] = [
     id: 1,
     title: "Cyber Guardians",
     subtitle: "Web App Development",
-    image: project1,
-    overlay: "bg-black/40",
-    hoverOverlay: "group-hover:bg-black",
+    image: cyberGuardiansImg,
+    overlay: "bg-[#93BD65]/15",
+    hoverOverlay: "group-hover:bg-[#93BD65]",
     description:
-      "Your go-to solution for accurate, hassle-free speech-to-text conversion. This powerful platform simplifies the entire transcription process—making it easy to convert speeches, meetings, interviews, and audio files into clear, well-structured, and editable text.",
+      "With decades of expertise, Cyber Guardians provides online training to strengthen cybersecurity, build digital resilience, and protect critical assets across industries",
   },
   {
     id: 2,
-    title: "Cyber Guardians",
-    subtitle: "Web App Development",
-    image: project2,
-    overlay: "bg-[#463853]/40",
-    hoverOverlay: "group-hover:bg-[#604977]",
+    title: "Keycoin",
+    subtitle: "Mobile App Development",
+    image: keycoin,
+    overlay: "bg-black/40",
+    hoverOverlay: "group-hover:bg-black",
     description:
-      "Your go-to solution for accurate, hassle-free speech-to-text conversion. This powerful platform simplifies the entire transcription process—making it easy to convert speeches, meetings, interviews, and audio files into clear, well-structured, and editable text.",
+      "Keycoin empowers you to take control of your financial future. As a decentralized digital currency, it offers independence, transparency, and global access—beyond the limits of traditional banking.",
   },
   {
     id: 3,
-    title: "Cyber Guardians",
+    title: "Global Swift ASIA",
     subtitle: "Web App Development",
-    image: project3,
-    overlay: "bg-[#1D7777]/40",
-    hoverOverlay: "group-hover:bg-[#1CB2B3]",
+    image: globalswiftasia,
+    overlay: "bg-[#013A69]/40",
+    hoverOverlay: "group-hover:bg-[#013A69]",
     description:
-      "Your go-to solution for accurate, hassle-free speech-to-text conversion. This powerful platform simplifies the entire transcription process—making it easy to convert speeches, meetings, interviews, and audio files into clear, well-structured, and editable text.",
+      "Global Swift Asia offers fast, secure, and reliable money transfers across Asia. Designed for individuals and businesses, it features a user-friendly platform, competitive rates, and strong security—making cross-border remittances simple and efficient.",
   },
 ];
 
@@ -78,10 +78,18 @@ const ProjectsSection: React.FC = () => {
               <p className="text-lg [@media(max-width:431px)]:text-[14px] sm:text-base md:text-lg lg:text-xs xl:text-sm 2xl:text-lg [@media(min-width:768px)_and_(max-width:865px)]:text-xs [@media(min-width:1024px)_and_(max-width:1083px)]:text-[10px] text-[#F0F0F0] mt-4 sm:mt-6 max-w-[90%] opacity-0 translate-x-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0">
                 {project.description}
               </p>
-
-              <Button className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer" variant="ghost">
-                <ArrowRight className="w-8 h-8 sm:w-10 sm:h-10 p-0.5 bg-[#191A23] rounded-full text-[#29E8AE] rotate-[-30deg]" />
-              </Button>
+              <a
+                href={`/portfolio#${project.title
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")}`}
+              >
+                <Button
+                  className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer"
+                  variant="ghost"
+                >
+                  <ArrowRight className="w-8 h-8 sm:w-10 sm:h-10 p-0.5 bg-[#191A23] rounded-full text-[#29E8AE] rotate-[-30deg]" />
+                </Button>
+              </a>
             </div>
           </div>
         ))}
@@ -89,10 +97,13 @@ const ProjectsSection: React.FC = () => {
 
       <div className="mt-8 flex justify-end relative z-20">
         <NavLink to="/portfolio">
-          <Button className="flex items-center text-lg sm:text-xl md:text-2xl font-semibold text-[#08162C] group hover:text-[#29E8AE] transition-colors cursor-pointer" variant="ghost">
+          <Button
+            className="flex items-center text-sm sm:text-lg md:text-xl font-semibold text-[#08162C] group hover:text-[#29E8AE] transition-colors cursor-pointer"
+            variant="ghost"
+          >
             VIEW ALL
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
-              <ArrowRight className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 group-hover:text-[#29E8AE] transition-colors" />
+              <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:text-[#29E8AE] transition-colors" />
             </span>
           </Button>
         </NavLink>

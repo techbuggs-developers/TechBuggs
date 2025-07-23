@@ -219,6 +219,7 @@ const PortfolioSection: React.FC = () => {
         {projectsData.map((project) => (
           <div
             key={project.id}
+            id={project.title.toLowerCase().replace(/\s+/g, "-")}
             className="flex flex-col bg-white justify-between rounded-3xl shadow-2xl p-6 md:p-10 max-w-[40rem] lg:max-w-[60rem] mx-auto"
           >
             <div className="flex flex-col lg:flex-row gap-10 justify-between">
