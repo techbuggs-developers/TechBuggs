@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { FaCogs, FaLaptopCode, FaBug } from "react-icons/fa";
 import { courseOutlines } from "../data/courseOutlines";
 import { Button } from "../components/common/button";
@@ -47,6 +47,18 @@ const Courses: React.FC = () => {
     setSelectedCourse(found || null);
     setOpenModal(!!found);
   };
+
+   useEffect(() => {
+    if (openModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [openModal]);
 
   return (
     <section className="min-h-screen py-12 px-4 md:px-12 lg:px-24 relative overflow-hidden z-50">
