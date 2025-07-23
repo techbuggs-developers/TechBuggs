@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import { NavLink } from "react-router-dom";
 
 const keys = {
   serviceId: "service_r5gw7te",
@@ -52,7 +53,8 @@ const ContactSection: React.FC = () => {
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="flex flex-col ">
           <p className="text-base md:text-lg font-semibold text-black mb-12">
-            Home {">"} <span className="text-[#78BA9F]"> Contact</span>
+            <NavLink to="/">Home {">"}</NavLink>{" "}
+            <span className="text-[#78BA9F]"> Contact</span>
           </p>
           <h2 className="text-5xl md:text-[5rem] font-semibold text-[#12334E] mb-10">
             Let’s Talk

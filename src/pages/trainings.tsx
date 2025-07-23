@@ -166,7 +166,7 @@ const Courses: React.FC = () => {
 
       {selectedCourse && (
         <div
-          className={`fixed inset-0 z-[99999] flex items-center justify-center bg-black/40 bg-opacity-70 pt-16  ${
+          className={`fixed inset-0 z-50 flex items-center justify-center bg-black/40 bg-opacity-70 pt-16  ${
             openModal ? "block" : "hidden"
           }`}
         >
@@ -183,7 +183,7 @@ const Courses: React.FC = () => {
               </p>
             </div>
 
-            <div className="overflow-y-auto pt-5 px-5 pb-24 max-h-[calc(100vh-150px)] sm:max-h-[calc(100vh-90px)] md:max-h-[calc(100vh-110px)] lg:max-h-[calc(100vh-100px)]">
+            <div className="overflow-y-auto pt-5 px-5 pb-28 max-h-[calc(100vh-150px)] sm:max-h-[calc(100vh-90px)] md:max-h-[calc(100vh-110px)] lg:max-h-[calc(100vh-100px)]">
               {selectedCourse.roadmap && selectedCourse.roadmap.length > 0 ? (
                 selectedCourse.roadmap.map((week, index) => (
                   <div

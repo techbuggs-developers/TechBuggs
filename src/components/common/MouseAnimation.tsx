@@ -43,7 +43,7 @@ const MouseAnimation: React.FC = () => {
     <>
       {/* Main cursor */}
       <motion.div
-        className="fixed pointer-events-none z-50"
+        className="fixed pointer-events-none z-100"
         animate={{
           x: mousePosition.x - 12,
           y: mousePosition.y - 12,
@@ -61,7 +61,7 @@ const MouseAnimation: React.FC = () => {
 
       {/* Cursor trail */}
       <motion.div
-        className="fixed pointer-events-none z-40"
+        className="fixed pointer-events-none z-100"
         animate={{
           x: mousePosition.x - 8,
           y: mousePosition.y - 8,

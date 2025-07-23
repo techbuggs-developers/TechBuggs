@@ -90,13 +90,13 @@ const HeroSection: React.FC = () => {
             <div
               className={`absolute transition-transform duration-1000 ease-in-out ${
                 isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
-              }  w-[340px] h-[200px]  sm:w-[600px] sm:h-[300px] md:w-[550px] md:h-[300px] lg:w-[500px] lg:h-[300px] xl:w-[550px] xl:h-[300px]    2xl:w-[800px] 2xl:h-[400px]  bg-black rounded-[6rem] sm:rounded-full overflow-hidden shadow-2xl z-10 `}
+              }  w-[340px] h-[200px]  sm:w-[600px] sm:h-[300px] md:w-[550px] md:h-[300px] lg:w-[500px] lg:h-[300px] xl:w-[550px] xl:h-[300px]    2xl:w-[800px] 2xl:h-[400px]  bg-gray-300 rounded-[6rem] sm:rounded-full overflow-hidden shadow-2xl z-10 `}
               style={{ transformOrigin: "center center" }}
             >
               <div className="relative w-full h-full overflow-hidden cursor-pointer">
                 <img
                   src={bgImg}
-                  alt="Capsule Background"
+                  alt="Group Photo"
                   className="absolute top-0 left-0 w-full h-full object-fill rounded-[6rem] sm:rounded-full shadow-lg"
                 />
               </div>

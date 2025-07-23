@@ -38,7 +38,6 @@ const App: React.FC = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/trainings" element={<Trainings />} />
         <Route path="/careers" element={<Career />} />
-        <Route path="/careers" element={<Career />} />
         <Route path="tech/react" element={<ReactDevelopmentPage />} />
         <Route path="tech/nodejs" element={<NodejsDevelopmentPage />} />
         <Route path="tech/python" element={<PythonDevelopmentPage />} />

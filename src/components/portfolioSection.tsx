@@ -236,7 +236,7 @@ const PortfolioSection: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="flex gap-8 justify-end flex-wrap mt-4">
+                <div className="flex gap-6 justify-center lg:justify-end flex-wrap mt-4">
                   {project.icons.map((icon, index) => (
                     <div key={index} className="relative group">
                       <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">

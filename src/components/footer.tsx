@@ -205,7 +205,7 @@ export default function Footer() {
               </h3>
               <p className="text-[#C8C8C8] text-sm   flex items-center gap-2">
                 <MapPin className="w-5 h-5  text-white" />
-                114, G1 Street Number 06, Lahore, 54770
+                114 F1 Wapda town Lahore
               </p>
             </div>
           </div>

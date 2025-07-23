@@ -5,8 +5,8 @@ import webImg from "../assets/webDevelopment.png";
 import mobileImg from "../assets/mobileApp.png";
 import mlImg from "../assets/machineLearning.png";
 import seoImg from "../assets/seo.png";
-import iamadesignerImg from "../assets/PortfolioImages/iamadesigner.webp";
-import rooiboosImg from "../assets/PortfolioImages/rooiboos.webp";
+import uiuxImg from "../assets/Ui-Ux.png";
+import digitalMarketing from "../assets/Digital-Marketing.png";
 import { Button } from "./common/button";
 import type { ServiceSectionItem } from "../types/serviceSection";
 import { NavLink } from "react-router-dom";
@@ -78,7 +78,7 @@ export const services: ServiceSectionItem[] = [
     textColor: "text-[#08162C]",
     tagBg: "bg-[#78BA9F]",
     tagText: "text-black",
-    image: iamadesignerImg,
+    image: uiuxImg,
     arrowBg: "bg-black",
     arrowText: "text-[#29E8AE]",
   },
@@ -92,7 +92,7 @@ export const services: ServiceSectionItem[] = [
     textColor: "text-[#08162C]",
     tagBg: "bg-white",
     tagText: "text-black",
-    image: rooiboosImg,
+    image: digitalMarketing,
     arrowBg: "bg-black",
     arrowText: "text-white",
   },

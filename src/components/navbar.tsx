@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className="fixed top-0 z-100 transition-all duration-300 w-full max-w-full rounded-3xl mt-2 left-0 -translate-x-0 md:left-1/2 md:-translate-x-1/2 md:mt-2 md:w-[100%] md:max-w-7xl [@media(min-width:1100px)]:rounded-full 
+      className="fixed top-0 z-80 transition-all duration-300 w-full max-w-full rounded-3xl mt-2 left-0 -translate-x-0 md:left-1/2 md:-translate-x-1/2 md:mt-2 md:w-[100%] md:max-w-7xl [@media(min-width:1100px)]:rounded-full 
          bg-white shadow-md"
     >
       <div className="py-3 px-6 flex items-center justify-between [@media(min-width:1100px)]:justify-around rounded-3xl md:rounded-full">
