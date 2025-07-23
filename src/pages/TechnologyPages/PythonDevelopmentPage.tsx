@@ -10,7 +10,6 @@ const PythonDevelopmentPage: React.FC = () => {
 
   return (
     <div className="bg-gray-50 text-gray-900">
-      {/* Hero Section */}
       <section
         ref={heroRef}
         className="relative overflow-hidden py-28 flex items-center"
@@ -33,7 +32,6 @@ const PythonDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Services Section */}
       <section ref={servicesRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,20 +46,20 @@ const PythonDevelopmentPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Web Development",
-                desc: "We build scalable web applications using Django and Flask frameworks, following best practices and modern architecture patterns.",
-              },
-              {
-                title: "Data Science & AI",
-                desc: "We develop machine learning models, data analysis solutions, and AI applications using Python's powerful data science ecosystem.",
+                title: "Custom Backend Development",
+                desc: "We develop custom backend systems and web applications using Python, tailored to your specific business requirements and objectives.",
               },
               {
                 title: "API Development",
-                desc: "We create RESTful APIs and microservices using FastAPI and Django REST framework for high-performance backend systems.",
+                desc: "We build robust and secure APIs using Python frameworks like Django and Flask, allowing seamless communication between different systems and enabling integration with external services.",
               },
               {
-                title: "Automation & Scripting",
-                desc: "We develop automation scripts and tools to streamline business processes and improve operational efficiency.",
+                title: "Web Scraping and Data Processing",
+                desc: "We leverage Python's libraries and tools to extract, process, and analyze data from various sources, enabling you to derive valuable insights and automate data-driven tasks.",
+              },
+              {
+                title: "Serverless Functions",
+                desc: "We develop serverless functions using Python and platforms like AWS Lambda, allowing you to run code without worrying about server management and scaling.",
               },
             ].map((item, i) => (
               <div
@@ -81,7 +79,6 @@ const PythonDevelopmentPage: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Benefits Section */}
       <section ref={benefitsRef} className="py-20 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -94,7 +91,6 @@ const PythonDevelopmentPage: React.FC = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-16">
-            {/* Image section */}
             <div className="flex justify-center w-full lg:w-[36%]">
               <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
                 <img
@@ -105,24 +101,23 @@ const PythonDevelopmentPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Numbered Benefits */}
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
               {[
                 {
-                  title: "Rapid Development",
-                  desc: "Python's simple syntax and extensive libraries enable faster development cycles and quicker time-to-market.",
+                  title: "Readability and Maintainability",
+                  desc: "Python is clean and readable syntax allows developers to write code that is easy to understand and maintain, resulting in efficient collaboration and long-term code sustainability.",
                 },
                 {
-                  title: "Versatility",
-                  desc: "Python can be used for web development, data science, AI, automation, and more — making it a versatile choice.",
+                  title: "Large Ecosystem of Libraries and Frameworks",
+                  desc: "Python has a vast collection of libraries and frameworks, such as Django and Flask, which provide pre-built components and functionalities for rapid development and streamlined backend processes.",
                 },
                 {
-                  title: "Rich Ecosystem",
-                  desc: "Thousands of libraries and frameworks like Django, Flask, Pandas, and TensorFlow power a wide range of use cases.",
+                  title: "Scalability and Performance",
+                  desc: "Python's scalability is supported by frameworks like Django and Flask, which offer features like caching, load balancing, and asynchronous task management, enabling efficient handling of high traffic and large-scale applications.",
                 },
                 {
-                  title: "Community Support",
-                  desc: "Strong community, extensive documentation, and learning resources make Python accessible and beginner-friendly.",
+                  title: "Integration and Versatility",
+                  desc: "Python seamlessly integrates with various technologies and databases, making it suitable for building backend systems that interact with different platforms and services.",
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">

@@ -47,20 +47,20 @@ const NextjsDevelopmentPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                title: "Server-side rendering (SSR)",
-                desc: "We implement SSR in Next.js to improve SEO and deliver faster content to your users.",
+                title: "Custom Next.js Development",
+                desc: "We leverage the power of Next.js to build scalable and high-performance web applications tailored to your specific business needs.",
               },
               {
-                title: "Static site generation (SSG)",
-                desc: "We build static sites that are pre-rendered at build time for ultra-fast load speeds.",
+                title: "Server-Side Rendering (SSR)",
+                desc: "Our team utilizes Next.js to implement server-side rendering, ensuring faster page loads and improved search engine visibility.",
               },
               {
-                title: "API routes development",
-                desc: "Create seamless backend logic using Next.js API routes for modern full-stack solutions.",
+                title: "Static Site Generation (SSG)",
+                desc: "We use Next.js to generate static websites that offer fast loading times, enhanced security, and cost-effective hosting options.",
               },
               {
-                title: "Headless CMS integration",
-                desc: "Integrate with any CMS like Strapi, Sanity, or Contentful to build dynamic Next.js websites.",
+                title: "Next.js Migration",
+                desc: "If you have an existing React application, we can help you migrate it to Next.js, leveraging its benefits and optimizing your application's performance.",
               },
             ].map((item, index) => (
               <div
@@ -104,24 +104,23 @@ const NextjsDevelopmentPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Numbered Benefits */}
             <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
               {[
                 {
-                  title: "SEO optimization",
-                  desc: "With SSR and SSG, Next.js ensures your content is crawlable and ranks well in search engines.",
+                  title: "Server-Side Rendering",
+                  desc: "Next.js enables server-side rendering, which improves initial page load times, enhances SEO, and provides a better user experience.",
                 },
                 {
-                  title: "Blazing fast performance",
-                  desc: "Pre-rendered pages and automatic code splitting ensure super fast load times.",
+                  title: "Automatic Code Splitting",
+                  desc: "Next.js automatically splits the JavaScript code into smaller chunks, loading only what is necessary for each page, resulting in faster page loads.",
                 },
                 {
-                  title: "Developer experience",
-                  desc: "Next.js offers a great DX with fast refresh, built-in routing, and easy deployment.",
+                  title: "Fast Refresh",
+                  desc: "Next.js offers a Fast Refresh feature that enables instant live updates to the application without losing the current state, providing a smooth development experience.",
                 },
                 {
-                  title: "Built-in scalability",
-                  desc: "Whether you need static content or dynamic features, Next.js can scale as your app grows.",
+                  title: "API Routes",
+                  desc: "Next.js simplifies the creation of API endpoints, allowing seamless integration of serverless functions for backend functionalities.",
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
