@@ -1,6 +1,5 @@
 import SecurityImg from "../assets/security.png";
 import ComputerImg from "../assets/computer.png";
-import LaptopImg from "../assets/laptop.png";
 import customerImg from "../assets/ServicesImages/customer.webp";
 import crossPlatformImg from "../assets/ServicesImages/cross-platform.webp";
 import predictiveAnalyticsImg from "../assets/ServicesImages/PredictiveAnalytics.webp";
@@ -29,7 +28,6 @@ export interface ServiceData {
       title: string;
       description: string;
     }>;
-    laptopImageCards: any[];
     breadcrumb: Array<{
       label: string;
       href: string;
@@ -71,7 +69,6 @@ export const servicesData: ServiceData[] = [
         { number: 3, title: "Development", description: "To iteratively build the perfect product to meet your goals." },
         { number: 4, title: "Release", description: "To get your finished product out to your customers." },
       ],
-      laptopImageCards: [LaptopImg, LaptopImg, LaptopImg],
       breadcrumb: [
         { label: "Home", href: "/" },
         { label: "Web Development Services", href: "/services/web-development" },
@@ -111,7 +108,6 @@ export const servicesData: ServiceData[] = [
         { number: 3, title: "Development", description: "Placeholder for mobile app development." },
         { number: 4, title: "Release", description: "Placeholder for mobile app release." },
       ],
-      laptopImageCards: [LaptopImg, LaptopImg, LaptopImg],
       breadcrumb: [
         { label: "Home", href: "/" },
         { label: "Mobile App Development", href: "/services/mobile-development" },
@@ -151,7 +147,6 @@ export const servicesData: ServiceData[] = [
         { number: 3, title: "Development", description: "Placeholder for ML development." },
         { number: 4, title: "Release", description: "Placeholder for ML release." },
       ],
-      laptopImageCards: [LaptopImg, LaptopImg, LaptopImg],
       breadcrumb: [
         { label: "Home", href: "/" },
         { label: "Machine Learning", href: "/services/machine-learning" },
@@ -191,7 +186,6 @@ export const servicesData: ServiceData[] = [
         { number: 3, title: "Development", description: "Placeholder for SEO implementation." },
         { number: 4, title: "Release", description: "Placeholder for SEO results." },
       ],
-      laptopImageCards: [LaptopImg, LaptopImg, LaptopImg],
       breadcrumb: [
         { label: "Home", href: "/" },
         { label: "SEO Optimization", href: "/services/seo-optimization" },
@@ -231,7 +225,6 @@ export const servicesData: ServiceData[] = [
         { number: 3, title: "Development", description: "Placeholder for UI/UX development." },
         { number: 4, title: "Release", description: "Placeholder for UI/UX release." },
       ],
-      laptopImageCards: [LaptopImg, LaptopImg, LaptopImg],
       breadcrumb: [
         { label: "Home", href: "/" },
         { label: "UI/UX Designing", href: "/services/ui-ux-design" },
@@ -271,7 +264,6 @@ export const servicesData: ServiceData[] = [
         { number: 3, title: "Development", description: "Placeholder for marketing campaign development." },
         { number: 4, title: "Release", description: "Placeholder for marketing campaign launch." },
       ],
-      laptopImageCards: [LaptopImg, LaptopImg, LaptopImg],
       breadcrumb: [
         { label: "Home", href: "/" },
         { label: "Digital Marketing", href: "/services/digital-marketing" },

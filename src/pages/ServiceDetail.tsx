@@ -43,17 +43,6 @@ const ServiceDetail: React.FC = () => {
         <p className="mt-6 text-base md:text-xl font-semibold text-[#252525] leading-relaxed max-w-3xl">
           {details.introSection.description}
         </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center mt-10 w-full">
-          {details.laptopImageCards.map((img, idx) => (
-            <div
-              key={idx}
-              className="bg-white shadow-lg p-6 rounded-2xl flex justify-center"
-            >
-              <img src={img} alt={`laptop-${idx}`} width={220} height={200} />
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Our Process */}
@@ -91,10 +80,37 @@ const ServiceDetail: React.FC = () => {
 
       {/* Services Section */}
       <div className="relative overflow-hidden mt-10 sm:mt-20">
-        {/* ... Gradient blobs */}
+        <div
+          className="absolute w-[40rem] h-[40rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-40 z-0 hidden sm:block"
+          style={{
+            background: "linear-gradient(to right, #78BA9F 20%, #12334E -80%)",
+            animation: "blob 8s infinite",
+            animationDelay: "2s",
+          }}
+        />
 
-        <div className="max-w-[69rem] mx-auto py-10 sm:py-20 px-6 md:px-16">
-          <div className="text-center max-w-5xl mx-auto mb-16">
+        <div
+          className="absolute w-[55rem] h-[35rem] bottom-0 right-[-10rem] rounded-tl-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
+          style={{
+            background: "linear-gradient(to right, #78BA9F 80%, #12334E 20%)",
+            animation: "blob 8s infinite",
+            animationDelay: "2s",
+          }}
+        />
+
+        <style>
+          {`
+      @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.05); }
+        66% { transform: translate(-20px, 20px) scale(0.95); }
+        100% { transform: translate(0px, 0px) scale(1); }
+      }
+    `}
+        </style>
+
+        <div className="max-w-[69rem] mx-auto py-10 sm:py-20 px-6 md:px-16 ">
+          <div className="text-center max-w-5xl mx-auto mb-16 ">
             <h2 className="text-2xl sm:text-3xl md:text-6xl font-semibold text-[#08162C]">
               {details.overviewSection.title1}
             </h2>
@@ -106,7 +122,7 @@ const ServiceDetail: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-20">
+          <div className="space-y-20 ">
             {details.serviceCards.map((service, index) => (
               <div
                 key={index}
@@ -126,7 +142,7 @@ const ServiceDetail: React.FC = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="mx-auto w-32 h-32"
+                    className="mx-auto w-32 h-32 transition-transform duration-300 hover:scale-150"
                   />
                 </div>
               </div>
@@ -134,26 +150,6 @@ const ServiceDetail: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* All Services Section */}
-      {/* <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-20">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-[#08162C]">
-          Explore All Our Services
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {servicesData.map((svc) => (
-            <a
-              key={svc.slug}
-              href={`/services/${svc.slug}`}
-              className="block bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-shadow border border-[#e5e7eb]"
-              style={{ textDecoration: 'none' }}
-            >
-              <h3 className="text-xl font-bold text-[#08162C] mb-2">{svc.title}</h3>
-              <p className="text-[#252525] text-base mb-2">{svc.description}</p>
-              <span className="inline-block mt-2 text-[#78BA9F] font-semibold">Learn More &rarr;</span>
-            </a>
-          ))}
-        </div>
-      </div> */}
     </section>
   );
 };

@@ -81,7 +81,7 @@ const Services: React.FC = () => {
                   />
                   <NavLink
                     to={`/services/${service.slug}`}
-                    className="hover:underline text-inherit"
+                    className="text-inherit"
                     style={{ display: "inline-flex", alignItems: "center" }}
                     onClick={(e) => e.stopPropagation()}
                   >
