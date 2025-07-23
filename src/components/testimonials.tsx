@@ -127,12 +127,12 @@ const TestimonialCard: React.FC = () => {
                     {item.company}
                   </p>
                 </div>
-                <div className="flex gap-1 text-[#29E8AE] text-sm absolute bottom-7 left-7">
+                <div className="flex gap-1 text-[#45BCA0] text-sm absolute bottom-7 left-7">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <FaStar key={i} />
                   ))}
                 </div>
-                <FaQuoteLeft className="text-[#29E8AE] text-xl mb-2" />
+                <FaQuoteLeft className="text-[#45BCA0] text-xl mb-2" />
                 <p className="text-[#4C4C4C] text-left text-sm mb-4 mt-4">
                   {item.testimonial}
                 </p>

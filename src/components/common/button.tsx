@@ -12,7 +12,7 @@ const variantStyles: Record<string, string> = {
   outline:
     "bg-white border-[3px] border-[#78BA9F] text-[#78BA9F] hover:bg-black hover:text-white hover:border-black",
   ghost:
-    "bg-transparent text-[#08162C] hover:text-[#29E8AE]",
+    "bg-transparent text-[#08162C] hover:text-[#45BCA0]",
 };
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

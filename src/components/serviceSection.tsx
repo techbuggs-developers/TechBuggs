@@ -24,7 +24,7 @@ export const services: ServiceSectionItem[] = [
     tagText: "text-black",
     image: webImg,
     arrowBg: "bg-black",
-    arrowText: "text-[#29E8AE]",
+    arrowText: "text-[#45BCA0]",
   },
   {
     slug: "mobile-development",
@@ -66,7 +66,7 @@ export const services: ServiceSectionItem[] = [
     tagText: "text-black",
     image: seoImg,
     arrowBg: "bg-black",
-    arrowText: "text-[#29E8AE]",
+    arrowText: "text-[#45BCA0]",
   },
   {
     slug: "ui-ux-design",
@@ -80,7 +80,7 @@ export const services: ServiceSectionItem[] = [
     tagText: "text-black",
     image: uiuxImg,
     arrowBg: "bg-black",
-    arrowText: "text-[#29E8AE]",
+    arrowText: "text-[#45BCA0]",
   },
   {
     slug: "digital-marketing",

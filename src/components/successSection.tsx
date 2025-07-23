@@ -175,7 +175,7 @@ const SuccessSection = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 mt-16 relative z-20">
             <div className="flex flex-col items-start gap-2">
-              <div className="text-[#29E8AE]">
+              <div className="text-[#45BCA0]">
                 <User size={40} />
               </div>
               <h3 className="font-bold text-lg">Human-Centric Design</h3>
@@ -185,7 +185,7 @@ const SuccessSection = () => {
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <div className="text-[#29E8AE]">
+              <div className="text-[#45BCA0]">
                 <Clock size={40} />
               </div>
               <h3 className="font-bold text-lg">Releases Early & Often</h3>
@@ -195,7 +195,7 @@ const SuccessSection = () => {
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <div className="text-[#29E8AE]">
+              <div className="text-[#45BCA0]">
                 <Users size={40} />
               </div>
               <h3 className="font-bold text-lg">A Dedicated Team</h3>
@@ -206,7 +206,7 @@ const SuccessSection = () => {
             </div>
 
             <div className="flex flex-col items-start gap-2">
-              <div className="text-[#29E8AE]">
+              <div className="text-[#45BCA0]">
                 <CheckCircle size={40} />
               </div>
               <h3 className="font-bold text-lg">Quality-Driven Approach</h3>

@@ -121,13 +121,13 @@ const AboutSection: React.FC = () => {
 
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 my-10 sm:my-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-          <div className="hidden lg:block absolute lg:top-6 lg:left-0 lg:right-[22%] h-0.5 bg-[#29E8AE] z-0" />
+          <div className="hidden lg:block absolute lg:top-6 lg:left-0 lg:right-[22%] h-0.5 bg-[#45BCA0] z-0" />
 
-          <div className="block sm:hidden absolute [@media(min-width:540px)_and_(max-width:640px)]:h-[19rem] h-[22rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#29E8AE] z-0" />
+          <div className="block sm:hidden absolute [@media(min-width:540px)_and_(max-width:640px)]:h-[19rem] h-[22rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#45BCA0] z-0" />
 
           {processSteps.map((step, index) => (
             <div key={index} className="flex sm:flex-col gap-4 relative">
-              <div className="bg-[#29E8AE] text-white w-12 h-12 flex items-center justify-center rounded-md mb-4 z-10 relative flex-shrink-0">
+              <div className="bg-[#45BCA0] text-white w-12 h-12 flex items-center justify-center rounded-md mb-4 z-10 relative flex-shrink-0">
                 <div className="text-xl">{step.icon}</div>
               </div>
               <div>

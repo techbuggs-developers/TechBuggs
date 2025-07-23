@@ -114,10 +114,10 @@ const Courses: React.FC = () => {
             return (
               <div
                 key={index}
-                className="relative bg-white rounded-2xl shadow-lg border-b-4 border-[#29E8AE] p-7 flex flex-col items-start transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl group min-h-[340px]"
+                className="relative bg-white rounded-2xl shadow-lg border-b-4 border-[#45BCA0] p-7 flex flex-col items-start transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl group min-h-[340px]"
               >
-                <div className="flex items-center justify-center w-14 h-14 rounded-lg bg-[#E8FFF8] shadow border-2 border-[#29E8AE] mb-4">
-                  <Icon size={32} className="text-[#29E8AE]" />
+                <div className="flex items-center justify-center w-14 h-14 rounded-lg bg-[#E8FFF8] shadow border-2 border-[#45BCA0] mb-4">
+                  <Icon size={32} className="text-[#45BCA0]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#08162C] mb-2">
                   {course.title}
@@ -137,7 +137,7 @@ const Courses: React.FC = () => {
                   </span>
                 </div>
                 <Button
-                  className="w-full mt-auto cursor-pointer text-[#78BA9F] border border-[#78BA9F] bg-white font-semibold group-hover:bg-[#29E8AE]/10 group-hover:text-[#08162C] transition-colors py-2 px-4 rounded-md"
+                  className="w-full mt-auto cursor-pointer text-[#78BA9F] border border-[#78BA9F] bg-white font-semibold group-hover:bg-[#45BCA0]/10 group-hover:text-[#08162C] transition-colors py-2 px-4 rounded-md"
                   variant="secondary"
                   onClick={() => handleViewCourse(course.outlineKey)}
                 >

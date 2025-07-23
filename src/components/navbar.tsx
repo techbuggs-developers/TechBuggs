@@ -96,8 +96,8 @@ const Navbar: React.FC = () => {
             className={({ isActive }) =>
               `text-lg font-medium transition-colors ${
                 isActive
-                  ? "text-[#29E8AE]"
-                  : "text-[#08162C] hover:text-[#29E8AE]"
+                  ? "text-[#45BCA0]"
+                  : "text-[#08162C] hover:text-[#45BCA0]"
               }`
             }
           >
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
             onMouseEnter={() => setTechDropdownOpen(true)}
             onMouseLeave={() => setTechDropdownOpen(false)}
           >
-            <button className="flex items-center gap-1 font-medium transition-colors text-[#08162C] hover:text-[#29E8AE] text-lg cursor-pointer">
+            <button className="flex items-center gap-1 font-medium transition-colors text-[#08162C] hover:text-[#45BCA0] text-lg cursor-pointer">
               Technologies{" "}
               <ChevronDown
                 size={20}
@@ -122,14 +122,14 @@ const Navbar: React.FC = () => {
               <div className="absolute top-full mt-0.5 left-0 w-[33rem] bg-gray-100 rounded-xl shadow-xl py-6 px-8 grid grid-cols-3 gap-6">
                 <div>
                   <h4 className="font-semibold text-black mb-2 flex items-center gap-2">
-                    <Layout className="text-[#29E8AE]" size={20} />
+                    <Layout className="text-[#45BCA0]" size={20} />
                     Front-end
                   </h4>
                   <ul className="space-y-2">
                     <li>
                       <NavLink
                         to="/tech/react"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         React
                       </NavLink>
@@ -137,7 +137,7 @@ const Navbar: React.FC = () => {
                     <li>
                       <NavLink
                         to="/tech/nextjs"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         Next.js
                       </NavLink>
@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
                     <li>
                       <NavLink
                         to="/tech/angular"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         Angular
                       </NavLink>
@@ -155,14 +155,14 @@ const Navbar: React.FC = () => {
 
                 <div>
                   <h4 className="font-semibold text-black mb-2 flex items-center gap-2">
-                    <Server className="text-[#29E8AE]" size={20} />
+                    <Server className="text-[#45BCA0]" size={20} />
                     Back-end
                   </h4>
                   <ul className="space-y-2">
                     <li>
                       <NavLink
                         to="/tech/nodejs"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         Node.js
                       </NavLink>
@@ -170,7 +170,7 @@ const Navbar: React.FC = () => {
                     <li>
                       <NavLink
                         to="/tech/python"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         Python
                       </NavLink>
@@ -180,14 +180,14 @@ const Navbar: React.FC = () => {
 
                 <div>
                   <h4 className="font-semibold text-black mb-2 flex items-center gap-2">
-                    <Smartphone className="text-[#29E8AE]" size={20} />
+                    <Smartphone className="text-[#45BCA0]" size={20} />
                     Mobile
                   </h4>
                   <ul className="space-y-2">
                     <li>
                       <NavLink
                         to="/tech/android"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         Android
                       </NavLink>
@@ -195,7 +195,7 @@ const Navbar: React.FC = () => {
                     <li>
                       <NavLink
                         to="/tech/react-native"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         React Native
                       </NavLink>
@@ -203,7 +203,7 @@ const Navbar: React.FC = () => {
                     <li>
                       <NavLink
                         to="/tech/flutter"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         Flutter
                       </NavLink>
@@ -213,7 +213,7 @@ const Navbar: React.FC = () => {
 
                 <div>
                   <h4 className="font-semibold text-black mb-2 flex items-start gap-2 ">
-                    <Palette className="text-[#29E8AE]" size={20} />
+                    <Palette className="text-[#45BCA0]" size={20} />
                     UI/UX Design
                   </h4>
 
@@ -221,7 +221,7 @@ const Navbar: React.FC = () => {
                     <li>
                       <NavLink
                         to="/tech/figma"
-                        className="flex items-center gap-2 text-gray-800 hover:text-[#29E8AE]"
+                        className="flex items-center gap-2 text-gray-800 hover:text-[#45BCA0]"
                       >
                         Figma
                       </NavLink>
@@ -243,8 +243,8 @@ const Navbar: React.FC = () => {
               className={({ isActive }) =>
                 `flex items-center gap-1 font-medium transition-colors text-lg cursor-pointer ${
                   isActive
-                    ? "text-[#29E8AE]"
-                    : "text-[#08162C] hover:text-[#29E8AE]"
+                    ? "text-[#45BCA0]"
+                    : "text-[#08162C] hover:text-[#45BCA0]"
                 }`
               }
             >
@@ -262,15 +262,15 @@ const Navbar: React.FC = () => {
                   <NavLink
                     key={service.slug}
                     to={`/services/${service.slug}`}
-                    className="px-4 py-2 flex gap-2 items-center hover:text-[#29E8AE]"
+                    className="px-4 py-2 flex gap-2 items-center hover:text-[#45BCA0]"
                   >
                     {/* Add icons based on service.slug */}
-                    {service.slug === "web-development" && <Globe size={18} className="text-[#29E8AE]" />}
-                    {service.slug === "mobile-development" && <Smartphone size={18} className="text-[#29E8AE]" />}
-                    {service.slug === "machine-learning" && <Brain size={18} className="text-[#29E8AE]" />}
-                    {service.slug === "seo-optimization" && <Search size={18} className="text-[#29E8AE]" />}
-                    {service.slug === "ui-ux-design" && <Palette size={18} className="text-[#29E8AE]" />}
-                    {service.slug === "digital-marketing" && <BarChart2 size={18} className="text-[#29E8AE]" />}
+                    {service.slug === "web-development" && <Globe size={18} className="text-[#45BCA0]" />}
+                    {service.slug === "mobile-development" && <Smartphone size={18} className="text-[#45BCA0]" />}
+                    {service.slug === "machine-learning" && <Brain size={18} className="text-[#45BCA0]" />}
+                    {service.slug === "seo-optimization" && <Search size={18} className="text-[#45BCA0]" />}
+                    {service.slug === "ui-ux-design" && <Palette size={18} className="text-[#45BCA0]" />}
+                    {service.slug === "digital-marketing" && <BarChart2 size={18} className="text-[#45BCA0]" />}
                     {service.title}
                   </NavLink>
                 ))}
@@ -284,8 +284,8 @@ const Navbar: React.FC = () => {
             className={({ isActive }) =>
               `text-lg font-medium transition-colors ${
                 isActive
-                  ? "text-[#29E8AE]"
-                  : "text-[#08162C] hover:text-[#29E8AE]"
+                  ? "text-[#45BCA0]"
+                  : "text-[#08162C] hover:text-[#45BCA0]"
               }`
             }
           >
@@ -298,8 +298,8 @@ const Navbar: React.FC = () => {
             className={({ isActive }) =>
               `text-lg font-medium transition-colors ${
                 isActive
-                  ? "text-[#29E8AE]"
-                  : "text-[#08162C] hover:text-[#29E8AE]"
+                  ? "text-[#45BCA0]"
+                  : "text-[#08162C] hover:text-[#45BCA0]"
               }`
             }
           >
@@ -312,8 +312,8 @@ const Navbar: React.FC = () => {
             className={({ isActive }) =>
               `text-lg font-medium transition-colors ${
                 isActive
-                  ? "text-[#29E8AE]"
-                  : "text-[#08162C] hover:text-[#29E8AE]"
+                  ? "text-[#45BCA0]"
+                  : "text-[#08162C] hover:text-[#45BCA0]"
               }`
             }
           >
@@ -367,7 +367,7 @@ const Navbar: React.FC = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <Layout size={20} className="text-[#29E8AE]" />
+              <Layout size={20} className="text-[#45BCA0]" />
               About us
             </NavLink>
 
@@ -377,7 +377,7 @@ const Navbar: React.FC = () => {
                 className="flex items-center justify-between w-full px-4 py-3 text-left font-medium text-gray-700 hover:bg-gray-100 rounded-xl"
               >
                 <span className="flex items-center gap-2">
-                  <Code2 size={20} className="text-[#29E8AE]" />
+                  <Code2 size={20} className="text-[#45BCA0]" />
                   Technologies
                 </span>
                 <ChevronDown
@@ -391,55 +391,55 @@ const Navbar: React.FC = () => {
                 <div className="ml-6 mt-2 space-y-2">
                   <NavLink
                     to="/tech/react"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     React
                   </NavLink>
                   <NavLink
                     to="/tech/nextjs"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     Next.js
                   </NavLink>
                   <NavLink
                     to="/tech/angular"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     Angular
                   </NavLink>
                   <NavLink
                     to="/tech/nodejs"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     Node.js
                   </NavLink>
                   <NavLink
                     to="/tech/python"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     Python
                   </NavLink>
                   <NavLink
                     to="/tech/android"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     Android
                   </NavLink>
                   <NavLink
                     to="/tech/react-native"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     React Native
                   </NavLink>
                   <NavLink
                     to="/tech/flutter"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     Flutter
                   </NavLink>
                   <NavLink
                     to="/tech/figma"
-                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#29E8AE]"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
                   >
                     Figma
                   </NavLink>
@@ -453,7 +453,7 @@ const Navbar: React.FC = () => {
                 className="flex items-center justify-between w-full px-4 py-3 text-left font-medium text-gray-700 hover:bg-gray-100 rounded-xl"
               >
                 <span className="flex items-center gap-2">
-                  <Globe size={20} className="text-[#29E8AE]" />
+                  <Globe size={20} className="text-[#45BCA0]" />
                   Our Services
                 </span>
                 <ChevronDown
@@ -473,12 +473,12 @@ const Navbar: React.FC = () => {
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {/* Add icons based on service.slug */}
-                      {service.slug === "web-development" && <Globe size={18} className="text-[#29E8AE]" />}
-                      {service.slug === "mobile-development" && <Smartphone size={18} className="text-[#29E8AE]" />}
-                      {service.slug === "machine-learning" && <Brain size={18} className="text-[#29E8AE]" />}
-                      {service.slug === "seo-optimization" && <Search size={18} className="text-[#29E8AE]" />}
-                      {service.slug === "ui-ux-design" && <Palette size={18} className="text-[#29E8AE]" />}
-                      {service.slug === "digital-marketing" && <BarChart2 size={18} className="text-[#29E8AE]" />}
+                      {service.slug === "web-development" && <Globe size={18} className="text-[#45BCA0]" />}
+                      {service.slug === "mobile-development" && <Smartphone size={18} className="text-[#45BCA0]" />}
+                      {service.slug === "machine-learning" && <Brain size={18} className="text-[#45BCA0]" />}
+                      {service.slug === "seo-optimization" && <Search size={18} className="text-[#45BCA0]" />}
+                      {service.slug === "ui-ux-design" && <Palette size={18} className="text-[#45BCA0]" />}
+                      {service.slug === "digital-marketing" && <BarChart2 size={18} className="text-[#45BCA0]" />}
                       {service.title}
                     </NavLink>
                   ))}
@@ -494,7 +494,7 @@ const Navbar: React.FC = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <FolderKanban size={20} className="text-[#29E8AE]" />
+              <FolderKanban size={20} className="text-[#45BCA0]" />
               Portfolio
             </NavLink>
 
@@ -506,7 +506,7 @@ const Navbar: React.FC = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <GraduationCap size={20} className="text-[#29E8AE]" />
+              <GraduationCap size={20} className="text-[#45BCA0]" />
               Trainings
             </NavLink>
 
@@ -518,7 +518,7 @@ const Navbar: React.FC = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <Brain size={20} className="text-[#29E8AE]" />
+              <Brain size={20} className="text-[#45BCA0]" />
               Careers
             </NavLink>
 

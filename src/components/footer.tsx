@@ -64,7 +64,7 @@ export default function Footer() {
 
             <div className="flex flex-col lg:flex-row items-start sm:items-center justify-between max-w-[72rem] gap-4 w-full">
               <div className="flex items-center gap-4">
-                <div className="h-16 w-[2px] rounded-sm bg-[#29E8AE] flex items-center " />
+                <div className="h-16 w-[2px] rounded-sm bg-[#45BCA0] flex items-center " />
                 <div className="flex flex-col space-y-2 sm:ml-0 lg:ml-10">
                   <h2 className="text-2xl sm:text-3xl font-bold">
                     News Subscription
@@ -93,8 +93,8 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-white text-lg mb-4 relative">
                 ABOUT COMPANY
-                <div className="w-[10.8rem] h-[2px] bg-[#29E8AE] mt-2 rounded-[1px] relative flex items-center">
-                  <div className="w-2 h-2 rounded-full border-2 border-[#29E8AE] flex items-center justify-center absolute right-0">
+                <div className="w-[10.8rem] h-[2px] bg-[#45BCA0] mt-2 rounded-[1px] relative flex items-center">
+                  <div className="w-2 h-2 rounded-full border-2 border-[#45BCA0] flex items-center justify-center absolute right-0">
                     <span className="bg-white w-[5px] h-[5px] rounded-full absolute" />
                   </div>
                 </div>
@@ -114,8 +114,8 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-white text-lg mb-4 relative">
                 QUICK LINKS
-                <div className="w-[7.8rem] h-[2px] bg-[#29E8AE] mt-2 rounded-[1px] relative flex items-center">
-                  <div className="w-2 h-2 border-2 border-[#29E8AE] flex justify-center items-center absolute right-0 rounded-full">
+                <div className="w-[7.8rem] h-[2px] bg-[#45BCA0] mt-2 rounded-[1px] relative flex items-center">
+                  <div className="w-2 h-2 border-2 border-[#45BCA0] flex justify-center items-center absolute right-0 rounded-full">
                     <span className="bg-white w-[5px] h-[5px] absolute rounded-full " />
                   </div>
                 </div>
@@ -128,8 +128,8 @@ export default function Footer() {
                       className={({ isActive }) =>
                         `text-base transition-colors ${
                           isActive
-                            ? "text-[#29E8AE]"
-                            : "text-[#C8C8C8] hover:text-[#29E8AE]"
+                            ? "text-[#45BCA0]"
+                            : "text-[#C8C8C8] hover:text-[#45BCA0]"
                         }`
                       }
                       onClick={() => {
@@ -146,8 +146,8 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-white text-lg mb-4 relative">
                 OUR SERVICES
-                <div className="w-[9rem] h-[2px] bg-[#29E8AE] mt-2 rounded-[1px] relative flex items-center">
-                  <div className="w-2 h-2 border-2 border-[#29E8AE] flex justify-center items-center absolute right-0 rounded-full">
+                <div className="w-[9rem] h-[2px] bg-[#45BCA0] mt-2 rounded-[1px] relative flex items-center">
+                  <div className="w-2 h-2 border-2 border-[#45BCA0] flex justify-center items-center absolute right-0 rounded-full">
                     <span className="bg-white w-[5px] h-[5px] rounded-full absolute " />
                   </div>
                 </div>
@@ -166,8 +166,8 @@ export default function Footer() {
                       className={({ isActive }) =>
                         `text-base transition-colors ${
                           isActive
-                            ? "text-[#29E8AE]"
-                            : "hover:text-[#29E8AE] text-[#C8C8C8]"
+                            ? "text-[#45BCA0]"
+                            : "hover:text-[#45BCA0] text-[#C8C8C8]"
                         }`
                       }
                     >
@@ -181,8 +181,8 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-white text-lg mb-4 relative">
                 CONTACT US
-                <div className="w-[7.8rem] h-[2px] bg-[#29E8AE] mt-2 rounded-[1px] relative flex items-center">
-                  <div className="w-2 h-2 border-2 border-[#29E8AE] absolute flex justify-center items-center right-0 rounded-full">
+                <div className="w-[7.8rem] h-[2px] bg-[#45BCA0] mt-2 rounded-[1px] relative flex items-center">
+                  <div className="w-2 h-2 border-2 border-[#45BCA0] absolute flex justify-center items-center right-0 rounded-full">
                     <span className="bg-white w-[5px] h-[5px] rounded-full absolute " />
                   </div>
                 </div>
@@ -197,8 +197,8 @@ export default function Footer() {
               </p>
               <h3 className="font-semibold text-white text-lg mb-3 relative">
                 LOCATION
-                <div className="w-[6.4rem] h-[2px] bg-[#29E8AE] mt-2 rounded-[1px] relative flex items-center">
-                  <div className="w-2 h-2 border-2 border-[#29E8AE] absolute flex justify-center items-center right-0 rounded-full">
+                <div className="w-[6.4rem] h-[2px] bg-[#45BCA0] mt-2 rounded-[1px] relative flex items-center">
+                  <div className="w-2 h-2 border-2 border-[#45BCA0] absolute flex justify-center items-center right-0 rounded-full">
                     <span className="bg-white w-[5px] h-[5px] rounded-full absolute" />
                   </div>
                 </div>

@@ -56,7 +56,7 @@ const MouseAnimation: React.FC = () => {
           mass: 0.1,
         }}
       >
-        <div className="w-6 h-6 border-2 border-[#29E8AE] rounded-full" />
+        <div className="w-6 h-6 border-2 border-[#45BCA0] rounded-full" />
       </motion.div>
 
       {/* Cursor trail */}
@@ -74,7 +74,7 @@ const MouseAnimation: React.FC = () => {
           mass: 0.2,
         }}
       >
-        <div className="w-4 h-4 border-2 border-[#29E8AE] rounded-full" />
+        <div className="w-4 h-4 border-2 border-[#45BCA0] rounded-full" />
       </motion.div>
     </>
   );

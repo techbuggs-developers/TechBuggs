@@ -9,7 +9,7 @@ const NotFound: React.FC = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-[10rem] font-extrabold text-[#29E8AE] leading-none"
+        className="text-[10rem] font-extrabold text-[#45BCA0] leading-none"
       >
         404
       </motion.h1>
@@ -26,7 +26,7 @@ const NotFound: React.FC = () => {
       </p>
       <Link
         to="/"
-        className="bg-[#29E8AE] text-[#0f172a] px-6 py-3 rounded-2xl font-semibold hover:bg-[#1fd4a5] transition-all duration-300"
+        className="bg-[#45BCA0] text-[#0f172a] px-6 py-3 rounded-2xl font-semibold hover:bg-[#1fd4a5] transition-all duration-300"
       >
         Go Back Home
       </Link>

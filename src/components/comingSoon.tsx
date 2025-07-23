@@ -20,7 +20,7 @@ const ComingSoon: React.FC = () => {
 
         <Link
           to="/"
-          className="inline-block bg-[#29E8AE] hover:bg-[#20d4a0] text-[#0f172a] font-semibold py-3 px-6 rounded-xl transition duration-300"
+          className="inline-block bg-[#45BCA0] hover:bg-[#20d4a0] text-[#0f172a] font-semibold py-3 px-6 rounded-xl transition duration-300"
         >
           Go Back Home
         </Link>
