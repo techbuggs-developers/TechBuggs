@@ -1,4 +1,5 @@
 export interface TechnologyContent {
+  slug: string;
   title: string;
   heroDescription: string;
   services: { title: string; desc: string }[];
@@ -6,8 +7,9 @@ export interface TechnologyContent {
   logo: string;
 }
 
-export const technologyData: Record<string, TechnologyContent> = {
-  react: {
+export const technologyData: TechnologyContent[] = [
+  {
+    slug: "react",
     title: "React Development",
     heroDescription:
       "React is a widely-used JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently update the user interface as the underlying data changes. With its declarative syntax and virtual DOM, React simplifies the process of building interactive and responsive web applications.",
@@ -25,7 +27,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Flexibility", desc: "React has a vast ecosystem of libraries, tools, and resources, as well as a vibrant community that actively contributes to its development and provides support." },
     ],
   },
-  nodejs: {
+  {
+    slug: "nodejs",
     title: "Node.js Development",
     heroDescription:
       "Node.js is a powerful JavaScript runtime built on Chrome's V8 engine. It enables developers to build scalable and high-performance server-side applications. With its event-driven, non-blocking I/O model, Node.js is ideal for real-time apps and APIs.",
@@ -43,7 +46,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Vast Ecosystem", desc: "Node.js has a rich ecosystem of modules and libraries available through npm, enabling developers to leverage pre-built components, frameworks, and tools to accelerate development and enhance functionality." },
     ],
   },
-  python: {
+  {
+    slug: "python",
     title: "Python Development",
     heroDescription:
       "Python is a versatile, high-level programming language known for its simplicity and readability. It's widely used for web development, data science, AI, and automation — enabling rapid development of robust applications.",
@@ -61,7 +65,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Integration and Versatility", desc: "Python seamlessly integrates with various technologies and databases, making it suitable for building backend systems that interact with different platforms and services." },
     ],
   },
-  nextjs: {
+  {
+    slug: "nextjs",
     title: "Next.js Development",
     heroDescription:
       "Build fast, scalable, and SEO-friendly web applications using Next.js – the leading React framework for production-grade solutions.",
@@ -79,7 +84,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "API Routes", desc: "Next.js simplifies the creation of API endpoints, allowing seamless integration of serverless functions for backend functionalities." },
     ],
   },
-  angular: {
+  {
+    slug: "angular",
     title: "Angular Development",
     heroDescription:
       "Build robust, scalable web applications with Angular – the platform for building mobile and desktop web applications using TypeScript.",
@@ -97,7 +103,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Enhanced Performance", desc: "Angular optimizes application performance through features like ahead-of-time (AOT) compilation, lazy loading, and code splitting, resulting in faster load times and improved user experience." },
     ],
   },
-  figma: {
+  {
+    slug: "figma",
     title: "Figma Design",
     heroDescription:
       "Create beautiful, collaborative designs with Figma – the modern interface design tool that brings teams together.",
@@ -115,7 +122,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Design System and Component Libraries", desc: "Figma supports the creation and management of design systems and component libraries. This allows designers to establish consistent design patterns, reuse design elements, and maintain design integrity throughout the project. It promotes design scalability and efficiency." },
     ],
   },
-  android: {
+  {
+    slug: "android",
     title: "Android Development",
     heroDescription:
       "Build powerful, native Android applications that deliver exceptional user experiences across millions of devices.",
@@ -133,7 +141,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Integration with Google Services", desc: "Android seamlessly integrates with various Google services such as Google Maps, Google Analytics, Google Drive, and Google Play Services, providing opportunities for enhanced functionality and integration with popular Google services." },
     ],
   },
-  flutter: {
+  {
+    slug: "flutter",
     title: "Flutter Development",
     heroDescription:
       "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase with Flutter.",
@@ -151,7 +160,8 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Rapid Development", desc: "Flutter's hot-reload feature allows developers to instantly see the effects of code changes, making the development process highly iterative and efficient. This helps in faster debugging, UI tweaking, and overall faster app development cycles." },
     ],
   },
-  "react-native": {
+  {
+    slug: "react-native",
     title: "React Native Development",
     heroDescription:
       "Build native mobile applications using React and JavaScript, delivering high-performance apps for iOS and Android.",
@@ -169,4 +179,4 @@ export const technologyData: Record<string, TechnologyContent> = {
       { title: "Rapid Development", desc: "React Native offers a hot-reloading feature that allows developers to see real-time updates of code changes instantly, speeding up the development process and enabling quick iterations." },
     ],
   },
-}; 
+]; 

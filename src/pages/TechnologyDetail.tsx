@@ -5,15 +5,15 @@ import { CheckCircle } from "lucide-react";
 import { technologyData } from "../data/technologyData";
 
 const TechnologyDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { technologiesSlug } = useParams<{ technologiesSlug: string }>();
 
-  if (!slug) return null;
+  if (!technologiesSlug) return null;
 
-  const tech = technologyData[slug];
+  const tech = technologyData.find((t) => t.slug === technologiesSlug);
 
   if (!tech) {
     return (
-      <div className="text-center py-20 text-red-500">
+      <div className="text-center py-42 text-red-500 ">
         Technology not found.
       </div>
     );
