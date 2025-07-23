@@ -1,96 +1,152 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Smartphone, Code2, Zap, Globe, Layers, Share2 } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import useScrollAnimation from "../../hooks/useAnimation";
 
 const ReactNativeDevelopmentPage: React.FC = () => {
   const { ref: heroRef, inView: heroInView } = useScrollAnimation(0.1);
+  const { ref: servicesRef, inView: servicesInView } = useScrollAnimation(0.1);
+  const { ref: benefitsRef, inView: benefitsInView } = useScrollAnimation(0.1);
 
   return (
-    <div className="min-h-screen">
+    <div className="bg-gray-50 text-gray-900">
+      {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden py-28 flex items-center transition-colors duration-300"
+        className="relative overflow-hidden py-28 flex items-center"
       >
-        {/* Background elements */}
-        <div className="absolute inset-0 z-0 bg-[url('data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a0a0a0' fill-opacity='0.1'%3E%3Ccircle cx='25' cy='25' r='3'/%3E%3Ccircle cx='75' cy='75' r='3'/%3E%3C/g%3E%3C/svg%3E')] bg-repeat">
-          <div className="absolute w-80 h-80 bg-primary-200 rounded-full -top-20 -left-20 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-          <div className="absolute w-96 h-96 bg-secondary-200 rounded-full top-20 -right-20 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute w-100 h-100 bg-accent-200 rounded-full -bottom-20 left-1/3 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-        </div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={heroInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="container mx-auto px-4 text-center relative z-10"
         >
-          <h1 className="text-4xl md:text-5xl h-20 font-bold mb-6 bg-clip-text">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#08162C]">
             React Native Development
           </h1>
-          <p className="text-xl max-w-3xl mx-auto text-gray-600">
+          <p className="text-xl max-w-3xl mx-auto text-[#4C4C4C]">
             Build native mobile applications using React and JavaScript,
             delivering high-performance apps for iOS and Android.
           </p>
         </motion.div>
       </section>
 
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              icon: <Code2 size={24} />,
-              title: "JavaScript/TypeScript",
-              text: "Write mobile apps using familiar JavaScript and TypeScript syntax.",
-              delay: 0.1,
-            },
-            {
-              icon: <Layers size={24} />,
-              title: "Native Components",
-              text: "Access native platform components and APIs for optimal performance.",
-              delay: 0.2,
-            },
-            {
-              icon: <Smartphone size={24} />,
-              title: "Cross-Platform",
-              text: "Develop for both iOS and Android with a single codebase.",
-              delay: 0.3,
-            },
-            {
-              icon: <Zap size={24} />,
-              title: "Hot Reloading",
-              text: "See your changes instantly with fast refresh and hot reloading.",
-              delay: 0.4,
-            },
-            {
-              icon: <Share2 size={24} />,
-              title: "Third-Party Libraries",
-              text: "Access a vast ecosystem of pre-built components and libraries.",
-              delay: 0.5,
-            },
-            {
-              icon: <Globe size={24} />,
-              title: "App Store Ready",
-              text: "Deploy your apps to the App Store and Google Play Store.",
-              delay: 0.6,
-            },
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: item.delay }}
-              className="card p-6"
-            >
-              <div className="bg-primary-50 text-primary-600 p-3 rounded-xl inline-flex mb-4">
-                {item.icon}
+      {/* Services Section */}
+      <section ref={servicesRef} className="py-20 bg-white">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={servicesInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="container mx-auto px-4"
+        >
+          <h2 className="text-4xl font-bold mb-12 text-center text-[#08162C]">
+            React Native development services we provide
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {[
+              {
+                title: "JavaScript / TypeScript",
+                desc: "Write mobile apps using modern JavaScript or TypeScript for maintainability and speed.",
+              },
+              {
+                title: "Native Components",
+                desc: "Integrate with platform-specific APIs and UI components for truly native performance.",
+              },
+              {
+                title: "Cross-Platform Codebase",
+                desc: "Build for both Android and iOS from a single codebase, reducing cost and effort.",
+              },
+              {
+                title: "Fast Refresh",
+                desc: "Use hot reloading to instantly see UI updates, speeding up development.",
+              },
+              {
+                title: "Third-Party Libraries",
+                desc: "Access a rich ecosystem of plugins, libraries, and components to accelerate development.",
+              },
+              {
+                title: "App Store Deployment",
+                desc: "Package and publish apps to the Apple App Store and Google Play Store.",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="p-6">
+                  <CheckCircle size={36} className="text-[#29E8AE] mb-4" />
+                  <h3 className="text-xl font-semibold text-[#08162C] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-[#4C4C4C]">{item.desc}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-              <p className="text-gray-600">{item.text}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Benefits Section */}
+      <section ref={benefitsRef} className="py-20 bg-white">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={benefitsInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="container mx-auto px-4"
+        >
+          <h2 className="text-4xl font-bold mb-12 text-center text-[#08162C]">
+            Benefits of React Native Development
+          </h2>
+
+          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-16">
+            {/* Image section */}
+            <div className="flex justify-center w-full lg:w-[36%]">
+              <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
+                <img
+                  src="https://reactnative.dev/img/header_logo.svg"
+                  alt="React Native Logo"
+                  className="w-64 h-64 object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Numbered Benefits */}
+            <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 self-center">
+              {[
+                {
+                  title: "Faster Development",
+                  desc: "Build and update apps rapidly with shared codebase and instant refresh features.",
+                },
+                {
+                  title: "Reduced Costs",
+                  desc: "Develop once and deploy across platforms, saving time and budget.",
+                },
+                {
+                  title: "Community & Ecosystem",
+                  desc: "Leverage a large developer community and a mature ecosystem of libraries.",
+                },
+                {
+                  title: "Native Performance",
+                  desc: "React Native bridges directly to native APIs ensuring smooth UI and performance.",
+                },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex-shrink-0 bg-[#78BA9F] text-[#08162C] rounded-full flex items-center justify-center font-semibold">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#08162C] mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-[#4C4C4C]">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </section>
     </div>
   );
 };

@@ -1,142 +1,144 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Smartphone, Code2, Layers, Zap, Globe, Palette } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import useScrollAnimation from "../../hooks/useAnimation";
 
 const FlutterDevelopmentPage: React.FC = () => {
   const { ref: heroRef, inView: heroInView } = useScrollAnimation(0.1);
+  const { ref: servicesRef, inView: servicesInView } = useScrollAnimation(0.1);
+  const { ref: benefitsRef, inView: benefitsInView } = useScrollAnimation(0.1);
 
   return (
-    <div className="min-h-screen">
+    <div className="bg-gray-50 text-gray-900">
+      {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden py-28 flex items-center transition-colors duration-300"
+        className="relative overflow-hidden py-28 flex items-center"
       >
-        {/* Background elements */}
-        <div className="absolute inset-0 z-0 bg-[url('data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a0a0a0' fill-opacity='0.1'%3E%3Ccircle cx='25' cy='25' r='3'/%3E%3Ccircle cx='75' cy='75' r='3'/%3E%3C/g%3E%3C/svg%3E')] bg-repeat">
-          <div className="absolute w-80 h-80 bg-primary-200 rounded-full -top-20 -left-20 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-          <div className="absolute w-96 h-96 bg-secondary-200 rounded-full top-20 -right-20 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute w-100 h-100 bg-accent-200 rounded-full -bottom-20 left-1/3 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-        </div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={heroInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="container mx-auto px-4 text-center relative z-10"
         >
-          <h1 className="text-4xl md:text-5xl h-20 font-bold mb-6 bg-clip-text ">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#08162C]">
             Flutter Development
           </h1>
-          <p className="text-xl max-w-3xl mx-auto text-gray-600">
+          <p className="text-xl max-w-3xl mx-auto text-[#4C4C4C]">
             Build beautiful, natively compiled applications for mobile, web, and
             desktop from a single codebase with Flutter.
           </p>
         </motion.div>
       </section>
 
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="card p-6"
-          >
-            <div className="bg-primary-50 text-primary-600 p-3 rounded-xl inline-flex mb-4">
-              <Code2 size={24} />
-            </div>
-            <h3 className="text-xl font-bold mb-3">Dart Programming</h3>
-            <p className="text-gray-600">
-              Modern, object-oriented programming language optimized for UI
-              development.
-            </p>
-          </motion.div>
+      {/* Services Section */}
+      <section ref={servicesRef} className="py-20 bg-white">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={servicesInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="container mx-auto px-4"
+        >
+          <h2 className="text-4xl font-bold mb-12 text-center text-[#08162C]">
+            Flutter development services we provide
+          </h2>
 
-          {/* Card 2 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="card p-6"
-          >
-            <div className="bg-primary-50 text-primary-600 p-3 rounded-xl inline-flex mb-4">
-              <Layers size={24} />
-            </div>
-            <h3 className="text-xl font-bold mb-3">Widget System</h3>
-            <p className="text-gray-600">
-              Rich set of customizable widgets for building beautiful user
-              interfaces.
-            </p>
-          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {[
+              {
+                title: "Cross-platform Development",
+                desc: "Create mobile, web, and desktop apps with a single codebase using Flutter.",
+              },
+              {
+                title: "UI/UX Design",
+                desc: "Build pixel-perfect UIs with customizable widgets and native look & feel.",
+              },
+              {
+                title: "Dart Programming",
+                desc: "Use Dart, an optimized language for building fast and expressive UIs.",
+              },
+              {
+                title: "Integration & Deployment",
+                desc: "Integrate with APIs and deploy to Play Store, App Store, or web effortlessly.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="p-6">
+                  <CheckCircle size={36} className="text-[#29E8AE] mb-4" />
+                  <h3 className="text-xl font-semibold text-[#08162C] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-[#4C4C4C]">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
 
-          {/* Card 3 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="card p-6"
-          >
-            <div className="bg-primary-50 text-primary-600 p-3 rounded-xl inline-flex mb-4">
-              <Smartphone size={24} />
-            </div>
-            <h3 className="text-xl font-bold mb-3">Cross-Platform</h3>
-            <p className="text-gray-600">
-              Develop for iOS, Android, web, and desktop from a single codebase.
-            </p>
-          </motion.div>
+      {/* Benefits Section */}
+      <section ref={benefitsRef} className="py-20 bg-white">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={benefitsInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="container mx-auto px-4"
+        >
+          <h2 className="text-4xl font-bold mb-12 text-center text-[#08162C]">
+            Benefits of Flutter Development
+          </h2>
 
-          {/* Card 4 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="card p-6"
-          >
-            <div className="bg-primary-50 text-primary-600 p-3 rounded-xl inline-flex mb-4">
-              <Zap size={24} />
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            {/* Image */}
+            <div className="flex justify-center w-full lg:w-[36%]">
+              <div className="bg-[#f8fbfd] rounded-2xl p-6 flex items-center justify-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+                  alt="Flutter Logo"
+                  className="w-64 h-64 object-contain"
+                />
+              </div>
             </div>
-            <h3 className="text-xl font-bold mb-3">Hot Reload</h3>
-            <p className="text-gray-600">
-              Fast development cycle with instant updates to your running app.
-            </p>
-          </motion.div>
 
-          {/* Card 5 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="card p-6"
-          >
-            <div className="bg-primary-50 text-primary-600 p-3 rounded-xl inline-flex mb-4">
-              <Palette size={24} />
+            {/* Numbered Benefits */}
+            <div className="w-full lg:w-[52%] grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
+              {[
+                {
+                  title: "Faster Development",
+                  desc: "Hot reload and reusable widgets speed up development dramatically.",
+                },
+                {
+                  title: "Beautiful UIs",
+                  desc: "Rich widget library allows crafting highly customized interfaces.",
+                },
+                {
+                  title: "Performance",
+                  desc: "Flutter apps are compiled to native code for high performance.",
+                },
+                {
+                  title: "Single Codebase",
+                  desc: "Maintain one codebase for Android, iOS, web, and desktop platforms.",
+                },
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex-shrink-0 bg-[#78BA9F] text-[#08162C] rounded-full flex items-center justify-center font-semibold">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#08162C] mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-[#4C4C4C]">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-            <h3 className="text-xl font-bold mb-3">Material Design</h3>
-            <p className="text-gray-600">
-              Beautiful Material Design and Cupertino widgets for native look
-              and feel.
-            </p>
-          </motion.div>
-
-          {/* Card 6 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={heroInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="card p-6"
-          >
-            <div className="bg-primary-50 text-primary-600 p-3 rounded-xl inline-flex mb-4">
-              <Globe size={24} />
-            </div>
-            <h3 className="text-xl font-bold mb-3">Global Reach</h3>
-            <p className="text-gray-600">
-              Deploy your apps to multiple platforms and reach users worldwide.
-            </p>
-          </motion.div>
-        </div>
-      </div>
+          </div>
+        </motion.div>
+      </section>
     </div>
   );
 };
