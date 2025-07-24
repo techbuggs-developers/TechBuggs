@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa6";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import type { Testimonial } from "../types/testimonial";
+import type { Testimonial } from "../types/index";
 
 const testimonials: Testimonial[] = [
   {

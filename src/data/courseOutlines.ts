@@ -1,4 +1,4 @@
-import type { CourseOutline } from "../types/courseOutline";
+import type { CourseOutline } from "../types/index";
 
 export const courseOutlines: CourseOutline[] = [
   {
@@ -194,7 +194,7 @@ export const courseOutlines: CourseOutline[] = [
     ],
   },
 
-    {
+  {
     title: "Frontend Development",
     duration: "8 Weeks",
     level: "Beginner",
@@ -333,7 +333,8 @@ export const courseOutlines: CourseOutline[] = [
           "SDLC vs STLC",
           "Testing Principles & QA Mindset",
         ],
-        logicFocus: "Understanding quality lifecycle and thinking like a tester",
+        logicFocus:
+          "Understanding quality lifecycle and thinking like a tester",
         softSkills: "Analytical Thinking, Attention to Detail",
       },
       {
@@ -415,6 +416,4 @@ export const courseOutlines: CourseOutline[] = [
       },
     ],
   },
-
-
 ];

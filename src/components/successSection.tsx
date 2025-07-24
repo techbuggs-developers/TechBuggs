@@ -20,7 +20,7 @@ import {
   SiDotnet,
   SiGo,
 } from "react-icons/si";
-import type { OrbitingCirclesProps } from "../types/orbitingCircles";
+import type { OrbitingCirclesProps } from "../types/index";
 
 const TechIcons = {
   React: () => (
