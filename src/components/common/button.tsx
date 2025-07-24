@@ -1,5 +1,5 @@
 import React from "react";
-import type { ButtonProps } from "../../types/button";
+import type { ButtonProps } from "../../types/index";
 
 const baseStyles =
   "transition-colors font-semibold rounded-full shadow-2xl  disabled:opacity-50 cursor-pointer";
