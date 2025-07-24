@@ -15,6 +15,7 @@ import MouseAnimation from "./components/common/MouseAnimation";
 import ScrollToTop from "./components/common/ScrollToTop";
 import ServiceDetail from "./pages/ServiceDetail";
 import TechnologyDetail from "./pages/TechnologyDetail";
+import Technologies from "./pages/Technologies";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -54,6 +55,7 @@ const App: React.FC = () => {
           path="/technologies/:technologiesSlug"
           element={<TechnologyDetail />}
         />
+        <Route path="/technologies" element={<Technologies />} />
         <Route path="/comingSoon" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
