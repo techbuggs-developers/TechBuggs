@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../components/common/button";
 import { useParams } from "react-router-dom";
-import { servicesData } from "../data/servicesData";
+import { servicesData } from "../data/ServicesDetailData";
 import { NavLink } from "react-router-dom";
 
 const ServiceDetail: React.FC = () => {

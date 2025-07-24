@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 import logo from "../assets/logo.png";
-import { servicesData } from "../data/servicesData";
+import { servicesData } from "../data/ServicesDetailData";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

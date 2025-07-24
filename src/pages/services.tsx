@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { services as homeServices } from "../components/serviceSection";
+import { serviceCardData as homeServices } from "../data/ServicesCardData";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import type { ServiceSectionItem } from "../types/serviceSection";
+import type { ServiceSectionItem } from "../types/index";
 
 const Services: React.FC = () => {
   const [hovered, setHovered] = useState<number | null>(null);

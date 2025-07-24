@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import { LuBrush } from "react-icons/lu";
 import { RiCodeSSlashLine } from "react-icons/ri";
 import { BiBarChartAlt2 } from "react-icons/bi";
-import ProjectsSection from "../components/projectSection";
+import ProjectsSection from "./projectSection";
 import { Button } from "./common/button";
 import { NavLink } from "react-router-dom";
 

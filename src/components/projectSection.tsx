@@ -6,7 +6,7 @@ import keycoin from "../assets/PortfolioImages/keycoin.webp";
 import globalswiftasia from "../assets/PortfolioImages/globalswiftasia.webp";
 import { NavLink } from "react-router-dom";
 import { Button } from "./common/button";
-import type { Project } from "../types/project";
+import type { Project } from "../types/index";
 
 const projects: Project[] = [
   {

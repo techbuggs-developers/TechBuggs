@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import img from "../assets/cloud computing 1.png";
 import { Button } from "./common/button";
-import type { CardProps } from "../types/card";
+import type { CardProps } from "../types/index";
 
 const cards = [
   {
