@@ -115,6 +115,7 @@ const TestimonialCard: React.FC = () => {
                   <img
                     src={item.avatarUrl}
                     alt={item.name}
+                    loading="lazy"
                     className="w-full h-full rounded-md object-cover"
                   />
                 </div>

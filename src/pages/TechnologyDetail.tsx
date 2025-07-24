@@ -105,6 +105,7 @@ const TechnologyDetail = () => {
                 <img
                   src={tech.logo}
                   alt={tech.title}
+                  loading="lazy"
                   className="w-64 h-64 object-contain"
                 />
               </div>

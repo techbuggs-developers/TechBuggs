@@ -50,7 +50,7 @@ const OurApproach: React.FC = () => {
       setIsMobile(window.innerWidth < 640);
     };
 
-    handleResize(); 
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -61,7 +61,6 @@ const OurApproach: React.FC = () => {
   return (
     <section className="w-full bg-white py-16 px-4 sm:mt-20">
       <div className="max-w-[89rem] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 px-4 md:px-10 lg:px-20">
-
         <div className="lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start relative z-20">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-[#08162C] mb-4">
             You bring the <br /> vision, we bring the <br /> spark.
@@ -71,7 +70,10 @@ const OurApproach: React.FC = () => {
             enterprise—with rapid, tailored digital solutions that boost
             efficiency and ROI.
           </p>
-          <Button className="text-nowrap relative z-20  px-4 py-2" variant="outline">
+          <Button
+            className="text-nowrap relative z-20  px-4 py-2"
+            variant="outline"
+          >
             Learn More about our Approach
           </Button>
         </div>
@@ -117,7 +119,10 @@ const Card: React.FC<CardProps> = ({ title, description, img }) => {
       </div>
       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="absolute left-4 bottom-[-40px] group-hover:bottom-16 transition-all duration-500">
-          <Button className="px-2 py-1 bg-[#78BA9F] text-[#08162C] text-xs rounded-full shadow-md cursor-pointer" variant="secondary">
+          <Button
+            className="px-2 py-1 bg-[#78BA9F] text-[#08162C] text-xs rounded-full shadow-md cursor-pointer"
+            variant="secondary"
+          >
             Explore More
           </Button>
         </div>

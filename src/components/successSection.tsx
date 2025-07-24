@@ -245,7 +245,13 @@ const SuccessSection = () => {
             </OrbitingCircles>
 
             <div className="absolute inset-0 flex rotate-45 items-center justify-center z-10">
-              <img src={bugLogo} alt="Logo-Bug" width={130} height={130} />
+              <img
+                src={bugLogo}
+                alt="Logo-Bug"
+                loading="lazy"
+                width={130}
+                height={130}
+              />
             </div>
           </div>
         </div>

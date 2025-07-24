@@ -62,6 +62,7 @@ const ProjectsSection: React.FC = () => {
             <img
               src={project.image}
               alt={project.title}
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover z-0 transition-all duration-500 group-hover:scale-200 group-hover:opacity-0"
             />
 

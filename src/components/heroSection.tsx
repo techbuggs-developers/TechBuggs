@@ -97,6 +97,7 @@ const HeroSection: React.FC = () => {
                 <img
                   src={bgImg}
                   alt="Group Photo"
+                  loading="lazy"
                   className="absolute top-0 left-0 w-full h-full object-fill rounded-[6rem] sm:rounded-full shadow-lg"
                 />
               </div>

@@ -9,7 +9,7 @@ const Services: React.FC = () => {
   const [hovered, setHovered] = useState<number | null>(null);
   return (
     <section className="py-10 sm:py-20 px-4 md:px-12 lg:px-24 bg-white pt-32 pb-20 relative overflow-hidden">
-       <div
+      <div
         className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-45 z-0 hidden sm:block"
         style={{
           background: "linear-gradient(to bottom, #78BA9F 20%, #12334E 80%)",
@@ -123,6 +123,7 @@ const Services: React.FC = () => {
               >
                 <img
                   src={service.image}
+                  loading="lazy"
                   alt={service.title.join(" ")}
                   className="w-full h-full object-contain"
                 />

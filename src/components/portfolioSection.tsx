@@ -199,9 +199,7 @@ const PortfolioSection: React.FC = () => {
 
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10 mb-14 md:mb-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
-         <NavLink to="/">
-           Home &gt;
-         </NavLink>
+          <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Portfolio</span>
         </p>
         <div className="space-y-2 relative z-20">
@@ -245,6 +243,7 @@ const PortfolioSection: React.FC = () => {
                       <img
                         src={icon.src}
                         alt={icon.name}
+                        loading="lazy"
                         className="w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-200 hover:scale-110"
                       />
                     </div>
@@ -256,6 +255,7 @@ const PortfolioSection: React.FC = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>

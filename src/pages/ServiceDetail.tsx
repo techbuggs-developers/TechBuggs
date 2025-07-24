@@ -144,6 +144,7 @@ const ServiceDetail: React.FC = () => {
                   <img
                     src={service.image}
                     alt={service.title}
+                    loading="lazy"
                     className="mx-auto w-32 h-32 transition-transform duration-300 hover:scale-150"
                   />
                 </div>

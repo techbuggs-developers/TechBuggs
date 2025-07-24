@@ -86,7 +86,12 @@ const Navbar: React.FC = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <img src={logo} alt="TechBuggs Logo" className="h-10 md:h-12" />
+          <img
+            src={logo}
+            alt="TechBuggs Logo"
+            loading="lazy"
+            className="h-10 md:h-12"
+          />
         </NavLink>
 
         <nav className="hidden [@media(min-width:1100px)]:flex items-center space-x-6">
