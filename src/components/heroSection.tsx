@@ -138,7 +138,7 @@ const HeroSection: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.9, ease: "easeInOut" }}
-            className="absolute bottom-7 left-8 xl:left-35 z-20 text-black text-sm md:text-xl font-medium hidden lg:block"
+            className="absolute bottom-7 left-8 xl:left-35 2xl:left-28 z-20 text-black text-sm md:text-xl font-medium hidden lg:block"
           >
             <div className="text-left space-y-1">
               <div className="text-xl md:text-2xl text-white font-bold">
@@ -180,11 +180,10 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.9 }}
-          className="absolute bottom-0  lg:right-8 xl:right-28 z-20 w-64 h-40 sm:w-80 sm:h-48 bg-[#BCBCBC80] border-2 sm:border-3 shadow-xl rounded-t-2xl p-4"
+          className="absolute bottom-0  lg:right-8 xl:right-28 2xl:right-28 z-20 w-64 h-40 sm:w-80 sm:h-48 bg-[#BCBCBC80] border-2 sm:border-2 shadow-xl rounded-t-2xl p-4"
         >
           <div className="text-sm sm:text-xl text-[#252525] font-semibold">
-            Clean Design. Smart Development. Business
-Growth.
+            Clean Design. Smart Development. Business Growth.
           </div>
           <div className="flex justify-end mt-5 mr-4">
             <NavLink to="/contact">
