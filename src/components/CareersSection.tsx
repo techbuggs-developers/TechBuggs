@@ -72,7 +72,7 @@ const values = [
   },
 ];
 
-const CareerSection = () => {
+const CareersSection = () => {
   const openingsRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToOpenings = () => {
@@ -298,4 +298,4 @@ const CareerSection = () => {
   );
 };
 
-export default CareerSection;
+export default CareersSection;
