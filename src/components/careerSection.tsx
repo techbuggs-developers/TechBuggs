@@ -4,6 +4,7 @@ import { TbBulb } from "react-icons/tb";
 import { Button } from "./common/button";
 import type { Quality } from "../types/quality";
 import { NavLink } from "react-router-dom";
+import { useRef } from "react";
 
 const qualities: Quality[] = [
   {
@@ -71,7 +72,13 @@ const values = [
   },
 ];
 
-const careerSection = () => {
+const CareerSection = () => {
+  const openingsRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToOpenings = () => {
+    openingsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="bg-white">
       <div className=" relative overflow-hidden pt-32">
@@ -106,7 +113,7 @@ const careerSection = () => {
         <div className="max-w-[69rem] mx-auto px-8 md:px-10 mt-10 pb-14 sm:pb-32 ">
           <p className="text-lg text- font-semibold mb-4 relative z-20">
             <NavLink to="/">Home &gt;</NavLink>{" "}
-            <span className="text-[#78BA9F] font-semibold">Carerrs</span>
+            <span className="text-[#78BA9F] font-semibold">Careers</span>
           </p>
 
           <div className="space-y-2 relative z-20">
@@ -127,11 +134,13 @@ const careerSection = () => {
           </p>
 
           <div className="mt-12">
-            <a href="#openings">
-            <Button className="px-6 py-3  relative z-20 " variant="outline">
+            <Button
+              onClick={scrollToOpenings}
+              className="px-6 py-3  relative z-20 "
+              variant="outline"
+            >
               See All Openings
             </Button>
-            </a>
           </div>
         </div>
       </div>
@@ -211,7 +220,10 @@ const careerSection = () => {
           </div>
         </div>
 
-        <div className="mt-10 sm:mt-20 px-8 md:px-10 relative z-20 pb-10" id="openings" >
+        <div
+          className="mt-10 sm:mt-20 px-8 md:px-10 relative z-20 pb-10"
+          ref={openingsRef}
+        >
           <div className="max-w-[69rem] mx-auto">
             <h2 className="text-2xl sm:text-5xl font-bold text-[#08162C] mb-4">
               Current Openings
@@ -286,4 +298,4 @@ const careerSection = () => {
   );
 };
 
-export default careerSection;
+export default CareerSection;
