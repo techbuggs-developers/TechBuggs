@@ -3,3 +3,10 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+/* Prevent image selection and dragging globally */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: auto;
+}
