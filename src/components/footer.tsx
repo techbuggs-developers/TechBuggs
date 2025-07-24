@@ -11,6 +11,8 @@ import { NavLink } from "react-router-dom";
 import FooterBg from "../assets/footer-bg.png";
 import LogoWhite from "../assets/logo-white.png";
 import { Button } from "./common/button";
+import { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 
 const quickLinks = [
   { name: "About Us", path: "/about" },
@@ -30,9 +32,22 @@ const services = [
 ];
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = () => {
+    if (!email.trim()) {
+      toast.error("Please enter a valid email.");
+      return;
+    }
+    setEmail("");
+    toast.success("Subscribed successfully!");
+  };
+
   return (
     <>
       <footer className=" text-white relative lg:h-[33rem]">
+        <Toaster position="top-center" reverseOrder={false} />
+
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${FooterBg})` }}
@@ -43,8 +58,8 @@ export default function Footer() {
             background: "linear-gradient(to right, #12334E 100%)",
           }}
         />
-
         <div className="absolute inset-0 bg-[#12334E]/50"></div>
+
         <div className="max-w-[85rem] mx-auto px-6 pt-10 space-y-10 relative">
           <div className="flex flex-col lg:flex-row justify-between gap-6 items-start md:items-center border-b border-gray-700 pb-10">
             <div className="mx-auto md:mx-0">
@@ -67,10 +82,10 @@ export default function Footer() {
                 <div className="h-16 w-[2px] rounded-sm bg-[#45BCA0] flex items-center " />
                 <div className="flex flex-col space-y-2 sm:ml-0 lg:ml-10">
                   <h2 className="text-2xl sm:text-3xl font-bold">
-                    News Subscription
+                    Stay Updated
                   </h2>
                   <p className="text-sm font-semibold text-[#C8C8C8]">
-                    Get Latest Deals from Waker’s Inbox & Subscribe Now
+                    Subscribe for quick updates on tech trends and offers.
                   </p>
                 </div>
               </div>
@@ -79,12 +94,15 @@ export default function Footer() {
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="pl-10 pr-4 py-4 w-full sm:w-75 rounded-md  bg-white border border-gray-600 text-black placeholder:text-[#7B7B7B]"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="pl-10 pr-4 py-4 w-full sm:w-75 rounded-md bg-white border border-gray-600 text-black placeholder:text-[#7B7B7B]"
                   />
                 </div>
                 <Button
                   className="w-full sm:w-40 px-6 py-4 rounded-md"
                   variant="primary"
+                  onClick={handleSubscribe}
                 >
                   SUBSCRIBE
                 </Button>
@@ -107,23 +125,24 @@ export default function Footer() {
                 cutting-edge technology.
               </p>
               <div className="flex gap-4">
-                <a href="https://www.linkedin.com/company/techbuggs/" target="blank">
-                  {" "}
+                <a
+                  href="https://www.linkedin.com/company/techbuggs/"
+                  target="blank"
+                >
                   <Linkedin />
                 </a>
-
                 <a
                   href="https://www.facebook.com/people/Techbuggs/61578437660327/"
                   target="blank"
                 >
-                  {" "}
                   <Facebook />
                 </a>
-                <a href="https://www.youtube.com/@Techbuggsofficial" target="blank">
-                  {" "}
+                <a
+                  href="https://www.youtube.com/@Techbuggsofficial"
+                  target="blank"
+                >
                   <Youtube />
                 </a>
-
                 <a
                   href="https://www.instagram.com/techbuggsofficial?igsh=MTlvbHNtMHZyNmtuaQ=="
                   target="blank"
@@ -225,8 +244,8 @@ export default function Footer() {
                   </div>
                 </div>
               </h3>
-              <p className="text-[#C8C8C8] text-sm   flex items-center gap-2">
-                <MapPin className="w-5 h-5  text-white" />
+              <p className="text-[#C8C8C8] text-sm flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-white" />
                 114 F1 Wapda town Lahore
               </p>
             </div>
