@@ -53,7 +53,7 @@ const ServiceDetail: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {/* Lines */}
           <div className="hidden lg:block absolute lg:top-6 lg:left-0 lg:right-[20%] h-0.5 bg-[#45BCA0] z-0" />
-          <div className="block sm:hidden absolute  h-[19rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#45BCA0] z-0" />
+          <div className="block sm:hidden absolute  [@media(max-width:543px)]:h-[22rem] h-[19rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#45BCA0] z-0" />
           {details.processSteps.map((step) => (
             <div key={step.number} className="flex sm:flex-col gap-4 relative">
               <div className="bg-[#45BCA0] text-white w-12 h-12 flex items-center justify-center rounded-md mb-4 z-10 relative flex-shrink-0">

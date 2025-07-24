@@ -268,15 +268,21 @@ export default function Footer() {
             © 2025 TechBuggs. All Rights Reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-2 text-center sm:text-right">
-            <span className="hover:underline cursor-pointer">
-              Terms & Condition
-            </span>
+            <NavLink to="/comingSoon">
+              <span className="hover:underline cursor-pointer">
+                Terms & Condition
+              </span>
+            </NavLink>
             <span className="text-white h-5 w-[1px] bg-white" />
-            <span className="hover:underline cursor-pointer">Careers</span>
+            <NavLink to="/comingSoon">
+              <span className="hover:underline cursor-pointer">Careers</span>
+            </NavLink>
             <span className="text-white h-5 w-[1px] bg-white" />
-            <span className="hover:underline cursor-pointer">
-              Privacy Policy
-            </span>
+            <NavLink to="/comingSoon">
+              <span className="hover:underline cursor-pointer">
+                Privacy Policy
+              </span>
+            </NavLink>
           </div>
         </div>
       </div>
