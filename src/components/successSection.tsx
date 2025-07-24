@@ -1,6 +1,6 @@
 import React from "react";
 import { User, Clock, Users, CheckCircle } from "lucide-react";
-import bugLogo from "../assets/Logo-bug.png";
+import bugLogo from "../assets/bugLogo.png";
 
 import {
   FaReact,
@@ -244,8 +244,8 @@ const SuccessSection = () => {
               <TechIcons.DotNet />
             </OrbitingCircles>
 
-            <div className="absolute inset-0 flex items-center justify-center z-10">
-              <img src={bugLogo} alt="Logo-Bug" width={200} height={200} />
+            <div className="absolute inset-0 flex rotate-45 items-center justify-center z-10">
+              <img src={bugLogo} alt="Logo-Bug" width={130} height={130} />
             </div>
           </div>
         </div>

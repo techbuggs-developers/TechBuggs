@@ -72,10 +72,10 @@ const ServiceDetail: React.FC = () => {
         </div>
 
         <div className="mt-12 mx-auto w-full flex justify-center">
-            <NavLink to="/contact">
-          <Button className="px-6 py-3" variant="outline">
-            Contact Us
-          </Button>
+          <NavLink to="/contact">
+            <Button className="px-6 py-3" variant="outline">
+              Contact Us
+            </Button>
           </NavLink>
         </div>
       </div>
@@ -83,7 +83,7 @@ const ServiceDetail: React.FC = () => {
       {/* Services Section */}
       <div className="relative overflow-hidden mt-10 sm:mt-20">
         <div
-          className="absolute w-[40rem] h-[40rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
+          className="absolute w-[40rem] h-[40rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-25 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to right, #78BA9F 20%, #12334E -80%)",
             animation: "blob 8s infinite",
@@ -92,7 +92,7 @@ const ServiceDetail: React.FC = () => {
         />
 
         <div
-          className="absolute w-[55rem] h-[35rem] bottom-0 right-[-10rem] rounded-tl-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
+          className="absolute w-[55rem] h-[35rem] bottom-0 right-[-10rem] rounded-tl-[100%] filter blur-3xl opacity-25 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to right, #78BA9F 80%, #12334E 20%)",
             animation: "blob 8s infinite",
@@ -111,9 +111,9 @@ const ServiceDetail: React.FC = () => {
     `}
         </style>
 
-        <div className="max-w-[69rem] mx-auto py-10 sm:py-20 px-6 md:px-16 ">
+        <div className="max-w-[69rem] mx-auto py-10 sm:py-20 px-6 md:px-16  ">
           <div className="text-center max-w-5xl mx-auto mb-16 ">
-            <h2 className="text-2xl sm:text-3xl md:text-6xl font-semibold text-[#08162C]">
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-semibold text-[#08162C] ">
               {details.overviewSection.title1}
             </h2>
             <h2 className="text-2xl sm:text-3xl md:text-6xl font-semibold mb-6 text-[#08162C]">
@@ -124,7 +124,7 @@ const ServiceDetail: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-20 ">
+          <div className="space-y-20  ">
             {details.serviceCards.map((service, index) => (
               <div
                 key={index}
