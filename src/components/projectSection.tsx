@@ -87,7 +87,7 @@ const ProjectsSection: React.FC = () => {
                   className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer"
                   variant="ghost"
                 >
-                  <ArrowRight className="w-8 h-8 sm:w-10 sm:h-10 p-0.5 bg-[#191A23] rounded-full text-[#29E8AE] rotate-[-30deg]" />
+                  <ArrowRight className="w-8 h-8 sm:w-10 sm:h-10 p-0.5 bg-[#191A23] rounded-full text-[#45BCA0] rotate-[-30deg]" />
                 </Button>
               </a>
             </div>
@@ -98,12 +98,12 @@ const ProjectsSection: React.FC = () => {
       <div className="mt-8 flex justify-end relative z-20">
         <NavLink to="/portfolio">
           <Button
-            className="flex items-center text-sm sm:text-lg md:text-xl font-semibold text-[#08162C] group hover:text-[#29E8AE] transition-colors cursor-pointer"
+            className="flex items-center text-sm sm:text-lg md:text-xl font-semibold group  transition-colors cursor-pointer"
             variant="ghost"
           >
             VIEW ALL
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
-              <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:text-[#29E8AE] transition-colors" />
+              <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:text-[#45BCA0] transition-colors" />
             </span>
           </Button>
         </NavLink>

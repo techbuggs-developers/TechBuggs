@@ -95,7 +95,7 @@ const Courses: React.FC = () => {
           <p className="text-lg text-[#08162C] font-semibold mb-4 text-left">
            <NavLink to="/">
           Home &gt; 
-          </NavLink>
+          </NavLink>{" "}
             <span className="text-[#78BA9F] font-semibold">Trainings</span>
           </p>
           <h2 className="text-4xl md:text-6xl font-bold mb-5 sm:mb-14 text-[#08162C] relative z-20">

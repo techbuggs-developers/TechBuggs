@@ -203,12 +203,12 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ limit }) => {
       <div className="mt-8 max-w-6xl mx-auto flex justify-end">
         <NavLink to="/services">
           <Button
-            className="flex items-center cursor-pointer text-sm sm:text-lg md:text-xl font-semibold text-[#08162C] group hover:text-[#29E8AE] transition-colors"
+            className="flex items-center cursor-pointer text-sm sm:text-lg md:text-xl font-semibold  group  transition-colors"
             variant="ghost"
           >
             SEE ALL
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
-              <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:text-[#29E8AE] transition-colors" />
+              <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:text-[#45BCA0] transition-colors" />
             </span>
           </Button>
         </NavLink>

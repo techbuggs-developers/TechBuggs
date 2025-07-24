@@ -127,9 +127,11 @@ const careerSection = () => {
           </p>
 
           <div className="mt-12">
+            <a href="#openings">
             <Button className="px-6 py-3  relative z-20 " variant="outline">
               See All Openings
             </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -163,7 +165,7 @@ const careerSection = () => {
 
       <div className=" relative overflow-hidden">
         <div
-          className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-rt-[100%] filter blur-3xl opacity-35 z-0 hidden sm:block"
+          className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-rt-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to bottom, #78BA9F 80%, #12334E 20%)",
             animation: "blob 8s infinite",
@@ -172,7 +174,7 @@ const careerSection = () => {
         />
 
         <div
-          className="absolute w-[32rem] h-[35rem] -bottom-20 -left-15 rounded-bl-[100%] filter blur-3xl opacity-35 z-0 hidden sm:block"
+          className="absolute w-[32rem] h-[35rem] -bottom-20 -left-15 rounded-bl-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to bottom, #78BA9F 50%, #12334E 50%)",
             animation: "blob 8s infinite",
@@ -196,9 +198,9 @@ const careerSection = () => {
             Inside Techbuggs
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10 relative z-20">
+          <div className="grid md:grid-cols-3 gap-10">
             {values.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="relative z-20">
                 {item.icon}
                 <h3 className="text-xl font-semibold text-[#252525] mb-2">
                   {item.title}
@@ -209,7 +211,7 @@ const careerSection = () => {
           </div>
         </div>
 
-        <div className="mt-10 sm:mt-20 px-8 md:px-10 relative z-20 pb-10">
+        <div className="mt-10 sm:mt-20 px-8 md:px-10 relative z-20 pb-10" id="openings" >
           <div className="max-w-[69rem] mx-auto">
             <h2 className="text-2xl sm:text-5xl font-bold text-[#08162C] mb-4">
               Current Openings
