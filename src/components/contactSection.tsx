@@ -24,8 +24,29 @@ const ContactSection: React.FC = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const validateEmail = (email: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const validatePhone = (phone: string) => {
+    const regex = /^[0-9]{10,11}$/;
+    return regex.test(phone);
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!validateEmail(form.email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    if (form.phone && !validatePhone(form.phone)) {
+      toast.error("Please enter a valid phone number.");
+      return;
+    }
+
     setLoading(true);
     try {
       await emailjs.send(
@@ -88,13 +109,15 @@ const ContactSection: React.FC = () => {
             required
           />
           <input
-            type="tel"
+            type="number"
             name="phone"
+            required
             placeholder="Phone number"
             value={form.phone}
             onChange={handleChange}
-            className="border-b border-[#999999] focus:outline-none pb-4 placeholder-[#4C4C4C] bg-transparent"
+            className="border-b border-[#999999] focus:outline-none pb-4 placeholder-[#4C4C4C] bg-transparent [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [appearance:textfield]"
           />
+
           <textarea
             name="message"
             placeholder="Tell us more about your idea"
