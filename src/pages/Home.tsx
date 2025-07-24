@@ -1,8 +1,8 @@
 import HeroSection from "../components/HeroSection";
 
 import Approach from "../components/OurApproach";
-import ProjectsSection from "../components/ProjectSection";
-import ServicesSection from "../components/ServiceSection";
+import ProjectsSection from "../components/ProjectsSection";
+import ServicesSection from "../components/ServicesSection";
 import SuccessSection from "../components/SuccessSection";
 import TestimonialCard from "../components/Testimonials";
 
