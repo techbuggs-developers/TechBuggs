@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaCogs, FaLaptopCode, FaBug } from "react-icons/fa";
-import { courseOutlines } from "../data/courseOutlines";
-import { Button } from "../components/common/button";
+import { courseOutlines } from "../data/CourseOutlines";
+import { Button } from "../components/common/Button";
 import { NavLink } from "react-router-dom";
 
 const cardCourses = [

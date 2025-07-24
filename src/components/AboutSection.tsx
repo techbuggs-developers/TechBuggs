@@ -3,8 +3,8 @@ import { BsSearch } from "react-icons/bs";
 import { LuBrush } from "react-icons/lu";
 import { RiCodeSSlashLine } from "react-icons/ri";
 import { BiBarChartAlt2 } from "react-icons/bi";
-import ProjectsSection from "./projectSection";
-import { Button } from "./common/button";
+import ProjectsSection from "./ProjectSection";
+import { Button } from "./common/Button";
 import { NavLink } from "react-router-dom";
 
 const processSteps = [

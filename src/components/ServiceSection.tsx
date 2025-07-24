@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { serviceCardData } from "../data/ServicesCardData";
-import { Button } from "./common/button";
+import { Button } from "./common/Button";
 import { NavLink } from "react-router-dom";
 import ServiceCard from "./ServiceCard"; 
 

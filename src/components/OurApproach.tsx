@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import img from "../assets/cloud computing 1.png";
-import { Button } from "./common/button";
+import { Button } from "./common/Button";
 import type { CardProps } from "../types/index";
 
 const cards = [

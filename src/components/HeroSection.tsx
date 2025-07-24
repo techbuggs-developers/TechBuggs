@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import bgImg from "../assets/HeroBg.png";
-import { Button } from "./common/button";
+import { Button } from "./common/Button";
 import { NavLink } from "react-router-dom";
 
 const HeroSection: React.FC = () => {

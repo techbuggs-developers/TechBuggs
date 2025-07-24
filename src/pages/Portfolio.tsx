@@ -1,4 +1,4 @@
-import PortfolioSection from "../components/portfolioSection";
+import PortfolioSection from "../components/PortfolioSection";
 import React from "react";
 
 const Portfolio: React.FC = () => {

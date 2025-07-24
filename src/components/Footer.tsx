@@ -10,7 +10,7 @@ import {
 import { NavLink } from "react-router-dom";
 import FooterBg from "../assets/footer-bg.png";
 import LogoWhite from "../assets/logo-white.png";
-import { Button } from "./common/button";
+import { Button } from "./common/Button";
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 

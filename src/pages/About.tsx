@@ -1,5 +1,5 @@
-import AboutSection from "../components/aboutSection";
-import TestimonialCard from "../components/testimonials";
+import AboutSection from "../components/AboutSection";
+import TestimonialCard from "../components/Testimonials";
 import React from "react";
 
 const About: React.FC = () => {

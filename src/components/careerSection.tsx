@@ -1,7 +1,7 @@
 import { FaUsers, FaHeart, FaHandsHelping, FaStar } from "react-icons/fa";
 import { FiTarget, FiUsers, FiZap, FiAward, FiHeart } from "react-icons/fi";
 import { TbBulb } from "react-icons/tb";
-import { Button } from "./common/button";
+import { Button } from "./common/Button";
 import type { Quality } from "../types/index";
 import { NavLink } from "react-router-dom";
 import { useRef } from "react";

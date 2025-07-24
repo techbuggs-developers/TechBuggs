@@ -1,10 +1,10 @@
-import HeroSection from "../components/heroSection";
+import HeroSection from "../components/HeroSection";
 
-import Approach from "../components/ourApproach";
-import ProjectsSection from "../components/projectSection";
-import ServicesSection from "../components/serviceSection";
-import SuccessSection from "../components/successSection";
-import TestimonialCard from "../components/testimonials";
+import Approach from "../components/OurApproach";
+import ProjectsSection from "../components/ProjectSection";
+import ServicesSection from "../components/ServiceSection";
+import SuccessSection from "../components/SuccessSection";
+import TestimonialCard from "../components/Testimonials";
 
 import React from "react";
 

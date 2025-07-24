@@ -1,4 +1,4 @@
-import CareerSection from "../components/careerSection";
+import CareerSection from "../components/CareerSection";
 import React from "react";
 
 const Career: React.FC = () => {
