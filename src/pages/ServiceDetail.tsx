@@ -22,7 +22,7 @@ const ServiceDetail: React.FC = () => {
     );
   }
   return (
-    <section className="bg-white pt-32 pb-20 relative overflow-hidden">
+    <section className="bg-white pt-32  relative overflow-hidden">
       {/* ... Gradient blob */}
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
@@ -72,16 +72,18 @@ const ServiceDetail: React.FC = () => {
         </div>
 
         <div className="mt-12 mx-auto w-full flex justify-center">
+            <NavLink to="/contact">
           <Button className="px-6 py-3" variant="outline">
             Contact Us
           </Button>
+          </NavLink>
         </div>
       </div>
 
       {/* Services Section */}
       <div className="relative overflow-hidden mt-10 sm:mt-20">
         <div
-          className="absolute w-[40rem] h-[40rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-40 z-0 hidden sm:block"
+          className="absolute w-[40rem] h-[40rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to right, #78BA9F 20%, #12334E -80%)",
             animation: "blob 8s infinite",
@@ -126,11 +128,11 @@ const ServiceDetail: React.FC = () => {
             {details.serviceCards.map((service, index) => (
               <div
                 key={index}
-                className={`flex flex-col ${
+                className={`flex flex-col c ${
                   service.reverse ? "md:flex-row-reverse" : "md:flex-row"
                 }  gap-10`}
               >
-                <div className="text-left md:w-1/2">
+                <div className="text-left md:w-1/2 relative z-20">
                   <h3 className="text-2xl md:text-5xl font-bold text-[#08162C] mb-4 leading-tight">
                     {service.title}
                   </h3>
