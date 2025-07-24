@@ -35,10 +35,18 @@ export default function Footer() {
   const [email, setEmail] = useState("");
 
   const handleSubscribe = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!email.trim()) {
-      toast.error("Please enter a valid email.");
+      toast.error("Please enter your email.");
       return;
     }
+
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email format.");
+      return;
+    }
+
     setEmail("");
     toast.success("Subscribed successfully!");
   };
@@ -72,6 +80,7 @@ export default function Footer() {
                 <img
                   src={LogoWhite}
                   alt="Logo"
+                  loading="lazy"
                   className="sm:h-28 sm:w-96 h-20 w-64 "
                 />
               </NavLink>

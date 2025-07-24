@@ -191,6 +191,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ limit }) => {
               >
                 <img
                   src={service.image}
+                  loading="lazy"
                   alt={service.title.join(" ")}
                   className="w-full h-full object-contain"
                 />
