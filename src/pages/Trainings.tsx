@@ -149,7 +149,7 @@ const Courses: React.FC = () => {
 
       <div className="flex justify-center">
         <a
-          href="https://docs.google.com/forms/d/1xMMVo4XW3pp-p4lBXfLOcnD6qO9hHJrNALa0-NpOEf0/edit"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc73N8UkWUV4Pt0uHrPkGVBbBWQN8o6ApBpsEfql9xG4LtA1Q/viewform?usp=dialog"
           target="_blank"
           rel="noopener noreferrer"
         >
