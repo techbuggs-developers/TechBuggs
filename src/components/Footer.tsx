@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import FooterBg from "../assets/footer-bg.png";
-import LogoWhite from "../assets/logo-white.png";
+import LogoWhite from "../assets/logo.png";
 import { Button } from "./common/Button";
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
@@ -243,8 +243,11 @@ export default function Footer() {
               </p>
               <p className="text-[#C8C8C8] text-base flex items-center gap-2 mb-3">
                 <Mail className="w-5 h-5 text-white" />
-                Info@techbuggs.com
+                <a href="mailto:Info@techbuggs.com">
+                  Info@techbuggs.com
+                </a>
               </p>
+
               <h3 className="font-semibold text-white text-lg mb-3 relative">
                 LOCATION
                 <div className="w-[6.4rem] h-[2px] bg-[#45BCA0] mt-2 rounded-[1px] relative flex items-center">

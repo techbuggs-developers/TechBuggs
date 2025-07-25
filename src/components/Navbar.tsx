@@ -115,25 +115,24 @@ const Navbar: React.FC = () => {
             onMouseLeave={() => setTechDropdownOpen(false)}
           >
             <NavLink
-                to="/technologies"
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className={({ isActive }) =>
-                  `flex items-center gap-1 font-medium transition-colors text-lg cursor-pointer  ${
-                    isActive
-                      ? "text-[#45BCA0]"
-                      : "text-[#08162C] hover:text-[#45BCA0]"
-                  }`
-                }
-              >
-                Technologies
-             {" "}
+              to="/technologies"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className={({ isActive }) =>
+                `flex items-center gap-1 font-medium transition-colors text-lg cursor-pointer  ${
+                  isActive
+                    ? "text-[#45BCA0]"
+                    : "text-[#08162C] hover:text-[#45BCA0]"
+                }`
+              }
+            >
+              Technologies{" "}
               <ChevronDown
                 size={20}
                 className={`transition-transform duration-200 mt-1 ${
                   techDropdownOpen ? "rotate-180" : ""
                 }`}
               />
-               </NavLink>
+            </NavLink>
 
             {techDropdownOpen && (
               <div className="absolute top-full mt-0.5 left-0 w-[33rem] bg-gray-100 rounded-xl shadow-xl py-6 px-8 grid grid-cols-3 gap-6">
@@ -393,6 +392,8 @@ const Navbar: React.FC = () => {
               className="flex items-center gap-2 font-medium py-3 px-4 rounded-xl text-gray-700 hover:bg-gray-100"
               onClick={() => {
                 setMobileMenuOpen(false);
+                setMobileServicesOpen(false);
+                setMobileTechOpen(false);
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
@@ -421,63 +422,99 @@ const Navbar: React.FC = () => {
                   <NavLink
                     to="/technologies/react"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     React
                   </NavLink>
                   <NavLink
                     to="/technologies/nextjs"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     Next.js
                   </NavLink>
                   <NavLink
                     to="/technologies/angular"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     Angular
                   </NavLink>
                   <NavLink
                     to="/technologies/nodejs"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     Node.js
                   </NavLink>
                   <NavLink
                     to="/technologies/python"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     Python
                   </NavLink>
                   <NavLink
                     to="/technologies/android"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     Android
                   </NavLink>
                   <NavLink
                     to="/technologies/react-native"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     React Native
                   </NavLink>
                   <NavLink
                     to="/technologies/flutter"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     Flutter
                   </NavLink>
                   <NavLink
                     to="/technologies/figma"
                     className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-[#45BCA0]"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setMobileServicesOpen(false);
+                      setMobileTechOpen(false);
+                    }}
                   >
                     Figma
                   </NavLink>
@@ -508,7 +545,11 @@ const Navbar: React.FC = () => {
                       key={service.slug}
                       to={`/services/${service.slug}`}
                       className="block px-4 py-2 flex items-center gap-2 text-gray-800 hover:bg-gray-100"
-                      onClick={() => setMobileMenuOpen(false)}
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        setMobileServicesOpen(false);
+                        setMobileTechOpen(false);
+                      }}
                     >
                       {/* Add icons based on service.slug */}
                       {service.slug === "web-development" && (
@@ -541,6 +582,8 @@ const Navbar: React.FC = () => {
               className="flex items-center gap-2 font-medium py-3 px-4 rounded-xl text-gray-700 hover:bg-gray-100"
               onClick={() => {
                 setMobileMenuOpen(false);
+                setMobileServicesOpen(false);
+                setMobileTechOpen(false);
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
@@ -553,6 +596,8 @@ const Navbar: React.FC = () => {
               className="flex items-center gap-2 font-medium py-3 px-4 rounded-xl text-gray-700 hover:bg-gray-100"
               onClick={() => {
                 setMobileMenuOpen(false);
+                setMobileServicesOpen(false);
+                setMobileTechOpen(false);
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
@@ -565,6 +610,8 @@ const Navbar: React.FC = () => {
               className="flex items-center gap-2 font-medium py-3 px-4 rounded-xl text-gray-700 hover:bg-gray-100"
               onClick={() => {
                 setMobileMenuOpen(false);
+                setMobileServicesOpen(false);
+                setMobileTechOpen(false);
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
@@ -577,6 +624,8 @@ const Navbar: React.FC = () => {
               className="text-center bg-[#78BA9F] rounded-xl px-6 py-3 flex items-center justify-center gap-2 mt-2"
               onClick={() => {
                 setMobileMenuOpen(false);
+                setMobileServicesOpen(false);
+                setMobileTechOpen(false);
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >

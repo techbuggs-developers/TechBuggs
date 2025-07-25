@@ -40,7 +40,7 @@ const MouseAnimation: React.FC = () => {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-[9999]"
+        className="fixed top-0 left-0 pointer-events-none z-[9999] hidden lg:block "
         animate={{
           x: mousePosition.x - 20,
           y: mousePosition.y - 20,
@@ -57,7 +57,7 @@ const MouseAnimation: React.FC = () => {
       </motion.div>
 
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-[9998]"
+        className="fixed top-0 left-0 pointer-events-none z-[9998] hidden lg:block"
         animate={{
           x: mousePosition.x - 10,
           y: mousePosition.y - 10,

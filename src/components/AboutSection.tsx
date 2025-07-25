@@ -88,9 +88,11 @@ const AboutSection: React.FC = () => {
         </p>
 
         <div className="mt-8 relative z-20">
+          <NavLink to="/portfolio">
           <Button className="px-6 py-3" variant="outline">
             Learn More about our Approach
           </Button>
+          </NavLink>
         </div>
       </div>
 

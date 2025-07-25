@@ -241,7 +241,7 @@ const PortfolioSection: React.FC = () => {
                         src={icon.src}
                         alt={icon.name}
                         loading="lazy"
-                        className="w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-200 hover:scale-110"
+                        className="w-10 h-10 sm:w-12 sm:h-12"
                       />
                     </div>
                   ))}

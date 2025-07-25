@@ -21,49 +21,52 @@ const ContactSection: React.FC = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === "name") {
+      const cleaned = value.replace(/[^a-zA-Z\s'-]/g, "");
+      setForm({ ...form, name: cleaned });
+    } else if (name === "phone") {
+      const cleaned = value.replace(/\D/g, "");
+      setForm({ ...form, phone: cleaned });
+    } else {
+      setForm({ ...form, [name]: value });
+    }
   };
 
-  const validateEmail = (email: string) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  };
-
-  const validatePhone = (phone: string) => {
-    const regex = /^[0-9]{10,11}$/;
-    return regex.test(phone);
-  };
+  const isValidEmail = (email: string) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!validateEmail(form.email)) {
-      toast.error("Please enter a valid email address.");
-      return;
-    }
+    const { name, email, phone, message } = form;
 
-    if (form.phone && !validatePhone(form.phone)) {
-      toast.error("Please enter a valid phone number.");
-      return;
+    if (!name.trim()) return toast.error("Full name is required.");
+    if (!isValidEmail(email)) return toast.error("Invalid email address.");
+    if (!message.trim()) return toast.error("Please enter a message.");
+    if (phone && (phone.length < 10 || phone.length > 11)) {
+      return toast.error("Phone must be 10 or 11 digits.");
     }
 
     setLoading(true);
+
     try {
       await emailjs.send(
         keys.serviceId,
         keys.templateId,
         {
-          from_name: form.name,
-          from_email: form.email,
-          phone: form.phone,
-          message: form.message,
+          from_name: name,
+          from_email: email,
+          phone,
+          message,
         },
         keys.publicKey
       );
       toast.success("Message sent successfully!");
       setForm({ name: "", email: "", phone: "", message: "" });
-    } catch (error) {
-      toast.error("Failed to send message. Please try again later.");
+    } catch {
+      toast.error("Failed to send message. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -72,10 +75,10 @@ const ContactSection: React.FC = () => {
   return (
     <section className="py-20 lg:py-40 px-8 md:px-20 lg:px-28 lg:mt-30 mt-20">
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div className="flex flex-col ">
+        <div className="flex flex-col">
           <p className="text-base md:text-lg font-semibold text-black mb-12">
             <NavLink to="/">Home {">"}</NavLink>{" "}
-            <span className="text-[#78BA9F]"> Contact</span>
+            <span className="text-[#78BA9F]">Contact</span>
           </p>
           <h2 className="text-5xl md:text-[5rem] font-semibold text-[#12334E] mb-10">
             Let’s Talk
@@ -109,15 +112,18 @@ const ContactSection: React.FC = () => {
             required
           />
           <input
-            type="number"
+            type="text"
             name="phone"
-            required
             placeholder="Phone number"
             value={form.phone}
             onChange={handleChange}
-            className="border-b border-[#999999] focus:outline-none pb-4 placeholder-[#4C4C4C] bg-transparent [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [appearance:textfield]"
+            onKeyDown={(e) => {
+              if (["e", "E", "+", "-", ".", " "].includes(e.key)) {
+                e.preventDefault();
+              }
+            }}
+            className="border-b border-[#999999] focus:outline-none pb-4 placeholder-[#4C4C4C] bg-transparent"
           />
-
           <textarea
             name="message"
             placeholder="Tell us more about your idea"
@@ -126,8 +132,7 @@ const ContactSection: React.FC = () => {
             onChange={handleChange}
             className="border-b border-[#999999] focus:outline-none pb-4 placeholder-[#4C4C4C] bg-transparent resize-none leading-none"
             required
-          ></textarea>
-
+          />
           <div className="flex justify-end">
             <button
               type="submit"
@@ -140,7 +145,7 @@ const ContactSection: React.FC = () => {
         </form>
       </div>
 
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster position="top-center" />
     </section>
   );
 };
