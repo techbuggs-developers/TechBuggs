@@ -1,33 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
-import {
-  SiReact,
-  SiNextdotjs,
-  SiAngular,
-  SiNodedotjs,
-  SiPython,
-  SiFlutter,
-  SiFigma,
-  SiAndroid,
-} from "react-icons/si";
+import { NavLink, useNavigate } from "react-router-dom";
+
+import AndroidImg from '../assets/TechStackImages/Android.png'
+import AngularImg from '../assets/TechStackImages/Angular.png'
+import FigmaImg from '../assets/TechStackImages/Figma.png'
+import FlutterImg from '../assets/TechStackImages/Flutter.png'
+import NextjsImg from '../assets/TechStackImages/Nextjs.png'
+import NodejsImg from '../assets/TechStackImages/Nodejs.png'
+import PythonImg from '../assets/TechStackImages/python.webp'
+import ReactImg from '../assets/TechStackImages/react-native.webp'
 
 const techStack = [
-  { name: "React", icon: SiReact, color: "text-sky-400" },
-  { name: "Next.js", icon: SiNextdotjs, color: "text-black" },
-  { name: "Angular", icon: SiAngular, color: "text-red-600" },
-  { name: "Node.js", icon: SiNodedotjs, color: "text-green-600" },
-  { name: "Python", icon: SiPython, color: "text-yellow-500" },
-  { name: "Flutter", icon: SiFlutter, color: "text-blue-400" },
-  { name: "Figma", icon: SiFigma, color: "text-pink-500" },
-  { name: "Android", icon: SiAndroid, color: "text-green-500" },
-  { name: "React Native", icon: SiReact, color: "text-sky-400" },
+  { name: "React", img: ReactImg, color: "text-sky-400", slug: "react" },
+  { name: "Next.js", img: NextjsImg, color: "text-black", slug: "nextjs" },
+  { name: "Angular", img: AngularImg, color: "text-[#E51536]", slug: "angular" },
+  { name: "Node.js", img: NodejsImg, color: "text-[#83CD29]", slug: "nodejs" },
+  { name: "Python", img: PythonImg, color: "text-yellow-500", slug: "python" },
+  { name: "Flutter", img: FlutterImg, color: "text-[#02539A]", slug: "flutter" },
+  { name: "Figma", img: FigmaImg, color: "text-[#FF7262]", slug: "figma" },
+  { name: "Android", img: AndroidImg, color: "text-[#97C023]", slug: "android" },
+  { name: "React Native", img: ReactImg, color: "text-sky-400", slug: "react-native" },
 ];
 
 const Technologies: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-10 sm:py-20 px-4 md:px-12 lg:px-24 bg-white pt-32 pb-20 relative overflow-hidden min-h-screen">
-      {/* Decorative gradients */}
       <div
         className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-45 z-0 hidden sm:block"
         style={{
@@ -65,21 +64,27 @@ const Technologies: React.FC = () => {
         {techStack.map((tech, index) => (
           <motion.div
             key={tech.name}
-            className="group relative flex flex-col justify-center items-center p-4 bg-white rounded-xl shadow-2xl hover:scale-110 transition-transform"
+            className="group relative flex flex-col justify-center items-center p-4 bg-white rounded-xl shadow-2xl hover:scale-110 transition-transform cursor-pointer"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
+            onClick={() => navigate(`/technologies/${tech.slug}`)}
+            tabIndex={0}
+            role="button"
+            aria-label={`View details for ${tech.name}`}
           >
             <div
-              className={`transition-all duration-500 ${tech.color} mb-2 group-hover:translate-y-3`}
+              className={`transition-all duration-500 mb-4 group-hover:translate-y-3 flex items-center justify-center rounded-full cursor-pointer`}
             >
-              <tech.icon
-                size={40}
-                className="transition-all duration-500 group-hover:scale-150 group-hover:drop-shadow-[0_0_3px_currentColor]"
+              <img
+                src={tech.img}
+                alt={tech.name}
+                className="w-10 h-10 object-contain transition-transform duration-500  group-hover:scale-120"
+                loading="lazy"
               />
             </div>
-            <p className="text-center text-sm relative z-10 transition-transform duration-500 group-hover:-translate-y-24 group-hover:scale-150">
+            <p className={`text-center text-sm font-medium relative ${tech.color} z-10 transition-transform duration-500 group-hover:-translate-y-24 group-hover:scale-120`}>
               {tech.name}
             </p>
           </motion.div>
