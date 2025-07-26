@@ -248,7 +248,7 @@ const PortfolioSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="relative w-full max-w-[360px] min-h-[400px]  mx-auto rounded-2xl overflow-hidden shadow-lg">
+              <div className="relative w-full max-w-[360px] sm:min-h-[400px]  mx-auto rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src={project.image}
                   alt={project.title}

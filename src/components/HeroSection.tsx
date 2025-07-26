@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center overflow-hidden relative px-4 bg-white">
+    <div className="lg:min-h-screen flex items-center justify-center overflow-hidden relative px-4 bg-white flex-col">
       <div
         className="absolute w-[30rem] h-[30rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-70 z-0"
         style={{
@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
     `}
       </style>
 
-      <div className="relative w-full container mx-auto px-8">
+      <div className="relative w-full container mx-auto px-8 pt-36 lg:pt-0 ">
         <div
           className={`relative z-10 flex flex-col lg:flex-row items-center  md:justify-center text-center  transition-all duration-1000 ${
             isOpen ? "lg:gap-0 2xl:gap-20 " : "gap-6"
@@ -90,7 +90,7 @@ const HeroSection: React.FC = () => {
             <div
               className={`absolute transition-transform duration-1000 ease-in-out ${
                 isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
-              }  w-[340px] h-[200px]  sm:w-[600px] sm:h-[300px] md:w-[550px] md:h-[300px] lg:w-[500px] lg:h-[300px] xl:w-[550px] xl:h-[300px]    2xl:w-[800px] 2xl:h-[400px]  bg-gray-300 rounded-[6rem] sm:rounded-full overflow-hidden shadow-2xl z-10 `}
+              } [@media(max-width:360px)]:w-[300px] [@media(max-width:360px)]:h-[180px] w-[340px] h-[200px]  sm:w-[600px] sm:h-[300px] md:w-[550px] md:h-[300px] lg:w-[500px] lg:h-[300px] xl:w-[550px] xl:h-[300px]    2xl:w-[800px] 2xl:h-[400px]  rounded-[6rem] sm:rounded-full overflow-hidden shadow-2xl z-10 `}
               style={{ transformOrigin: "center center" }}
             >
               <div className="relative w-full h-full overflow-hidden cursor-pointer">
@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             <div
-              className={`sm:h-80 h-62  w-0.5 bg-gray-200 transition-all duration-700 ease-out ${
+              className={`sm:h-80 h-62  w-0.5 bg-[#78BA9F] transition-all duration-700 ease-out ${
                 isOpen ? "scale-y-75 opacity-60" : "scale-y-100 opacity-100"
               }`}
             ></div>
@@ -127,77 +127,79 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      <AnimatePresence mode="wait">
+      <div className="flex items-center justify-around w-full pt-10 lg:pt-0 lg:absolute lg:bottom-0">
+        <AnimatePresence mode="wait">
+          {!isOpen ? (
+            <div className=" relative z-20 text-gray-400 text-sm md:text-xl font-medium hidden lg:block">
+              Turning your ideas into
+            </div>
+          ) : (
+            <motion.div
+              key="animated-text"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.9, ease: "easeInOut" }}
+              className="relative z-20 text-black text-sm md:text-xl font-medium hidden lg:block"
+            >
+              <div className="text-left space-y-1">
+                <div className="text-xl md:text-2xl text-white font-bold">
+                  Turning Your Ideas into
+                </div>
+                <div className="text-xl md:text-2xl font-bold text-white">
+                  Reality
+                </div>
+                <div className="text-sm md:text-base font-normal text-white opacity-90">
+                  Let’s create something impactful — <br /> together.
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              key="horizontal-capsule-line"
+              initial={{ width: 0, opacity: 0 }}
+              animate={{ width: boxWidth, opacity: 1 }}
+              exit={{ width: 0, opacity: 0 }}
+              transition={{ duration: 0.9, ease: "easeInOut" }}
+              className="relative h-[2px] bg-black border rounded-full z-10 hidden lg:block"
+              // style={{ transform: "translateX(-50%)" }}
+            />
+          )}
+        </AnimatePresence>
+
         {!isOpen ? (
-          <div className="absolute bottom-2 left-32 z-20 text-gray-400 text-sm md:text-xl font-medium hidden lg:block">
-            Turning your ideas into
+          <div className="relative w-80  border  z-10 text-gray-400 text-sm md:text-lg font-medium px-4 py-3 rounded-t-2xl shadow-md hidden lg:block ">
+            Helping businesses grow
           </div>
         ) : (
           <motion.div
-            key="animated-text"
-            initial={{ opacity: 0, y: 10 }}
+            key="business-card"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
-            className="absolute bottom-7 left-8 xl:left-35 2xl:left-28 z-20 text-black text-sm md:text-xl font-medium hidden lg:block"
+            transition={{ duration: 0.9 }}
+            className="relative z-20 w-64 h-40 sm:w-80 sm:h-48 bg-[#BCBCBC80] border-2 sm:border-2 shadow-xl rounded-t-2xl p-4"
           >
-            <div className="text-left space-y-1">
-              <div className="text-xl md:text-2xl text-white font-bold">
-                Turning Your Ideas into
-              </div>
-              <div className="text-xl md:text-2xl font-bold text-white">
-                Reality
-              </div>
-              <div className="text-sm md:text-base font-normal text-white opacity-90">
-                Let’s create something impactful — <br /> together.
-              </div>
+            <div className="text-sm sm:text-xl text-[#252525] font-semibold">
+              Clean Design. Smart Development. Business Growth.
+            </div>
+            <div className="flex justify-end mt-5 mr-4">
+              <NavLink to="/contact">
+                <Button
+                  className="px-3 py-1 sm:px-5 sm:py-2 bg-[#78BA9F] text-[#12334E] rounded-full shadow hover:bg-black hover:text-white transition-all text-sm sm:text-base font-semibold"
+                  variant="secondary"
+                >
+                  Build With Us
+                </Button>
+              </NavLink>
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            key="horizontal-capsule-line"
-            initial={{ width: 0, opacity: 0 }}
-            animate={{ width: boxWidth, opacity: 1 }}
-            exit={{ width: 0, opacity: 0 }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
-            className="absolute h-[2px] bg-black border rounded-full left-1/2 bottom-20 z-10 hidden lg:block"
-            style={{ transform: "translateX(-50%)" }}
-          />
-        )}
-      </AnimatePresence>
-
-      {!isOpen ? (
-        <div className="absolute w-80 bottom-0 border right-28  z-10 text-gray-400 text-sm md:text-lg font-medium px-4 py-3 rounded-t-2xl shadow-md hidden lg:block">
-          Helping businesses grow
-        </div>
-      ) : (
-        <motion.div
-          key="business-card"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.9 }}
-          className="absolute bottom-0  lg:right-8 xl:right-28 2xl:right-28 z-20 w-64 h-40 sm:w-80 sm:h-48 bg-[#BCBCBC80] border-2 sm:border-2 shadow-xl rounded-t-2xl p-4"
-        >
-          <div className="text-sm sm:text-xl text-[#252525] font-semibold">
-            Clean Design. Smart Development. Business Growth.
-          </div>
-          <div className="flex justify-end mt-5 mr-4">
-            <NavLink to="/contact">
-              <Button
-                className="px-3 py-1 sm:px-5 sm:py-2 bg-[#78BA9F] text-[#12334E] rounded-full shadow hover:bg-black hover:text-white transition-all text-sm sm:text-base font-semibold"
-                variant="secondary"
-              >
-                Build With Us
-              </Button>
-            </NavLink>
-          </div>
-        </motion.div>
-      )}
+      </div>
     </div>
   );
 };
