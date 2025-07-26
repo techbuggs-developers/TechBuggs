@@ -81,7 +81,7 @@ const CareersSection = () => {
 
   return (
     <section className="bg-white">
-      <div className=" relative overflow-hidden pt-32">
+      <div className=" relative overflow-hidden pt-28 md:pt-32 pb-0 md:pb-20">
         <div
           className="absolute w-[40rem] h-[35rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
@@ -110,7 +110,7 @@ const CareersSection = () => {
       }
     `}
         </style>
-        <div className="max-w-[69rem] mx-auto px-8 md:px-10 mt-10 pb-14 sm:pb-32 ">
+        <div className="max-w-[69rem] mx-auto px-8 md:px-10  pb-14 sm:pb-32 ">
           <p className="text-lg text- font-semibold mb-4 relative z-20">
             <NavLink to="/">Home &gt;</NavLink>{" "}
             <span className="text-[#78BA9F] font-semibold">Careers</span>

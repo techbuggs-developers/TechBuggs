@@ -33,9 +33,9 @@ const processSteps = [
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="bg-white  pt-32 pb-20 relative overflow-hidden">
+    <section className="bg-white pt-28 md:pt-32 pb-0 md:pb-20 relative overflow-hidden">
       <div
-        className="absolute w-[46rem] h-[40rem] top-[32rem] left-0 rounded-br-[100%] filter blur-3xl opacity-40 z-0 hidden sm:block"
+        className="absolute w-[46rem] h-[40rem]  top-[32rem] left-0 rounded-br-[100%] filter blur-3xl opacity-40 z-0 hidden sm:block"
         style={{
           background: "linear-gradient(to bottom, #78BA9F 50%, #12334E 50%)",
           animation: "blob 8s infinite",
@@ -62,7 +62,7 @@ const AboutSection: React.FC = () => {
       }
     `}
       </style>
-      <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10">
+      <div className="max-w-[69rem] mx-auto px-4 md:px-6 ">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> About</span>
@@ -89,9 +89,9 @@ const AboutSection: React.FC = () => {
 
         <div className="mt-8 relative z-20">
           <NavLink to="/portfolio">
-          <Button className="px-6 py-3" variant="outline">
-            Learn More about our Approach
-          </Button>
+            <Button className="px-6 py-3" variant="outline">
+              Learn More about our Approach
+            </Button>
           </NavLink>
         </div>
       </div>
@@ -123,7 +123,7 @@ const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           <div className="hidden lg:block absolute lg:top-6 lg:left-0 lg:right-[22%] h-0.5 bg-[#45BCA0] z-0" />
 
-          <div className="block sm:hidden absolute [@media(min-width:540px)_and_(max-width:640px)]:h-[19rem] h-[22rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#45BCA0] z-0" />
+          <div className="block sm:hidden absolute [@media(max-width:360px)]:h-[24rem] [@media(min-width:540px)_and_(max-width:640px)]:h-[19rem] h-[22rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#45BCA0] z-0" />
 
           {processSteps.map((step, index) => (
             <div key={index} className="flex sm:flex-col gap-4 relative">

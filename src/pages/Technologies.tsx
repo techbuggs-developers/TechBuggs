@@ -2,31 +2,51 @@ import React from "react";
 import { motion } from "framer-motion";
 import { NavLink, useNavigate } from "react-router-dom";
 
-import AndroidImg from '../assets/TechStackImages/Android.png'
-import AngularImg from '../assets/TechStackImages/Angular.png'
-import FigmaImg from '../assets/TechStackImages/Figma.png'
-import FlutterImg from '../assets/TechStackImages/Flutter.png'
-import NextjsImg from '../assets/TechStackImages/Nextjs.png'
-import NodejsImg from '../assets/TechStackImages/Nodejs.png'
-import PythonImg from '../assets/TechStackImages/python.webp'
-import ReactImg from '../assets/TechStackImages/react-native.webp'
+import AndroidImg from "../assets/TechStackImages/Android.png";
+import AngularImg from "../assets/TechStackImages/Angular.png";
+import FigmaImg from "../assets/TechStackImages/Figma.png";
+import FlutterImg from "../assets/TechStackImages/Flutter.png";
+import NextjsImg from "../assets/TechStackImages/Nextjs.png";
+import NodejsImg from "../assets/TechStackImages/Nodejs.png";
+import PythonImg from "../assets/TechStackImages/python.webp";
+import ReactImg from "../assets/TechStackImages/react-native.webp";
 
 const techStack = [
   { name: "React", img: ReactImg, color: "text-sky-400", slug: "react" },
   { name: "Next.js", img: NextjsImg, color: "text-black", slug: "nextjs" },
-  { name: "Angular", img: AngularImg, color: "text-[#E51536]", slug: "angular" },
+  {
+    name: "Angular",
+    img: AngularImg,
+    color: "text-[#E51536]",
+    slug: "angular",
+  },
   { name: "Node.js", img: NodejsImg, color: "text-[#83CD29]", slug: "nodejs" },
   { name: "Python", img: PythonImg, color: "text-yellow-500", slug: "python" },
-  { name: "Flutter", img: FlutterImg, color: "text-[#02539A]", slug: "flutter" },
+  {
+    name: "Flutter",
+    img: FlutterImg,
+    color: "text-[#02539A]",
+    slug: "flutter",
+  },
   { name: "Figma", img: FigmaImg, color: "text-[#FF7262]", slug: "figma" },
-  { name: "Android", img: AndroidImg, color: "text-[#97C023]", slug: "android" },
-  { name: "React Native", img: ReactImg, color: "text-sky-400", slug: "react-native" },
+  {
+    name: "Android",
+    img: AndroidImg,
+    color: "text-[#97C023]",
+    slug: "android",
+  },
+  {
+    name: "React Native",
+    img: ReactImg,
+    color: "text-sky-400",
+    slug: "react-native",
+  },
 ];
 
 const Technologies: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <section className="py-10 sm:py-20 px-4 md:px-12 lg:px-24 bg-white pt-32 pb-20 relative overflow-hidden min-h-screen">
+    <section className=" px-4 md:px-12 lg:px-24 bg-white pt-28 md:pt-32 pb-0 md:pb-20 relative overflow-hidden min-h-screen">
       <div
         className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-45 z-0 hidden sm:block"
         style={{
@@ -51,7 +71,7 @@ const Technologies: React.FC = () => {
           100% { transform: translate(0px, 0px) scale(1); }
         }
       `}</style>
-      <div className="max-w-6xl mx-auto px-4 md:px-6 mt-20 mb-14 md:mb-20">
+      <div className="max-w-6xl mx-auto px-4 md:px-6  mb-14 md:mb-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Technologies</span>
@@ -84,7 +104,9 @@ const Technologies: React.FC = () => {
                 loading="lazy"
               />
             </div>
-            <p className={`text-center text-sm font-medium relative ${tech.color} z-10 transition-transform duration-500 group-hover:-translate-y-24 group-hover:scale-120`}>
+            <p
+              className={`text-center text-sm font-medium relative ${tech.color} z-10 transition-transform duration-500 group-hover:-translate-y-24 group-hover:scale-120`}
+            >
               {tech.name}
             </p>
           </motion.div>
@@ -94,4 +116,4 @@ const Technologies: React.FC = () => {
   );
 };
 
-export default Technologies; 
+export default Technologies;

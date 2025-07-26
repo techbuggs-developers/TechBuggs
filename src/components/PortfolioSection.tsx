@@ -169,7 +169,7 @@ const projectsData = [
 
 const PortfolioSection: React.FC = () => {
   return (
-    <section className="pt-32 pb-20 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
+    <section className="pt-28 md:pt-32 pb-0 md:pb-20 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
       <div
         className="absolute w-[45rem] h-[45rem] top-[12rem] right-0 rounded-bl-[100%] filter blur-3xl opacity-50 z-0 hidden sm:block"
         style={{
@@ -197,7 +197,7 @@ const PortfolioSection: React.FC = () => {
         `}
       </style>
 
-      <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10 mb-14 md:mb-20">
+      <div className="max-w-[69rem] mx-auto px-4 md:px-6 mb-14 md:mb-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Portfolio</span>
@@ -248,7 +248,7 @@ const PortfolioSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="relative w-full max-w-[360px] sm:min-h-[400px]  mx-auto rounded-2xl overflow-hidden shadow-lg">
+              <div className="relative w-full max-w-[360px]   mx-auto rounded-2xl overflow-hidden shadow-lg">
                 <img
                   src={project.image}
                   alt={project.title}

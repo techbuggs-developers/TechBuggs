@@ -16,6 +16,8 @@ import ScrollToTop from "./components/common/ScrollToTop";
 import ServiceDetail from "./pages/ServiceDetail";
 import TechnologyDetail from "./pages/TechnologyDetail";
 import Technologies from "./pages/Technologies";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -56,6 +58,8 @@ const App: React.FC = () => {
           element={<TechnologyDetail />}
         />
         <Route path="/technologies" element={<Technologies />} />
+        <Route path="/termsAndCondition" element={<TermsAndConditions />} />
+        <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/comingSoon" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection />
-      <div className="relative px-5 overflow-hidden">
+      <div className="relative  overflow-hidden">
         <div
           className="absolute w-[30rem] h-[60rem] top-[15rem] right-0 rounded-bl-[100%] filter blur-3xl opacity-70 z-0"
           style={{

@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { serviceCardData as homeServices } from "../data/ServicesCardData";
 import { NavLink } from "react-router-dom";
-import ServiceCard from "../components/ServiceCard"; 
+import ServiceCard from "../components/ServiceCard";
 import type { ServiceSectionItem } from "../types/index";
 
 const Services: React.FC = () => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section className="py-10 sm:py-20 px-4 md:px-12 lg:px-24 bg-white pt-32 pb-20 relative overflow-hidden">
-
+    <section className=" px-4 md:px-12 lg:px-24 pt-28 md:pt-32 pb-0 md:pb-20 bg-white relative overflow-hidden">
       <div
         className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-45 z-0 hidden sm:block"
         style={{
@@ -27,7 +26,6 @@ const Services: React.FC = () => {
         }}
       />
 
-
       <style>
         {`
         @keyframes blob {
@@ -39,8 +37,7 @@ const Services: React.FC = () => {
         `}
       </style>
 
-
-      <div className="max-w-6xl mx-auto px-4 md:px-6 mt-20 mb-14 md:mb-20">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 mb-14 md:mb-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Services</span>
@@ -49,7 +46,6 @@ const Services: React.FC = () => {
           Our Services
         </h1>
       </div>
-
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {homeServices.map((service: ServiceSectionItem, index: number) => (

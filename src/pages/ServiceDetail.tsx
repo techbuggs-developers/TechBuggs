@@ -22,9 +22,9 @@ const ServiceDetail: React.FC = () => {
     );
   }
   return (
-    <section className="bg-white pt-32  relative overflow-hidden">
+    <section className="bg-white pt-28 md:pt-32   relative overflow-hidden">
       {/* ... Gradient blob */}
-      <div className="max-w-[69rem] mx-auto px-4 md:px-6 mt-10">
+      <div className="max-w-[69rem] mx-auto px-4 md:px-6 ">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">
             {details.breadcrumb[0].label} {"> "}
@@ -53,7 +53,7 @@ const ServiceDetail: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {/* Lines */}
           <div className="hidden lg:block absolute lg:top-6 lg:left-0 lg:right-[20%] h-0.5 bg-[#45BCA0] z-0" />
-          <div className="block sm:hidden absolute  [@media(max-width:543px)]:h-[22rem] h-[19rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#45BCA0] z-0" />
+          <div className="block sm:hidden absolute [@media(max-width:360px)]:h-[26rem]  [@media(min-width:360px)and(max-width:543px)]:h-[22rem] h-[19rem] top-[1.5rem] left-[1.5rem] w-0.5 bg-[#45BCA0] z-0" />
           {details.processSteps.map((step) => (
             <div key={step.number} className="flex sm:flex-col gap-4 relative">
               <div className="bg-[#45BCA0] text-white w-12 h-12 flex items-center justify-center rounded-md mb-4 z-10 relative flex-shrink-0">

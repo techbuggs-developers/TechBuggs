@@ -243,9 +243,7 @@ export default function Footer() {
               </p>
               <p className="text-[#C8C8C8] text-base flex items-center gap-2 mb-3">
                 <Mail className="w-5 h-5 text-white" />
-                <a href="mailto:Info@techbuggs.com">
-                  Info@techbuggs.com
-                </a>
+                <a href="mailto:Info@techbuggs.com">Info@techbuggs.com</a>
               </p>
 
               <h3 className="font-semibold text-white text-lg mb-3 relative">
@@ -271,20 +269,16 @@ export default function Footer() {
             © 2025 TechBuggs. All Rights Reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-2 text-center sm:text-right">
-            <NavLink to="/comingSoon">
-              <span className="hover:underline cursor-pointer">
-                Terms & Condition
-              </span>
+            <NavLink to="/termsAndCondition">
+              <span className="cursor-pointer">Terms & Condition</span>
             </NavLink>
             <span className="text-white h-5 w-[1px] bg-white" />
-            <NavLink to="/comingSoon">
-              <span className="hover:underline cursor-pointer">Careers</span>
+            <NavLink to="/careers">
+              <span className="cursor-pointer">Careers</span>
             </NavLink>
             <span className="text-white h-5 w-[1px] bg-white" />
-            <NavLink to="/comingSoon">
-              <span className="hover:underline cursor-pointer">
-                Privacy Policy
-              </span>
+            <NavLink to="/privacyPolicy">
+              <span className="cursor-pointer">Privacy Policy</span>
             </NavLink>
           </div>
         </div>

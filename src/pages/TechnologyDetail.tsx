@@ -21,7 +21,7 @@ const TechnologyDetail = () => {
 
   return (
     <div>
-      <div className="relative overflow-hidden ">
+      <div className="relative overflow-hidden pt-28 md:pt-32 pb-0 md:pb-20 ">
         <div
           className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
@@ -48,7 +48,7 @@ const TechnologyDetail = () => {
         }
         `}
         </style>
-        <div className="max-w-6xl px-4 mt-30 mx-auto text-left">
+        <div className="max-w-6xl px-4  mx-auto text-left">
           <p className="text-lg text-[#08162C] font-semibold">
             <NavLink to="/">Home &gt;</NavLink>
             <span className="text-[#78BA9F] font-semibold"> {tech.title}</span>

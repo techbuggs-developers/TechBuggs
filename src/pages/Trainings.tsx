@@ -62,7 +62,7 @@ const Courses: React.FC = () => {
   }, [openModal]);
 
   return (
-    <section className="min-h-screen py-12 px-4 md:px-12 lg:px-24 relative overflow-hidden z-50">
+    <section className="min-h-screen pt-28 md:pt-32 pb-0 md:pb-20 px-4 md:px-12 lg:px-24 relative overflow-hidden z-50">
       <div
         className="absolute w-[40rem] h-[35rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-35 z-0 hidden sm:block"
         style={{
@@ -90,7 +90,7 @@ const Courses: React.FC = () => {
         `}
       </style>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 mt-32 mb-14 md:mb-20">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 mb-14 md:mb-20">
         <div className="sm:text-center mb-10 relative z-20">
           <p className="text-lg text-[#08162C] font-semibold mb-4 text-left">
             <NavLink to="/">Home &gt;</NavLink>{" "}
