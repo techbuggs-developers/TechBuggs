@@ -1,15 +1,15 @@
-import SecurityImg from "../assets/security.png";
-import ComputerImg from "../assets/computer.png";
-import customerImg from "../assets/ServicesImages/customer.webp";
-import crossPlatformImg from "../assets/ServicesImages/cross-platform.webp";
-import predictiveAnalyticsImg from "../assets/ServicesImages/PredictiveAnalytics.webp";
-import dataDrivenImg from "../assets/ServicesImages/data-driven.webp";
-import onpageSeoImg from "../assets/ServicesImages/onpage-seo.webp";
-import offpageSeoImg from "../assets/ServicesImages/offpage-seo.webp";
-import designImg from "../assets/ServicesImages/design.webp";
-import prototypingImg from "../assets/ServicesImages/prototyping.webp";
-import adsImg from "../assets/ServicesImages/ads.webp";
-import contentMarketingImg from "../assets/ServicesImages/ContentMarketing.webp";
+import SecurityImg from "../assets/ServicesDetailsImages/security.webp";
+import ComputerImg from "../assets/ServicesDetailsImages/responsive-web-design.webp";
+import customerImg from "../assets/ServicesDetailsImages/customer.webp";
+import crossPlatformImg from "../assets/ServicesDetailsImages/cross-platform.webp";
+import predictiveAnalyticsImg from "../assets/ServicesDetailsImages/PredictiveAnalytics.webp";
+import dataDrivenImg from "../assets/ServicesDetailsImages/data-driven.webp";
+import onpageSeoImg from "../assets/ServicesDetailsImages/onpage-seo.webp";
+import offpageSeoImg from "../assets/ServicesDetailsImages/offpage-seo.webp";
+import designImg from "../assets/ServicesDetailsImages/design.webp";
+import prototypingImg from "../assets/ServicesDetailsImages/prototyping.webp";
+import adsImg from "../assets/ServicesDetailsImages/ads.webp";
+import contentMarketingImg from "../assets/ServicesDetailsImages/ContentMarketing.webp";
 
 export interface ServiceData {
   slug: string;
