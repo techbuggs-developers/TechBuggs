@@ -141,7 +141,7 @@ export interface Project {
   title: string;
   subtitle: string;
   description: string;
-  icons: { src: string; name: string }[];
+  icons?: { src: string; name: string }[];
   image: string;
 }
 

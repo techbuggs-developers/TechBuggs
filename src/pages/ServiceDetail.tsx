@@ -23,7 +23,24 @@ const ServiceDetail: React.FC = () => {
   }
   return (
     <section className="bg-white pt-28 md:pt-32   relative overflow-hidden">
-      {/* ... Gradient blob */}
+      <div
+        className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-50 z-0 hidden sm:block"
+        style={{
+          background: "linear-gradient(to bottom, #78BA9F 80%, #12334E 20%)",
+          animation: "blob 8s infinite",
+          animationDelay: "2s",
+        }}
+      />
+       <style>
+          {`
+      @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.05); }
+        66% { transform: translate(-20px, 20px) scale(0.95); }
+        100% { transform: translate(0px, 0px) scale(1); }
+      }
+    `}
+        </style>
       <div className="max-w-[69rem] mx-auto px-4 md:px-6 ">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">
