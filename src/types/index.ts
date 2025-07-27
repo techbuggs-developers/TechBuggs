@@ -136,3 +136,25 @@ export interface TechnologyCardProps {
   color: string;
   onClick?: () => void;
 }
+export interface Project {
+  id: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  icons: { src: string; name: string }[];
+  image: string;
+}
+
+export interface PortfolioIcon {
+  src: string;
+  name: string;
+}
+
+export interface PortfolioProject {
+  id: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  icons: PortfolioIcon[];
+  image: string;
+}

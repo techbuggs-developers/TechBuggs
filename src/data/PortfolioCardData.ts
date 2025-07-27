@@ -1,4 +1,3 @@
-import React from "react";
 import project1 from "../assets/PortfolioImages/cg.webp";
 import wordpress from "../assets/PortfolioImages/wordpress.webp";
 import node from "../assets/PortfolioImages/node-js.webp";
@@ -25,9 +24,9 @@ import naseebi from "../assets/PortfolioImages/naseebi.webp";
 import blockchain from "../assets/PortfolioImages/blockchain.webp";
 import tailwindcss from "../assets/PortfolioImages/tailwindcss.webp";
 import keycoinweb from "../assets/PortfolioImages/keycoinweb.webp";
-import { NavLink } from "react-router-dom";
+import type { PortfolioProject } from "../types";
 
-const projectsData = [
+export const projectsData: PortfolioProject[] = [
   {
     id: 1,
     title: "Cyber Guardians",
@@ -165,103 +164,4 @@ const projectsData = [
     ],
     image: keycoinweb,
   },
-];
-
-const PortfolioSection: React.FC = () => {
-  return (
-    <section className="pt-28 md:pt-32 pb-10 md:pb-20 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
-      <div
-        className="absolute w-[45rem] h-[45rem] top-[12rem] right-0 rounded-bl-[100%] filter blur-3xl opacity-50 z-0 hidden sm:block"
-        style={{
-          background: "linear-gradient(to bottom, #78BA9F 70%, #12334E 30%)",
-          animation: "blob 8s infinite",
-          animationDelay: "2s",
-        }}
-      />
-      <div
-        className="absolute w-[60rem] h-[55rem] bottom-[8rem] left-[-10rem] rounded-tr-[100%] filter blur-3xl opacity-50 z-0 hidden sm:block"
-        style={{
-          background: "linear-gradient(to bottom, #78BA9F 70%, #12334E 30%)",
-          animation: "blob 8s infinite",
-          animationDelay: "2s",
-        }}
-      />
-      <style>
-        {`
-          @keyframes blob {
-            0% { transform: translate(0px, 0px) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.05); }
-            66% { transform: translate(-20px, 20px) scale(0.95); }
-            100% { transform: translate(0px, 0px) scale(1); }
-          }
-        `}
-      </style>
-
-      <div className="max-w-[69rem] mx-auto px-4 md:px-6 mb-14 md:mb-20">
-        <p className="text-lg text-[#08162C] font-semibold mb-4">
-          <NavLink to="/">Home &gt;</NavLink>
-          <span className="text-[#78BA9F] font-semibold"> Portfolio</span>
-        </p>
-        <div className="space-y-2 relative z-20">
-          <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] mb-4">
-            Effective solutions for unique client problems
-          </h1>
-        </div>
-        <p className="mt-6 text-base md:text-lg text-[#252525] leading-relaxed max-w-3xl">
-          Our design-first approach has helped transform innovative businesses
-          like these.
-        </p>
-      </div>
-
-      <div className="space-y-12 relative z-20">
-        {projectsData.map((project) => (
-          <div
-            key={project.id}
-            id={project.title.toLowerCase().replace(/\s+/g, "-")}
-            className="flex flex-col bg-white justify-between rounded-3xl shadow-2xl p-6 md:p-10 max-w-[40rem] lg:max-w-[60rem] mx-auto"
-          >
-            <div className="flex flex-col lg:flex-row gap-10 justify-between">
-              <div className="text-left flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl mb-4 font-bold text-[#08162C]">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-[#78BA9F] font-semibold mb-4">
-                    {project.subtitle}
-                  </p>
-                  <p className="text-sm sm:text-base md:text-base text-[#252525] mb-6 max-w-[35rem]">
-                    {project.description}
-                  </p>
-                </div>
-
-                <div className="flex gap-6 justify-center lg:justify-end flex-wrap mt-4">
-                  {project.icons.map((icon, index) => (
-                    <div key={index} className="relative group">
-                      <img
-                        src={icon.src}
-                        alt={icon.name}
-                        loading="lazy"
-                        className="w-10 h-10 sm:w-12 sm:h-12"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="relative w-full max-w-[360px]   mx-auto rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
-
-export default PortfolioSection;
+]; 
