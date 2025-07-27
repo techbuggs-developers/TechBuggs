@@ -56,7 +56,7 @@ const TechnologyDetail = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="pt-20  text-center ">
+        <section className="pt-10 sm:pt-20  text-center ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

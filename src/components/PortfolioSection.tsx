@@ -169,7 +169,7 @@ const projectsData = [
 
 const PortfolioSection: React.FC = () => {
   return (
-    <section className="pt-28 md:pt-32 pb-0 md:pb-20 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
+    <section className="pt-28 md:pt-32 pb-10 md:pb-20 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
       <div
         className="absolute w-[45rem] h-[45rem] top-[12rem] right-0 rounded-bl-[100%] filter blur-3xl opacity-50 z-0 hidden sm:block"
         style={{

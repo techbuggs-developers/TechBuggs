@@ -62,7 +62,7 @@ const Courses: React.FC = () => {
   }, [openModal]);
 
   return (
-    <section className="min-h-screen pt-28 md:pt-32 pb-0 md:pb-20 px-4 md:px-12 lg:px-24 relative overflow-hidden z-50">
+    <section className="min-h-screen pt-28 md:pt-32 pb-10 md:pb-20 px-4 md:px-12 lg:px-24 relative overflow-hidden z-50">
       <div
         className="absolute w-[40rem] h-[35rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-35 z-0 hidden sm:block"
         style={{

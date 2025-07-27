@@ -621,7 +621,7 @@ const Navbar: React.FC = () => {
 
             <NavLink
               to="/contact"
-              className="text-center bg-[#78BA9F] rounded-xl px-6 py-3 flex items-center justify-center gap-2 mt-2"
+              className="text-center bg-[#45BCA0] rounded-xl px-6 py-3 flex items-center justify-center gap-2 mt-2"
               onClick={() => {
                 setMobileMenuOpen(false);
                 setMobileServicesOpen(false);
