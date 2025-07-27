@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { courseOutlines } from "../data/CourseOutlines";
 import React from "react";
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -97,4 +98,41 @@ export interface Testimonial {
   company: string;
   avatarUrl: string;
   testimonial: string;
+}
+
+export interface TrainingCourse {
+  title: string;
+  description: string;
+  duration: string;
+  level: string;
+  category: string;
+  icon: string; 
+  outlineKey: string;
+}
+
+export interface TrainingCardProps {
+  course: TrainingCourse;
+  onViewCourse: (outlineKey: string) => void;
+}
+
+export interface TrainingModalProps {
+  selectedCourse: (typeof courseOutlines)[0] | null;
+  open: boolean;
+  onClose: () => void;
+}
+
+export interface TechnologyContent {
+  slug: string;
+  title: string;
+  heroDescription: string;
+  services: { title: string; desc: string }[];
+  benefits: { title: string; desc: string }[];
+  logo: string;
+}
+
+export interface TechnologyCardProps {
+  name: string;
+  img: string;
+  color: string;
+  onClick?: () => void;
 }

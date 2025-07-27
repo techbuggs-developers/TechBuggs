@@ -1,11 +1,4 @@
-export interface TechnologyContent {
-  slug: string;
-  title: string;
-  heroDescription: string;
-  services: { title: string; desc: string }[];
-  benefits: { title: string; desc: string }[];
-  logo: string;
-}
+import type { TechnologyContent } from "../types/index";
 
 export const technologyData: TechnologyContent[] = [
   {
