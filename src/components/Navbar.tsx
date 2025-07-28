@@ -17,7 +17,7 @@ import {
   FolderKanban,
 } from "lucide-react";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/images/logo.png";
 import { servicesData } from "../data/ServicesDetailData";
 
 const Navbar: React.FC = () => {

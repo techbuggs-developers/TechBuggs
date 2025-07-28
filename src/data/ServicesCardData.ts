@@ -1,9 +1,9 @@
-import webImg from "../assets/ServiceCardImages/webDevelopment.png";
-import mobileImg from "../assets/ServiceCardImages/mobileApp.png";
-import mlImg from "../assets/ServiceCardImages/machineLearning.png";
-import seoImg from "../assets/ServiceCardImages/seo.png";
-import uiuxImg from "../assets/ServiceCardImages/Ui-Ux.png";
-import digitalMarketing from "../assets/ServiceCardImages/Digital-Marketing.png";
+import webImg from "../assets/images/ServiceCardImages/webDevelopment.png";
+import mobileImg from "../assets/images/ServiceCardImages/mobileApp.png";
+import mlImg from "../assets/images/ServiceCardImages/machineLearning.png";
+import seoImg from "../assets/images/ServiceCardImages/seo.png";
+import uiuxImg from "../assets/images/ServiceCardImages/Ui-Ux.png";
+import digitalMarketing from "../assets/images/ServiceCardImages/Digital-Marketing.png";
 import type { ServiceSectionItem } from "../types/index";
 
 export const serviceCardData: ServiceSectionItem[] = [

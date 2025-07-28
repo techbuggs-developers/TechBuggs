@@ -8,8 +8,8 @@ import {
   Phone,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import FooterBg from "../assets/footer-bg.png";
-import LogoWhite from "../assets/logo.png";
+import FooterBg from "../assets/images/footer-bg.png";
+import LogoWhite from "../assets/images/logo.png";
 import { Button } from "./common/Button";
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
@@ -264,7 +264,7 @@ export default function Footer() {
       </footer>
 
       <div className="bg-[#12334E] text-white py-4 px-4 sm:px-6 ">
-        <div className="max-w-[85rem] px-6 mx-auto flex flex-col sm:flex-row justify-between items-center text-sm gap-3">
+        <div className="max-w-[85rem]  mx-auto flex flex-col sm:flex-row justify-between items-center text-sm gap-3">
           <p className="text-center sm:text-left">
             © 2025 TechBuggs. All Rights Reserved.
           </p>

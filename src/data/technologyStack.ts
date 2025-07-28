@@ -1,11 +1,11 @@
-import AndroidImg from "../assets/TechStackImages/Android.png";
-import AngularImg from "../assets/TechStackImages/Angular.png";
-import FigmaImg from "../assets/TechStackImages/Figma.png";
-import FlutterImg from "../assets/TechStackImages/Flutter.png";
-import NextjsImg from "../assets/TechStackImages/Nextjs.png";
-import NodejsImg from "../assets/TechStackImages/Nodejs.png";
-import PythonImg from "../assets/TechStackImages/python.webp";
-import ReactImg from "../assets/TechStackImages/react-native.webp";
+import AndroidImg from "../assets/images/TechStackImages/Android.png";
+import AngularImg from "../assets/images/TechStackImages/Angular.png";
+import FigmaImg from "../assets/images/TechStackImages/Figma.png";
+import FlutterImg from "../assets/images/TechStackImages/Flutter.png";
+import NextjsImg from "../assets/images/TechStackImages/Nextjs.png";
+import NodejsImg from "../assets/images/TechStackImages/Nodejs.png";
+import PythonImg from "../assets/images/TechStackImages/python.webp";
+import ReactImg from "../assets/images/TechStackImages/react-native.webp";
 
 export const technologyStack = [
   { name: "React", img: ReactImg, color: "text-sky-400", slug: "react" },

@@ -1,7 +1,7 @@
 import type { Project } from "../types";
-import cyberGuardiansImg from "../assets/PortfolioImages/cg.webp";
-import keycoinImg from "../assets/PortfolioImages/keycoin.webp";
-import globalswiftasiaImg from "../assets/PortfolioImages/globalswiftasia.webp";
+import cyberGuardiansImg from "../assets/images/PortfolioImages/cg.webp";
+import keycoinImg from "../assets/images/PortfolioImages/keycoin.webp";
+import globalswiftasiaImg from "../assets/images/PortfolioImages/globalswiftasia.webp";
 
 export const projects: Project[] = [
   {
