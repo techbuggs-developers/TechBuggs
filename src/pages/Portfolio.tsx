@@ -34,7 +34,7 @@ const Portfolio: React.FC = () => {
         `}
       </style>
 
-      <div className="max-w-[69rem] mx-auto px-4 md:px-6 mb-14 md:mb-20">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 mb-14 md:mb-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Portfolio</span>
@@ -44,7 +44,7 @@ const Portfolio: React.FC = () => {
             Effective solutions for unique client problems
           </h1>
         </div>
-        <p className="mt-6 text-base md:text-lg text-[#252525] leading-relaxed max-w-3xl">
+        <p className="mt-6 px-3 text-base md:text-lg text-[#252525] leading-relaxed max-w-3xl">
           Our design-first approach has helped transform innovative businesses
           like these.
         </p>

@@ -37,7 +37,7 @@ const Technologies: React.FC = () => {
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Technologies</span>
         </p>
-        <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] text-center mb-12">
+        <h1 className="text-4xl md:text-[5rem] font-semibold mt-6 sm:mt-20 text-[#08162C] text-center mb-12">
           Our Technologies
         </h1>
       </div>

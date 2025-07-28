@@ -41,7 +41,7 @@ const ServiceDetail: React.FC = () => {
       }
     `}
         </style>
-      <div className="max-w-[69rem] mx-auto px-4 md:px-6 ">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 ">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">
             {details.breadcrumb[0].label} {"> "}
