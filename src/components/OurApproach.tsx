@@ -110,6 +110,8 @@ const Card: React.FC<CardProps> = ({ title, description, img }) => {
     <div
       className="w-48 h-48 bg-cover bg-center rounded-xl relative group overflow-hidden shadow-md flex flex-col justify-between p-4"
       style={{ backgroundImage: `url(${img})` }}
+      role="img"
+      aria-label="Cloud computing technology illustration"
     >
       <div className="z-10">
         <h3 className="text-lg font-semibold leading-tight text-white">

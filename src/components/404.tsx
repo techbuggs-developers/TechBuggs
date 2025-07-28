@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NotFound: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#0f172a] text-white px-6">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-[#0f172a] text-white px-6">
       <motion.h1
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -30,7 +30,7 @@ const NotFound: React.FC = () => {
       >
         Go Back Home
       </Link>
-    </div>
+    </main>
   );
 };
 

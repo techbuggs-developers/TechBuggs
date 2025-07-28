@@ -89,6 +89,8 @@ const CareersSection = () => {
             animation: "blob 8s infinite",
             animationDelay: "2s",
           }}
+          role="presentation"
+          aria-hidden="true"
         />
 
         <div
@@ -98,6 +100,8 @@ const CareersSection = () => {
             animation: "blob 8s infinite",
             animationDelay: "2s",
           }}
+          role="presentation"
+          aria-hidden="true"
         />
 
         <style>
@@ -180,6 +184,8 @@ const CareersSection = () => {
             animation: "blob 8s infinite",
             animationDelay: "2s",
           }}
+          role="presentation"
+          aria-hidden="true"
         />
 
         <div
@@ -189,6 +195,8 @@ const CareersSection = () => {
             animation: "blob 8s infinite",
             animationDelay: "2s",
           }}
+          role="presentation"
+          aria-hidden="true"
         />
 
         <style>

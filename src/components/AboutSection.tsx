@@ -41,6 +41,8 @@ const AboutSection: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
 
       <div
@@ -50,6 +52,8 @@ const AboutSection: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
 
       <style>

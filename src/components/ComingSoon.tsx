@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const ComingSoon: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1a2e40] flex items-center justify-center px-6">
-      <motion.div
+    <main className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1a2e40] flex items-center justify-center px-6">
+      <motion.section
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -15,7 +15,7 @@ const ComingSoon: React.FC = () => {
           Coming Soon
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-10">
-          We’re working hard to launch something amazing. Stay tuned!
+          We're working hard to launch something amazing. Stay tuned!
         </p>
 
         <Link
@@ -24,8 +24,8 @@ const ComingSoon: React.FC = () => {
         >
           Go Back Home
         </Link>
-      </motion.div>
-    </div>
+      </motion.section>
+    </main>
   );
 };
 

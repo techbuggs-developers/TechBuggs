@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="lg:min-h-screen flex items-center justify-center overflow-hidden relative px-4 bg-white flex-col">
+    <section className="lg:min-h-screen flex items-center justify-center overflow-hidden relative px-4 bg-white flex-col">
       <div
         className="absolute w-[30rem] h-[30rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-70 z-0"
         style={{
@@ -43,6 +43,8 @@ const HeroSection: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
 
       <div
@@ -52,6 +54,8 @@ const HeroSection: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
 
       <style>
@@ -78,12 +82,12 @@ const HeroSection: React.FC = () => {
                 : "translate-x-0"
             }`}
           >
-            <div className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
+            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
               We
-            </div>
-            <div className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
+            </h1>
+            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
               Build
-            </div>
+            </h1>
           </div>
 
           <div className="relative flex items-center justify-center">
@@ -96,7 +100,7 @@ const HeroSection: React.FC = () => {
               <div className="relative w-full h-full overflow-hidden cursor-pointer">
                 <img
                   src={bgImg}
-                  alt="Group Photo"
+                  alt="TechBuggs team working on innovative software development projects"
                   loading="lazy"
                   className="absolute top-0 left-0 w-full h-full object-fill rounded-[6rem] sm:rounded-full shadow-lg"
                 />
@@ -117,12 +121,12 @@ const HeroSection: React.FC = () => {
                 : "translate-x-0 "
             }`}
           >
-            <div className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
+            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
               What
-            </div>
-            <div className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
+            </h1>
+            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
               Matters
-            </div>
+            </h1>
           </div>
         </div>
       </div>
@@ -143,15 +147,15 @@ const HeroSection: React.FC = () => {
               className="relative z-20 text-black text-sm md:text-xl font-medium hidden lg:block"
             >
               <div className="text-left space-y-1">
-                <div className="text-xl md:text-2xl text-white font-bold">
+                <h2 className="text-xl md:text-2xl text-white font-bold">
                   Turning Your Ideas into
-                </div>
-                <div className="text-xl md:text-2xl font-bold text-white">
+                </h2>
+                <h2 className="text-xl md:text-2xl font-bold text-white">
                   Reality
-                </div>
-                <div className="text-sm md:text-base font-normal text-white opacity-90">
-                  Let’s create something impactful — <br /> together.
-                </div>
+                </h2>
+                <p className="text-sm md:text-base font-normal text-white opacity-90">
+                  Let's create something impactful — <br /> together.
+                </p>
               </div>
             </motion.div>
           )}
@@ -184,9 +188,9 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.9 }}
             className="relative z-20 w-64 h-40 sm:w-80 sm:h-48 bg-[#BCBCBC80] border-2 sm:border-2 shadow-xl rounded-t-2xl p-4"
           >
-            <div className="text-sm sm:text-xl text-[#252525] font-semibold">
+            <h3 className="text-sm sm:text-xl text-[#252525] font-semibold">
               Clean Design. Smart Development. Business Growth.
-            </div>
+            </h3>
             <div className="flex justify-end mt-5 mr-4">
               <NavLink to="/contact">
                 <Button
@@ -200,7 +204,7 @@ const HeroSection: React.FC = () => {
           </motion.div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

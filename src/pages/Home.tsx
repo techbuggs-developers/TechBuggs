@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection />
-      <div className="relative  overflow-hidden">
+      <section className="relative overflow-hidden">
         <div
           className="absolute w-[30rem] h-[60rem] top-[15rem] right-0 rounded-bl-[100%] filter blur-3xl opacity-70 z-0"
           style={{
@@ -20,6 +20,8 @@ const Home: React.FC = () => {
             animation: "blob 8s infinite",
             animationDelay: "2s",
           }}
+          role="presentation"
+          aria-hidden="true"
         />
 
         <div
@@ -29,11 +31,13 @@ const Home: React.FC = () => {
             animation: "blob 8s infinite",
             animationDelay: "2s",
           }}
+          role="presentation"
+          aria-hidden="true"
         />
 
         <style>
           {`
-      ..keyframes blob {
+      @keyframes blob {
         0% { transform: translate(0px, 0px) scale(1); }
         33% { transform: translate(30px, -50px) scale(1.05); }
         66% { transform: translate(-20px, 20px) scale(0.95); }
@@ -44,9 +48,9 @@ const Home: React.FC = () => {
         <Approach />
         <ServicesSection limit={4} />
         <ProjectsSection />
-      </div>
+      </section>
       <TestimonialCard />
-      <div className="relative overflow-hidden">
+      <section className="relative overflow-hidden">
         <div
           className="absolute w-[40rem] h-[30rem] bottom-0 left-[-10rem] rounded-tr-[100%] filter blur-3xl opacity-40 z-0"
           style={{
@@ -54,11 +58,13 @@ const Home: React.FC = () => {
             animation: "blob 8s infinite",
             animationDelay: "2s",
           }}
+          role="presentation"
+          aria-hidden="true"
         />
 
         <style>
           {`
-      ..keyframes blob {
+      @keyframes blob {
         0% { transform: translate(0px, 0px) scale(1); }
         33% { transform: translate(30px, -50px) scale(1.05); }
         66% { transform: translate(-20px, 20px) scale(0.95); }
@@ -67,7 +73,7 @@ const Home: React.FC = () => {
     `}
         </style>
         <SuccessSection />
-      </div>
+      </section>
     </>
   );
 };

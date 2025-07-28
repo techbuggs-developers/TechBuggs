@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
         >
           <img
             src={logo}
-            alt="TechBuggs Logo"
+            alt="TechBuggs company logo"
             loading="lazy"
             className="h-10 md:h-12"
           />

@@ -16,6 +16,8 @@ const Services: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
       <div
         className="absolute w-[32rem] h-[35rem] bottom-0 left-0 rounded-tr-[100%] filter blur-3xl opacity-45 z-0 hidden sm:block"
@@ -24,6 +26,8 @@ const Services: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
 
       <style>

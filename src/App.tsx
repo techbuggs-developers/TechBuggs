@@ -44,25 +44,27 @@ const App: React.FC = () => {
       <MouseAnimation />
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/trainings" element={<Trainings />} />
-        <Route path="/careers" element={<Career />} />
-        <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
-        <Route
-          path="/technologies/:technologiesSlug"
-          element={<TechnologyDetail />}
-        />
-        <Route path="/technologies" element={<Technologies />} />
-        <Route path="/termsAndCondition" element={<TermsAndConditions />} />
-        <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
-        <Route path="/comingSoon" element={<ComingSoon />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <main role="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/trainings" element={<Trainings />} />
+          <Route path="/careers" element={<Career />} />
+          <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
+          <Route
+            path="/technologies/:technologiesSlug"
+            element={<TechnologyDetail />}
+          />
+          <Route path="/technologies" element={<Technologies />} />
+          <Route path="/termsAndCondition" element={<TermsAndConditions />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/comingSoon" element={<ComingSoon />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );

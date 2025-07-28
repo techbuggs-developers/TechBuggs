@@ -247,7 +247,7 @@ const SuccessSection = () => {
             <div className="absolute inset-0 flex rotate-45 items-center justify-center z-10">
               <img
                 src={bugLogo}
-                alt="Logo-Bug"
+                alt="TechBuggs company logo featuring a bug design"
                 loading="lazy"
                 width={130}
                 height={130}

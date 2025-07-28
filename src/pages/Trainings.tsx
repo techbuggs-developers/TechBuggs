@@ -38,6 +38,8 @@ const Courses: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
       <div
         className="absolute w-[32rem] h-[35rem] bottom-0 right-0 rounded-tl-[100%] filter blur-3xl opacity-35 z-0 hidden sm:block"
@@ -46,6 +48,8 @@ const Courses: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
       <style>
         {`

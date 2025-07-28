@@ -14,6 +14,8 @@ const Portfolio: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
       <div
         className="absolute w-[60rem] h-[55rem] bottom-[8rem] left-[-10rem] rounded-tr-[100%] filter blur-3xl opacity-50 z-0 hidden sm:block"
@@ -22,6 +24,8 @@ const Portfolio: React.FC = () => {
           animation: "blob 8s infinite",
           animationDelay: "2s",
         }}
+        role="presentation"
+        aria-hidden="true"
       />
       <style>
         {`

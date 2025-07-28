@@ -59,6 +59,8 @@ export default function Footer() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${FooterBg})` }}
+          role="img"
+          aria-label="Footer background design"
         ></div>
         <div
           className="absolute w-full h-[40rem] bottom-0 left-0  filter blur-3xl opacity-40 z-0"
@@ -79,7 +81,7 @@ export default function Footer() {
               >
                 <img
                   src={LogoWhite}
-                  alt="Logo"
+                  alt="TechBuggs company logo"
                   loading="lazy"
                   className="sm:h-28 sm:w-96 h-20 w-64 "
                 />
