@@ -83,6 +83,9 @@ const Navbar: React.FC = () => {
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
+            setMobileMenuOpen(false);
+            setMobileServicesOpen(false);
+            setMobileTechOpen(false);
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
@@ -402,16 +405,24 @@ const Navbar: React.FC = () => {
             </NavLink>
 
             <div>
-              <button
-                onClick={() => setMobileTechOpen(!mobileTechOpen)}
-                className="flex items-center justify-between w-full px-4 py-3 text-left font-medium text-gray-700 hover:bg-gray-100 rounded-xl"
-              >
-                <span className="flex items-center gap-2">
-                  <Code2 size={20} className="text-[#45BCA0]" />
-                  Technologies
-                </span>
+              <button className="flex items-center justify-between w-full px-4 py-3 text-left font-medium text-gray-700 hover:bg-gray-100 rounded-xl">
+                <NavLink
+                  to="/technologies"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setMobileServicesOpen(false);
+                    setMobileTechOpen(false);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <span className="flex items-center gap-2">
+                    <Code2 size={20} className="text-[#45BCA0]" />
+                    Technologies
+                  </span>
+                </NavLink>
                 <ChevronDown
                   size={16}
+                  onClick={() => setMobileTechOpen(!mobileTechOpen)}
                   className={`${
                     mobileTechOpen ? "rotate-180" : ""
                   } transition-transform`}
@@ -523,16 +534,24 @@ const Navbar: React.FC = () => {
             </div>
 
             <div>
-              <button
-                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex items-center justify-between w-full px-4 py-3 text-left font-medium text-gray-700 hover:bg-gray-100 rounded-xl"
-              >
-                <span className="flex items-center gap-2">
-                  <Globe size={20} className="text-[#45BCA0]" />
-                  Our Services
-                </span>
+              <button className="flex items-center justify-between w-full px-4 py-3 text-left font-medium text-gray-700 hover:bg-gray-100 rounded-xl">
+                <NavLink
+                  to="/services"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setMobileServicesOpen(false);
+                    setMobileTechOpen(false);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <span className="flex items-center gap-2">
+                    <Globe size={20} className="text-[#45BCA0]" />
+                    Our Services
+                  </span>
+                </NavLink>
                 <ChevronDown
                   size={16}
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                   className={`${
                     mobileServicesOpen ? "rotate-180" : ""
                   } transition-transform`}

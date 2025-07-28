@@ -7,7 +7,7 @@ import { technologyStack } from "../data/technologyStack";
 const Technologies: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <section className=" px-4 md:px-12 lg:px-24 bg-white pt-28 md:pt-32 pb-0 md:pb-20 relative overflow-hidden min-h-screen">
+    <section className=" px-4 md:px-12 lg:px-24 bg-white pt-28 md:pt-32 pb-10 md:pb-20 relative overflow-hidden min-h-screen">
       <div
         className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-bl-[100%] filter blur-3xl opacity-45 z-0 hidden sm:block"
         style={{
@@ -41,7 +41,7 @@ const Technologies: React.FC = () => {
           Our Technologies
         </h1>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-5 sm:gap-x-12 gap-y-20 w-full max-w-6xl mx-auto relative overflow-visible z-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-5 sm:gap-x-12 gap-y-14 sm:gap-y-20 w-full max-w-6xl mx-auto relative overflow-visible z-10">
         {technologyStack.map((tech, index) => (
           <motion.div
             key={tech.name}
