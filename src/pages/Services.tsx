@@ -41,7 +41,7 @@ const Services: React.FC = () => {
         `}
       </style>
 
-      <div className="max-w-6xl mx-auto px-4 mb-14 md:mb-20">
+      <div className="max-w-6xl mx-auto px-4 mb-14 md:mb-20 relative z-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Services</span>

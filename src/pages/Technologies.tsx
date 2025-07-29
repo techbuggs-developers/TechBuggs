@@ -36,7 +36,7 @@ const Technologies: React.FC = () => {
           100% { transform: translate(0px, 0px) scale(1); }
         }
       `}</style>
-      <div className="max-w-6xl mx-auto px-4 md:px-6  mb-14 md:mb-20">
+      <div className="max-w-6xl mx-auto px-4 md:px-6  mb-14 md:mb-20  relative z-20">
         <p className="text-lg text-[#08162C] font-semibold mb-4">
           <NavLink to="/">Home &gt;</NavLink>
           <span className="text-[#78BA9F] font-semibold"> Technologies</span>
