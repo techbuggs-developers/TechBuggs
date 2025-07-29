@@ -4,7 +4,7 @@ import FigmaImg from "../assets/images/TechStackImages/Figma.webp";
 import FlutterImg from "../assets/images/TechStackImages/Flutter.webp";
 import NextjsImg from "../assets/images/TechStackImages/Next-js.webp";
 import NodejsImg from "../assets/images/TechStackImages/Nodejs.webp";
-import PythonImg from "../assets/images/TechStackImages/python.webp";
+import PythonImg from "../assets/images/TechStackImages/PythonImg.webp";
 import ReactImg from "../assets/images/TechStackImages/react-native.webp";
 
 export const technologyStack = [
