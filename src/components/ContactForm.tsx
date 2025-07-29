@@ -122,6 +122,7 @@ const ContactForm: React.FC = () => {
           type="submit"
           className="bg-[#15847A] text-white font-semibold px-6 py-2 rounded-full cursor-pointer transition-colors hover:bg-[#0f6b5e]"
           disabled={loading}
+          aria-label="Send contact message"
         >
           {loading ? "Sending..." : "Send"}
         </button>

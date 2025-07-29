@@ -73,6 +73,7 @@ const OurApproach: React.FC = () => {
           <Button
             className="text-nowrap relative z-20  px-4 py-2"
             variant="outline"
+            aria-label="Learn more about our approach to digital solutions"
           >
             Learn More about our Approach
           </Button>
@@ -124,6 +125,7 @@ const Card: React.FC<CardProps> = ({ title, description, img }) => {
           <Button
             className="px-2 py-1 bg-[#78BA9F] text-[#08162C] text-xs rounded-full shadow-md cursor-pointer"
             variant="secondary"
+            aria-label={`Explore more about ${title}`}
           >
             Explore More
           </Button>

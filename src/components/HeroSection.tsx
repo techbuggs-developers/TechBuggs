@@ -196,6 +196,7 @@ const HeroSection: React.FC = () => {
                 <Button
                   className="px-3 py-1 sm:px-5 sm:py-2 bg-[#78BA9F] text-[#12334E] rounded-full shadow hover:bg-black hover:text-white transition-all text-sm sm:text-base font-semibold"
                   variant="secondary"
+                  aria-label="Start building your project with us"
                 >
                   Build With Us
                 </Button>

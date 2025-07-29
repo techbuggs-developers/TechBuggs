@@ -39,6 +39,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ limit }) => {
           <Button
             className="flex items-center cursor-pointer text-sm sm:text-lg md:text-xl font-semibold group transition-colors"
             variant="ghost"
+            aria-label="View all services"
           >
             SEE ALL
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">

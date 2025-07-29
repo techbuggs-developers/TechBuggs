@@ -93,7 +93,11 @@ const AboutSection: React.FC = () => {
 
         <div className="mt-8 relative z-20">
           <NavLink to="/portfolio">
-            <Button className="px-6 py-3" variant="outline">
+            <Button 
+              className="px-6 py-3" 
+              variant="outline"
+              aria-label="Learn more about our approach to digital solutions"
+            >
               Learn More about our Approach
             </Button>
           </NavLink>

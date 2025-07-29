@@ -92,7 +92,11 @@ const ServiceDetail: React.FC = () => {
 
         <div className="mt-12 mx-auto w-full flex justify-center">
           <NavLink to="/contact-us">
-            <Button className="px-6 py-3" variant="outline">
+            <Button 
+              className="px-6 py-3" 
+              variant="outline"
+              aria-label="Contact us about this service"
+            >
               Contact Us
             </Button>
           </NavLink>

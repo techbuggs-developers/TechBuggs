@@ -142,6 +142,7 @@ const CareersSection = () => {
               onClick={scrollToOpenings}
               className="px-6 py-3  relative z-20 "
               variant="outline"
+              aria-label="View all current job openings"
             >
               See All Openings
             </Button>

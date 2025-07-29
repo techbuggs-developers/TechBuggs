@@ -91,6 +91,15 @@ const TestimonialCard: React.FC = () => {
         <div
           onClick={() => sliderRef.current?.slickPrev()}
           className="absolute -bottom-16 [@media(min-width:1100px)_and_(max-width:1280px)]:left-8 [@media(min-width:1280px)_and_(max-width:1350px)]:left-8  lg:left-2 xl:left-23 [@media(min-width:1535px)_and_(max-width:1542px)]:left-18  2xl:left-42 z-50 transform -translate-y-1/2 cursor-pointer w-10 h-10 border-2 border-[#555555] text-[#08162C] rounded-full shadow-md flex items-center justify-center"
+          role="button"
+          tabIndex={0}
+          aria-label="Previous testimonial"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              sliderRef.current?.slickPrev();
+            }
+          }}
         >
           <FaArrowLeft className="text-xl" />
         </div>
@@ -98,6 +107,15 @@ const TestimonialCard: React.FC = () => {
         <div
           onClick={() => sliderRef.current?.slickNext()}
           className="absolute -bottom-16 lg:right-2 [@media(min-width:1100px)_and_(max-width:1280px)]:right-8 [@media(min-width:1536px)_and_(max-width:1545px)]:right-26 [@media(min-width:1280px)_and_(max-width:1350px)]:right-14 xl:right-25 2xl:right-50 z-50 transform -translate-y-1/2 cursor-pointer w-10 h-10 border-2 border-[#08162C] text-[#12334E] rounded-full shadow-md flex items-center justify-center"
+          role="button"
+          tabIndex={0}
+          aria-label="Next testimonial"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              sliderRef.current?.slickNext();
+            }
+          }}
         >
           <FaArrowRight className="text-xl" />
         </div>

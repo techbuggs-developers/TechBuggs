@@ -98,6 +98,7 @@ const Courses: React.FC = () => {
           <Button
             className="text-nowrap  bg-white relative z-20  px-4 py-2"
             variant="outline"
+            aria-label="Register for training courses"
           >
             Register Now
           </Button>

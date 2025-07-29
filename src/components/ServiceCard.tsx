@@ -82,6 +82,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             className="text-inherit"
             style={{ display: "inline-flex", alignItems: "center" }}
             onClick={(e) => e.stopPropagation()}
+            aria-label={`Learn more about ${service.title.join(" ")}`}
           >
             {service.description}
           </NavLink>

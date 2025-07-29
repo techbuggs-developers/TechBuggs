@@ -27,6 +27,7 @@ export const TrainingCard: React.FC<TrainingCardProps> = ({ course, onViewCourse
       <button
         className="w-full mt-auto cursor-pointer text-[#78BA9F] border border-[#78BA9F] bg-white font-semibold group-hover:bg-[#45BCA0]/10 group-hover:text-[#08162C] transition-colors py-2 px-4 rounded-md"
         onClick={() => onViewCourse(course.outlineKey)}
+        aria-label={`View details for ${course.title} course`}
       >
         View Course
       </button>

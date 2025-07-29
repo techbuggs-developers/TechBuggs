@@ -38,6 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <Button
             className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer"
             variant="ghost"
+            aria-label={`View details for ${project.title}`}
           >
             <ArrowRight className="w-8 h-8 sm:w-10 sm:h-10 p-0.5 bg-[#191A23] rounded-full text-[#45BCA0] rotate-[-30deg]" />
           </Button>

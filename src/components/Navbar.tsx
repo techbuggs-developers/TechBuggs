@@ -134,6 +134,7 @@ const Navbar: React.FC = () => {
                 className={`transition-transform duration-200 mt-1 ${
                   techDropdownOpen ? "rotate-180" : ""
                 }`}
+                aria-hidden="true"
               />
             </NavLink>
 
@@ -273,6 +274,7 @@ const Navbar: React.FC = () => {
                 className={`transition-transform mt-1 duration-200 ${
                   servicesDropdownOpen ? "rotate-180" : ""
                 }`}
+                aria-hidden="true"
               />
             </NavLink>
             {servicesDropdownOpen && (
@@ -426,6 +428,15 @@ const Navbar: React.FC = () => {
                   className={`${
                     mobileTechOpen ? "rotate-180" : ""
                   } transition-transform`}
+                  aria-label={`${mobileTechOpen ? 'Collapse' : 'Expand'} technologies menu`}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setMobileTechOpen(!mobileTechOpen);
+                    }
+                  }}
                 />
               </button>
               {mobileTechOpen && (
@@ -555,6 +566,15 @@ const Navbar: React.FC = () => {
                   className={`${
                     mobileServicesOpen ? "rotate-180" : ""
                   } transition-transform`}
+                  aria-label={`${mobileServicesOpen ? 'Collapse' : 'Expand'} services menu`}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setMobileServicesOpen(!mobileServicesOpen);
+                    }
+                  }}
                 />
               </button>
               {mobileServicesOpen && (

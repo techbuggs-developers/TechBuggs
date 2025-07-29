@@ -114,6 +114,7 @@ export default function Footer() {
                   className="w-full sm:w-40 px-6 py-4 rounded-md"
                   variant="primary"
                   onClick={handleSubscribe}
+                  aria-label="Subscribe to our newsletter"
                 >
                   SUBSCRIBE
                 </Button>
@@ -139,24 +140,28 @@ export default function Footer() {
                 <a
                   href="https://www.linkedin.com/company/techbuggs/"
                   target="blank"
+                  aria-label="Visit our LinkedIn page"
                 >
                   <Linkedin />
                 </a>
                 <a
                   href="https://www.facebook.com/people/Techbuggs/61578437660327/"
                   target="blank"
+                  aria-label="Visit our Facebook page"
                 >
                   <Facebook />
                 </a>
                 <a
                   href="https://www.youtube.com/@Techbuggsofficial"
                   target="blank"
+                  aria-label="Visit our YouTube channel"
                 >
                   <Youtube />
                 </a>
                 <a
                   href="https://www.instagram.com/techbuggsofficial?igsh=MTlvbHNtMHZyNmtuaQ=="
                   target="blank"
+                  aria-label="Visit our Instagram page"
                 >
                   <Instagram />
                 </a>
