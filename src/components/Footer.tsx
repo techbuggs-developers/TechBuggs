@@ -8,8 +8,8 @@ import {
   Phone,
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import FooterBg from "../assets/images/footer-bg.png";
-import LogoWhite from "../assets/images/logo.png";
+import FooterBg from "../assets/images/footer-bg.webp";
+import LogoWhite from "../assets/images/logo.webp";
 import { Button } from "./common/Button";
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";

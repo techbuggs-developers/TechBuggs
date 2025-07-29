@@ -1,9 +1,9 @@
-import AndroidImg from "../assets/images/TechStackImages/Android.png";
-import AngularImg from "../assets/images/TechStackImages/Angular.png";
-import FigmaImg from "../assets/images/TechStackImages/Figma.png";
-import FlutterImg from "../assets/images/TechStackImages/Flutter.png";
-import NextjsImg from "../assets/images/TechStackImages/Nextjs.png";
-import NodejsImg from "../assets/images/TechStackImages/Nodejs.png";
+import AndroidImg from "../assets/images/TechStackImages/Android.webp";
+import AngularImg from "../assets/images/TechStackImages/Angular.webp";
+import FigmaImg from "../assets/images/TechStackImages/Figma.webp";
+import FlutterImg from "../assets/images/TechStackImages/Flutter.webp";
+import NextjsImg from "../assets/images/TechStackImages/Nextjs.webp";
+import NodejsImg from "../assets/images/TechStackImages/Nodejs.webp";
 import PythonImg from "../assets/images/TechStackImages/python.webp";
 import ReactImg from "../assets/images/TechStackImages/react-native.webp";
 

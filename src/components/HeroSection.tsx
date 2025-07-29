@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import bgImg from "../assets/images/HeroBg.png";
+import bgImg from "../assets/images/HeroBg.webp";
 import { Button } from "./common/Button";
 import { NavLink } from "react-router-dom";
 

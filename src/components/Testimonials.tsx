@@ -9,7 +9,7 @@ import type { Testimonial } from "../types/index";
 
 import Client1 from "../assets/images/TestimonialImages/Client1.webp"
 import Client2 from "../assets/images/TestimonialImages/Client2.webp"
-import Client3 from "../assets/images/TestimonialImages/Client3.jpeg"
+import Client3 from "../assets/images/TestimonialImages/Client3.webp"
 import Client4 from "../assets/images/TestimonialImages/Client4.webp"
 
 const testimonials: Testimonial[] = [

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import img from "../assets/images/cloud computing 1.png";
+import img from "../assets/images/cloud computing 1.webp";
 import { Button } from "./common/Button";
 import type { CardProps } from "../types/index";
 

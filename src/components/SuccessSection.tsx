@@ -1,6 +1,6 @@
 import React from "react";
 import { User, Clock, Users, CheckCircle } from "lucide-react";
-import bugLogo from "../assets/images/bugLogo.png";
+import bugLogo from "../assets/images/bugLogo.webp";
 
 import {
   FaReact,
