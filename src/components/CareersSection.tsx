@@ -150,7 +150,7 @@ const CareersSection = () => {
       </div>
 
       <div className="bg-[#12334E]  text-white  ">
-        <div className="max-w-6xl mx-auto py-28 px-4">
+        <div className="max-w-6xl mx-auto py-16 sm:py-28 px-4">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
             Who do we look for?
           </h2>
@@ -210,8 +210,8 @@ const CareersSection = () => {
     `}
         </style>
 
-        <div className="py-14 sm:py-20 px-4 max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[#08162C]">
+        <div className="py-14 sm:py-20 px-4 max-w-6xl mx-auto sm:mt-20">
+          <h2 className="text-3xl md:text-5xl font-bold mb-10 sm:mb-16 text-[#08162C]">
             Inside Techbuggs
           </h2>
 
@@ -229,7 +229,7 @@ const CareersSection = () => {
         </div>
 
         <div
-          className="mt-10 sm:mt-20 px-8 md:px-10 relative z-20 pb-10"
+          className="sm:mt-20 px-4 md:px-10 relative z-20 pb-10"
           ref={openingsRef}
         >
           <div className="max-w-[69rem] mx-auto">

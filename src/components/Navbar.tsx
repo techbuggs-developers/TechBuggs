@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
 
         <nav className="hidden [@media(min-width:1100px)]:flex items-center space-x-6">
           <NavLink
-            to="/about"
+            to="/about-us"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className={({ isActive }) =>
               `text-lg font-medium transition-colors ${
@@ -324,7 +324,7 @@ const Navbar: React.FC = () => {
           </NavLink>
 
           <NavLink
-            to="/trainings"
+            to="/training-courses"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className={({ isActive }) =>
               `text-lg font-medium transition-colors ${
@@ -352,7 +352,7 @@ const Navbar: React.FC = () => {
           </NavLink>
 
           <NavLink
-            to="/contact"
+            to="/contact-us"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className={({ isActive }) =>
               `rounded-full px-4 py-2 transition-colors duration-200 text-base font-medium text-nowrap ${
@@ -391,7 +391,7 @@ const Navbar: React.FC = () => {
         >
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <NavLink
-              to="/about"
+              to="/about-us"
               className="flex items-center gap-2 font-medium py-3 px-4 rounded-xl text-gray-700 hover:bg-gray-100"
               onClick={() => {
                 setMobileMenuOpen(false);
@@ -611,7 +611,7 @@ const Navbar: React.FC = () => {
             </NavLink>
 
             <NavLink
-              to="/trainings"
+              to="/training-courses"
               className="flex items-center gap-2 font-medium py-3 px-4 rounded-xl text-gray-700 hover:bg-gray-100"
               onClick={() => {
                 setMobileMenuOpen(false);
@@ -639,7 +639,7 @@ const Navbar: React.FC = () => {
             </NavLink>
 
             <NavLink
-              to="/contact"
+              to="/contact-us"
               className="text-center bg-[#45BCA0] rounded-xl px-6 py-3 flex items-center justify-center gap-2 mt-2"
               onClick={() => {
                 setMobileMenuOpen(false);

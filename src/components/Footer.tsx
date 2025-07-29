@@ -15,11 +15,11 @@ import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 
 const quickLinks = [
-  { name: "About Us", path: "/about" },
+  { name: "About Us", path: "/about-us" },
   { name: "Portfolio", path: "/portfolio" },
   { name: "Careers", path: "/careers" },
-  { name: "Trainings", path: "/trainings" },
-  { name: "Contact Us", path: "/contact" },
+  { name: "Trainings", path: "/training-courses" },
+  { name: "Contact Us", path: "/contact-us" },
 ];
 
 const services = [
@@ -70,7 +70,7 @@ export default function Footer() {
         />
         <div className="absolute inset-0 bg-[#12334E]/50"></div>
 
-        <div className="max-w-[85rem] mx-auto px-6 pt-10 space-y-10 relative">
+        <div className="max-w-[85rem] mx-auto px-4 pt-10 space-y-10 relative">
           <div className="flex flex-col lg:flex-row justify-between gap-6 items-start md:items-center border-b border-gray-700 pb-10">
             <div className="mx-auto md:mx-0">
               <NavLink
@@ -271,7 +271,7 @@ export default function Footer() {
             © 2025 TechBuggs. All Rights Reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-2 text-center sm:text-right">
-            <NavLink to="/termsAndCondition">
+            <NavLink to="/terms-and-conditions">
               <span className="cursor-pointer">Terms & Condition</span>
             </NavLink>
             <span className="text-white h-5 w-[1px] bg-white" />
@@ -279,7 +279,7 @@ export default function Footer() {
               <span className="cursor-pointer">Careers</span>
             </NavLink>
             <span className="text-white h-5 w-[1px] bg-white" />
-            <NavLink to="/privacyPolicy">
+            <NavLink to="/privacy-policy">
               <span className="cursor-pointer">Privacy Policy</span>
             </NavLink>
           </div>

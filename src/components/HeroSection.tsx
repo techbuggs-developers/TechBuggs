@@ -192,7 +192,7 @@ const HeroSection: React.FC = () => {
               Clean Design. Smart Development. Business Growth.
             </h3>
             <div className="flex justify-end mt-5 mr-4">
-              <NavLink to="/contact">
+              <NavLink to="/contact-us">
                 <Button
                   className="px-3 py-1 sm:px-5 sm:py-2 bg-[#78BA9F] text-[#12334E] rounded-full shadow hover:bg-black hover:text-white transition-all text-sm sm:text-base font-semibold"
                   variant="secondary"
