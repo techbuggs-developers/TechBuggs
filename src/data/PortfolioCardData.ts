@@ -5,7 +5,7 @@ import mongodb from "../assets/images/TechStackImages/mongodb.webp";
 import aws from "../assets/images/TechStackImages/aws.webp";
 import react from "../assets/images/TechStackImages/react-native.webp";
 import python from "../assets/images/TechStackImages/python.webp";
-import nextjs from "../assets/images/TechStackImages/nextjs.webp";
+import nextjs from "../assets/images/TechStackImages/Next-js.webp";
 import takenote from "../assets/images/PortfolioImages/takenote.webp";
 import italplastick from "../assets/images/PortfolioImages/italplastick.webp";
 import php from "../assets/images/TechStackImages/php.webp";
