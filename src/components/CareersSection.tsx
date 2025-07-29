@@ -81,7 +81,7 @@ const CareersSection = () => {
 
   return (
     <section className="bg-white">
-      <div className=" relative overflow-hidden pt-28 md:pt-32 pb-0 md:pb-20">
+      <div className=" relative overflow-hidden pt-28 md:pt-32 pb-0 md:pb-14">
         <div
           className="absolute w-[40rem] h-[35rem] top-0 left-0 rounded-br-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
@@ -114,7 +114,7 @@ const CareersSection = () => {
       }
     `}
         </style>
-        <div className="max-w-6xl mx-auto px-5  pb-14 sm:pb-32 ">
+        <div className="max-w-6xl mx-auto px-5  pb-10">
           <p className="text-lg text- font-semibold mb-4 relative z-20">
             <NavLink to="/">Home &gt;</NavLink>{" "}
             <span className="text-[#78BA9F] font-semibold">Careers</span>
@@ -210,7 +210,7 @@ const CareersSection = () => {
     `}
         </style>
 
-        <div className="py-14 sm:py-20 px-4 max-w-6xl mx-auto sm:mt-20">
+        <div className="py-14 sm:py-20 px-4 max-w-6xl mx-auto ">
           <h2 className="text-3xl md:text-5xl font-bold mb-10 sm:mb-16 text-[#08162C]">
             Inside Techbuggs
           </h2>
@@ -229,7 +229,7 @@ const CareersSection = () => {
         </div>
 
         <div
-          className="sm:mt-20 px-4 md:px-10 relative z-20 pb-10"
+          className="sm:mt-10 px-4 md:px-10 relative z-20 pb-10"
           ref={openingsRef}
         >
           <div className="max-w-[69rem] mx-auto">

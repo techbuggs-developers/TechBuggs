@@ -7,13 +7,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import type { Testimonial } from "../types/index";
 
+import Client1 from "../assets/images/TestimonialImages/Client1.webp"
+import Client2 from "../assets/images/TestimonialImages/Client2.webp"
+import Client3 from "../assets/images/TestimonialImages/Client3.jpeg"
+import Client4 from "../assets/images/TestimonialImages/Client4.webp"
+
 const testimonials: Testimonial[] = [
   {
     name: "Sarah Johnson",
     role: "CTO",
     company: "InnovateTech Inc",
-    avatarUrl:
-      "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    avatarUrl: Client1,
     testimonial:
       "TechBuggs transformed our outdated systems into a streamlined, efficient platform. Their team's technical expertise and commitment to our vision exceeded our expectations.",
   },
@@ -21,8 +25,7 @@ const testimonials: Testimonial[] = [
     name: "Mark Reynolds",
     role: "CEO",
     company: "Global Logistics",
-    avatarUrl:
-      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    avatarUrl: Client2,
     testimonial:
       "The supply chain management system developed by TechBuggs has increased our operational efficiency by 40%. Their solution was tailored perfectly to our complex requirements.",
   },
@@ -30,8 +33,7 @@ const testimonials: Testimonial[] = [
     name: "Jennifer Wu",
     role: "Product Manager",
     company: "HealthFirst",
-    avatarUrl:
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    avatarUrl: Client3,
     testimonial:
       "Working with TechBuggs on our healthcare platform was seamless. They understood our industry needs and delivered a HIPAA-compliant solution on time and within budget.",
   },
@@ -39,8 +41,7 @@ const testimonials: Testimonial[] = [
     name: "David Alvarez",
     role: "Director of Digital",
     company: "Retail Solutions",
-    avatarUrl:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    avatarUrl: Client4,
     testimonial:
       "The e-commerce platform developed by TechBuggs helped us increase our conversion rates by 35% and provided valuable customer insights that transformed our business strategy.",
   },
@@ -56,7 +57,7 @@ const TestimonialCard: React.FC = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3500,
     arrows: false,
     responsive: [
       {

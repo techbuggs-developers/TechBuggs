@@ -1,4 +1,12 @@
 import type { TechnologyContent } from "../types/index";
+import AndroidImg from "../assets/images/TechStackImages/Android.png";
+import AngularImg from "../assets/images/TechStackImages/Angular.png";
+import FigmaImg from "../assets/images/TechStackImages/Figma.png";
+import FlutterImg from "../assets/images/TechStackImages/Flutter.png";
+import NextjsImg from "../assets/images/TechStackImages/Nextjs.png";
+import NodejsImg from "../assets/images/TechStackImages/Nodejs.png";
+import PythonImg from "../assets/images/TechStackImages/Python.png";
+import ReactImg from "../assets/images/TechStackImages/React.png";
 
 export const technologyData: TechnologyContent[] = [
   {
@@ -6,7 +14,7 @@ export const technologyData: TechnologyContent[] = [
     title: "React Development",
     heroDescription:
       "React is a widely-used JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently update the user interface as the underlying data changes. With its declarative syntax and virtual DOM, React simplifies the process of building interactive and responsive web applications.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    logo: ReactImg,
     services: [
       { title: "React.js development from scratch", desc: "We build tailor-made React applications from scratch, aligning them with your specific business requirements and objectives." },
       { title: "Custom React.js development", desc: "Our team creates reusable and efficient React components that can be seamlessly integrated into your existing applications." },
@@ -25,7 +33,7 @@ export const technologyData: TechnologyContent[] = [
     title: "Node.js Development",
     heroDescription:
       "Node.js is a powerful JavaScript runtime built on Chrome's V8 engine. It enables developers to build scalable and high-performance server-side applications. With its event-driven, non-blocking I/O model, Node.js is ideal for real-time apps and APIs.",
-    logo: "https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png",
+    logo: NodejsImg,
     services: [
       { title: "Custom Backend Development", desc: "We develop custom backend applications and APIs using Node.js, tailored to your specific business requirements and scalability needs." },
       { title: "RESTful API Development", desc: "We build robust and scalable RESTful APIs using Node.js and popular frameworks like Express.js, allowing seamless integration with frontend applications and third-party services." },
@@ -44,7 +52,7 @@ export const technologyData: TechnologyContent[] = [
     title: "Python Development",
     heroDescription:
       "Python is a versatile, high-level programming language known for its simplicity and readability. It's widely used for web development, data science, AI, and automation — enabling rapid development of robust applications.",
-    logo: "https://www.python.org/static/community_logos/python-logo-generic.svg",
+    logo: PythonImg,
     services: [
       { title: "Custom Backend Development", desc: "We develop custom backend systems and web applications using Python, tailored to your specific business requirements and objectives." },
       { title: "API Development", desc: "We build robust and secure APIs using Python frameworks like Django and Flask, allowing seamless communication between different systems and enabling integration with external services." },
@@ -63,7 +71,7 @@ export const technologyData: TechnologyContent[] = [
     title: "Next.js Development",
     heroDescription:
       "Build fast, scalable, and SEO-friendly web applications using Next.js – the leading React framework for production-grade solutions.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+    logo: NextjsImg,
     services: [
       { title: "Custom Next.js Development", desc: "We leverage the power of Next.js to build scalable and high-performance web applications tailored to your specific business needs." },
       { title: "Server-Side Rendering (SSR)", desc: "Our team utilizes Next.js to implement server-side rendering, ensuring faster page loads and improved search engine visibility." },
@@ -82,7 +90,7 @@ export const technologyData: TechnologyContent[] = [
     title: "Angular Development",
     heroDescription:
       "Build robust, scalable web applications with Angular – the platform for building mobile and desktop web applications using TypeScript.",
-    logo: "https://angular.io/assets/images/logos/angular/angular.svg",
+    logo: AngularImg,
     services: [
       { title: "Custom Angular Development", desc: "We develop customized Angular applications tailored to your specific business requirements, delivering robust and scalable solutions." },
       { title: "Angular Component Development", desc: "Our team creates reusable and modular Angular components that can be seamlessly integrated into your applications, promoting code reusability and efficiency." },
@@ -101,7 +109,7 @@ export const technologyData: TechnologyContent[] = [
     title: "Figma Design",
     heroDescription:
       "Create beautiful, collaborative designs with Figma – the modern interface design tool that brings teams together.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+    logo: FigmaImg,
     services: [
       { title: "User Research and UX Strategy", desc: "We conduct user research to understand your target audience and their needs. Based on the findings, we create UX strategies that align with your business goals and provide optimal user experiences." },
       { title: "Wire-framing and Prototyping", desc: "We use Figma to create wire-frames and interactive prototypes that illustrate the layout, navigation, and functionality of your digital product. This allows you to visualize the user flow and make informed design decisions." },
@@ -120,7 +128,7 @@ export const technologyData: TechnologyContent[] = [
     title: "Android Development",
     heroDescription:
       "Build powerful, native Android applications that deliver exceptional user experiences across millions of devices.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg",
+    logo: AndroidImg,
     services: [
       { title: "Custom Android App Development", desc: "We develop tailor-made Android applications that align with your business requirements, ensuring a visually appealing design, smooth functionality, and optimal performance." },
       { title: "UI/UX Design", desc: "Our skilled designers create intuitive and visually engaging user interfaces, focusing on user-centric design principles to deliver a seamless and delightful user experience for your Android app." },
@@ -139,7 +147,7 @@ export const technologyData: TechnologyContent[] = [
     title: "Flutter Development",
     heroDescription:
       "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase with Flutter.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png",
+    logo: FlutterImg,
     services: [
       { title: "Cross-Platform App Development", desc: "We utilize Flutter to build robust and scalable mobile applications that work seamlessly on iOS, Android, and the web. This ensures maximum reach and compatibility across different devices." },
       { title: "Custom UI/UX Design", desc: "Our talented designers create visually appealing and user-friendly interfaces, leveraging Flutter's rich widget library to design intuitive and engaging user experiences." },
@@ -158,7 +166,7 @@ export const technologyData: TechnologyContent[] = [
     title: "React Native Development",
     heroDescription:
       "Build native mobile applications using React and JavaScript, delivering high-performance apps for iOS and Android.",
-    logo: "https://reactnative.dev/img/header_logo.svg",
+    logo: ReactImg,
     services: [
       { title: "Cross-Platform App Development", desc: "We leverage React Native to build robust and feature-rich mobile applications that run smoothly on both iOS and Android platforms, ensuring a consistent user experience across devices." },
       { title: "UI/UX Design", desc: "Our talented designers create visually appealing and user-friendly interfaces, following best design practices to deliver an intuitive and engaging user experience for your React Native app." },
