@@ -62,9 +62,9 @@ const OurApproach: React.FC = () => {
     <section className="w-full bg-white py-16 px-4 sm:mt-20">
       <div className="max-w-[89rem] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 px-4 md:px-10 lg:px-20">
         <div className="lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start relative z-20">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-[#08162C] mb-4">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-[#08162C] mb-4">
             You bring the <br /> vision, we bring the <br /> spark.
-          </h2>
+          </h1>
           <p className="text-[#252525] text-sm sm:text-base md:text-lg mb-6 max-w-md">
             Techbuggs accelerates visionary organizations—small to
             enterprise—with rapid, tailored digital solutions that boost

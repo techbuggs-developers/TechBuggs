@@ -82,12 +82,12 @@ const HeroSection: React.FC = () => {
                 : "translate-x-0"
             }`}
           >
-            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
+            <h2 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
               We
-            </h1>
-            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
+            </h2>
+            <h2 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C]">
               Build
-            </h1>
+            </h2>
           </div>
 
           <div className="relative flex items-center justify-center">
@@ -121,12 +121,12 @@ const HeroSection: React.FC = () => {
                 : "translate-x-0 "
             }`}
           >
-            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
+            <h2 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
               What
-            </h1>
-            <h1 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
+            </h2>
+            <h2 className="text-4xl md:text-7xl sm:text-6xl font-bold text-[#08162C] ">
               Matters
-            </h1>
+            </h2>
           </div>
         </div>
       </div>
@@ -147,12 +147,12 @@ const HeroSection: React.FC = () => {
               className="relative z-20 text-black text-sm md:text-xl font-medium hidden lg:block"
             >
               <div className="text-left space-y-1">
-                <h2 className="text-xl md:text-2xl text-white font-bold">
+                <h3 className="text-xl md:text-2xl text-white font-bold">
                   Turning Your Ideas into
-                </h2>
-                <h2 className="text-xl md:text-2xl font-bold text-white">
+                </h3>
+                <h3 className="text-xl md:text-2xl font-bold text-white">
                   Reality
-                </h2>
+                </h3>
                 <p className="text-sm md:text-base font-normal text-white opacity-90">
                   Let's create something impactful — <br /> together.
                 </p>

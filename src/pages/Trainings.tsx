@@ -68,9 +68,9 @@ const Courses: React.FC = () => {
             <NavLink to="/">Home &gt;</NavLink>{" "}
             <span className="text-[#78BA9F] font-semibold">Trainings</span>
           </p>
-          <h2 className="text-4xl md:text-6xl font-bold mb-5 sm:mb-14 text-[#08162C] relative z-20">
+          <h1 className="text-4xl md:text-6xl font-bold mb-5 sm:mb-14 text-[#08162C] relative z-20">
             Our Courses
-          </h2>
+          </h1>
           <p className="text-lg text-[#252525] max-w-2xl mx-auto mb-2">
             Explore our range of hands-on, industry-focused courses designed to
             help you master in-demand skills. Whether you're a beginner or

@@ -76,12 +76,12 @@ const AboutSection: React.FC = () => {
           <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] ">
             Better outcomes.
           </h1>
-          <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] ">
+          <h2 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] ">
             Less stress.
-          </h1>
-          <h1 className="text-4xl md:text-7xl font-semibold text-[#08162C] ">
+          </h2>
+          <h2 className="text-4xl md:text-7xl font-semibold text-[#08162C] ">
             A little fun on the side.
-          </h1>
+          </h2>
         </div>
 
         <p className="mt-6 text-base md:text-xl font-semibold text-[#252525] leading-relaxed max-w-3xl relative z-20">

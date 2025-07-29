@@ -13,9 +13,9 @@ const Contact: React.FC = () => {
             <NavLink to="/">Home {">"}</NavLink>{" "}
             <span className="text-[#78BA9F]">Contact</span>
           </p>
-          <h2 className="text-5xl md:text-[5rem] font-semibold text-[#12334E] mb-10">
-            Let’s Talk
-          </h2>
+          <h1 className="text-5xl md:text-[5rem] font-semibold text-[#12334E] mb-10">
+            Let's Talk
+          </h1>
           <p className="text-lg md:text-xl font-semibold max-w-[30rem] text-[#303030] leading-relaxed">
             Get in touch to discuss your AI goals or software product needs. Not
             sure where to start? We can help with that, too.

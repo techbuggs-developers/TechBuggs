@@ -169,9 +169,9 @@ const SuccessSection = () => {
 
       <div className="max-w-[76rem] mx-auto grid grid-cols-1 [@media(min-width:1200px)]:grid-cols-2 gap-16 mt-35">
         <div className="space-y-10">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold md:text-nowrap text-[#08162C]">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold md:text-nowrap text-[#08162C]">
             Your Success is our focus
-          </h2>
+          </h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 mt-16 relative z-20">
             <div className="flex flex-col items-start gap-2">

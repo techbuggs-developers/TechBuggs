@@ -124,12 +124,12 @@ const CareersSection = () => {
             <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C] ">
               A Curious Mind.
             </h1>
-            <h1 className="text-4xl md:text-[5rem] font-semibold text-[#08162C]">
+            <h2 className="text-4xl md:text-[5rem] font-semibold text-[#08162C]">
               A Kind Heart.
-            </h1>
-            <h1 className="text-4xl md:text-7xl font-semibold text-[#08162C] ">
+            </h2>
+            <h2 className="text-4xl md:text-7xl font-semibold text-[#08162C] ">
               A Can-Do Attitude.
-            </h1>
+            </h2>
           </div>
 
           <p className="mt-6 text-base md:text-xl font-semibold text-[#252525] leading-relaxed max-w-3xl">
