@@ -179,7 +179,7 @@ const CareersSection = () => {
 
       <div className=" relative overflow-hidden">
         <div
-          className="absolute w-[40rem] h-[35rem] top-0 right-0 rounded-rt-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
+          className="absolute w-[30rem] h-[20rem] top-0 right-0 rounded-rt-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to bottom, #78BA9F 80%, #12334E 20%)",
             animation: "blob 8s infinite",
@@ -190,7 +190,7 @@ const CareersSection = () => {
         />
 
         <div
-          className="absolute w-[32rem] h-[35rem] -bottom-20 -left-15 rounded-bl-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
+          className="absolute w-[30rem] h-[25rem] -bottom-20 -left-15 rounded-bl-[100%] filter blur-3xl opacity-30 z-0 hidden sm:block"
           style={{
             background: "linear-gradient(to bottom, #78BA9F 50%, #12334E 50%)",
             animation: "blob 8s infinite",
@@ -229,7 +229,7 @@ const CareersSection = () => {
           </div>
         </div>
 
-        <div
+        {/* <div
           className="sm:mt-10 px-4 md:px-10 relative z-20 pb-10"
           ref={openingsRef}
         >
@@ -301,7 +301,7 @@ const CareersSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
