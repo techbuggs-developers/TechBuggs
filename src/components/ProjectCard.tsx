@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             .replace(/\s+/g, "-")}`}
         >
           <Button
-            className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer"
+            className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 sm:opacity-0 sm:translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer"
             variant="ghost"
             aria-label={`View details for ${project.title}`}
           >

@@ -6,13 +6,13 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     if (hash) {
-      // If there's a hash, scroll to the element
+
       const element = document.getElementById(hash.slice(1));
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // If no hash, scroll to top
+
       window.scrollTo({
         top: 0,
         left: 0,

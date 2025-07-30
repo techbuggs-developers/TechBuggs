@@ -285,7 +285,6 @@ const Navbar: React.FC = () => {
                     to={`/services/${service.slug}`}
                     className="px-4 py-2 flex gap-2 items-center hover:text-[#45BCA0]"
                   >
-                    {/* Add icons based on service.slug */}
                     {service.slug === "web-development" && (
                       <Globe size={18} className="text-[#45BCA0]" />
                     )}
